@@ -1,0 +1,96 @@
+---
+title: "Histórico das aulas do curso"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("knitr_setup.R")
+```
+
+Abaixo o histórico de atividades realizadas em classe e atividades extra
+classe aplicadas.
+
+- **07/03**: Apresentação da disciplina (em função da troca de professores)
+- **09/03**: Conceitos de amostragem. [Slides](01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf)
+- **14/03**: Classificação de variáveis. Análise exploratória de dados.
+  [Material](02_Analise_Exploratoria_de_Dados.html)
+- **16/03**: Análise exploratória de dados: variáveis quantitativas
+  contínuas. [Material](02_Analise_Exploratoria_de_Dados.html)
+- **21/03**: Sabatina 1
+- **23/03**: Medidas resumo: medidas de tendência central.
+  [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf)
+- **28/03**: Medidas resumo: medidas de variabilidade.
+  [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf)
+- **30/03**: Medidas resumo: medidas de posição relativa.
+  [Slides](03_Medidas_resumo/03_Medidas_resumo.pdf)
+- **04/04**: Sabatina 2
+- **06/04**: Probabilidade: experimentos, eventos e conjuntos.
+  [Slides](04_Probabilidade/04_Probabilidade.pdf)
+- **11/04**: Probabilidade: definição clássica e frequentista. Regra da
+  adição. Probabilidade condicional.
+  [Slides](04_Probabilidade/04_Probabilidade.pdf)
+- **13/04**: Sem aula
+- **18/04**: Probabilidade: regra da multiplicação e independência entre
+  eventos. [Slides](04_Probabilidade/04_Probabilidade.pdf)
+- **20/04**: Sabatina 3
+- **25/04**: Variáveis aleatórias: definições e exemplos.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **27/04**: Variáveis aleatórias discretas: definições e propriedades
+  de esperança e variância. Modelo Bernoulli.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **02/05**: Variáveis aleatórias discretas: Modelo binomial.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **04/05**: Variáveis aleatórias discretas: Modelo Poisson.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **09/05**: Variáveis aleatórias contínuas: definições, propriedades,
+  esperança e variância.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **11/05**: Variáveis aleatórias contínuas: Modelo normal.
+  [Slides](05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf)
+- **16/05**: Variáveis aleatórias: revisão e exercícios
+- **18/05**: Sabatina 4
+- **23/05**: Não haverá aula (em função da [RBRAS 2016])
+- **25/05**: Não haverá aula (em função da [RBRAS 2016])
+- **30/05**: Introdução à inferência estatística. Estimadores pontuais e
+  propriedades dos estimadores.
+  [Slides](06_Estimacao_pontual/06_Estimacao_pontual.pdf)
+- **01/06**: Propriedades de estimadores e erros amostrais.
+  [Slides](06_Estimacao_pontual/06_Estimacao_pontual.pdf)
+- **06/06**: Distribuição amostral da média (ver slides e figuras:
+  [dist_amostral_idades.pdf](06_Estimacao_pontual/dist_amostral_idades.pdf)
+  e [dist_amostrais.pdf](06_Estimacao_pontual/dist_amostrais.pdf)).
+- **08/06**: Sabatina 5. Estimação intervalar. Intervalo de confiança
+  para a média ($\sigma$ conhecido).
+  [Slides](07_Estimacao_intervalar/07_Estimacao_intervalar.pdf)
+- **13/06**: Não haverá aula.
+- **15/06**: Não haverá aula.
+- **20/06**: Estimação intervalar. Intervalo de confiança para a média
+  ($\sigma$ desconhecido). Tamanho de amostra.
+  [Slides](07_Estimacao_intervalar/07_Estimacao_intervalar.pdf)
+- **22/06**: Não haverá aula.
+- **27/06**: Testes de hipótese para a média ($\sigma$ conhecido e
+  desconhecido). [Slides](08_Teste_de_hipotese/08_Teste_de_hipotese.pdf)
+- **29/06**: Sabatina 6
+
+## Exercícios
+
+- [Lista 1][]: Amostragem e análise exploratória de dados. [Gabarito 1][].
+- [Lista 2][]: Medidas resumo. [Gabarito 2][]
+- [Lista 3][]: Probabilidade. [Gabarito 3][]
+
+## Notas
+
+As notas estão disponíveis [nesta página](notas.html).
+
+
+
+[Lista 1]: exercicios/01_Amostragem_e_Exploratoria.pdf
+[Gabarito 1]: exercicios/01_Amostragem_e_Exploratoria_GABARITO.pdf
+[Lista 2]: exercicios/03_Medidas_resumo.pdf
+[Gabarito 2]: exercicios/03_Medidas_resumo_GABARITO.pdf
+[Lista 3]: exercicios/04_Probabilidade.pdf
+[Gabarito 3]: exercicios/04_Probabilidade_GABARITO.pdf
+
+[RBRAS 2016]: http://rbras2016.ufba.br/pt
