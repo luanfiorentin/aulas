@@ -3,364 +3,338 @@ title: "Notas"
 output:
   html_document:
     toc: false
+    code_folding: show
 ---
 
-```{r setup, include=FALSE}
-source("knitr_setup.R")
+```{r setup, include=FALSE, cache=FALSE}
+source("setup_knitr.R")
 ```
 
-```{r pacotes, include=FALSE}
-library(knitr)
-```
+# Como são calculadas as notas no Moodle {.tabset}
 
-```{r, include=FALSE}
-## Importa
-notas <- read.csv("misc/notas.csv")
-## Converte matriculas para numero
-notas$Matricula <- as.numeric(gsub("GRR", "", notas$Matricula))
-notas <- notas[order(notas$Matricula), ]
-rownames(notas) <- 1:nrow(notas)
-## Seleciona apenas as colunas com as notas de sabatinas (S*)
-notas.col <- which(names(notas) %in%
-                   names(notas)[grep("^S", names(notas))])
-```
+## Versão simplificada
 
-## Histograma e box plot geral
+As questões de múltipla escolha feitas no Moodle possuem um método de
+atribuição de pontos que segue algumas regras, demonstradas a seguir.
 
-```{r, fig.width=8, fig.height=6}
-## Grafico geral das notas
-breaks <- 0:10
-## table(cut(notas$S1, breaks = breaks,
-##           right = FALSE, include.lowest = TRUE))
-## Junta notas de todas as sabatinas em um único vetor
-notas.all <- do.call(c, notas[, notas.col])
-hist(notas.all, breaks = breaks, right = FALSE, include.lowest = TRUE,
-     main = "Notas gerais", xlab = "Notas", ylab = "Frequência absoluta")
-boxplot(notas.all, horizontal = TRUE, ylim = c(0, 10),
-        col = "lightgray", add = TRUE)
-```
+A primeira coisa a saber é que o valor de cada alternativa muda conforme
+o número de alternativas veradeiras/falsas. Cada alternativa verdadeira
+terá pontuação sempre dada por
+$$
+\frac{1}{\text{# verdadeiras}}
+$$
+ou seja, cada alternativa verdadeira será uma fração do número total de
+alternativas verdadeiras.
 
-Resumo dos cinco números, média, desvio-padrão, e número de provas não
-realizadas (NA):
+Ao marcar uma alternativa falsa, existirá uma penalização, ou seja, você
+receberá uma pontuação negativa por ter marcado uma alternativa falsa.
+Essa pontuação negativa será utilizada para descontar da nota final
+obtida marcando-se as alternativas verdadeiras. O cálculo da pontuação
+de cada alternativa falsa marcada é dado por
+$$
+\frac{1}{\max\{ \text{# falsas, 2} \}}
+$$
+A ideia é a mesma da pontuação das alternativas verdadeiras, mas se
+houverem apenas uma ou nenhuma alternativa falsa na questão, a fração será
+sempre $1/2$. Esse detalhe serve para que, no caso de ocorrer apenas uma
+alternativa falsa, a marcação dessa alternativa não anule toda a
+questão. Portanto, no caso de ocorrer apenas uma alternativa falsa, a
+penalização por marcar essa alternativa será $1/2 = 0,5$, e não $1/1 =
+1$ se não houvesse esse detalhe.
 
-```{r}
-statm <- function(x){
-    res <- c(fivenum(x),
-             mean(x, na.rm = TRUE),
-             sd(x, na.rm = TRUE),
-             sum(is.na(x)))
-    names(res) <- c("Min", "Q1", "Q2", "Q3", "Max", "Média", "s", "NAs")
+É importante notar que, de acordo com esses critérios, a nota final
+**poderia** ser negativa. No entanto, **a nota nunca será negativa**, já
+que existe uma restrição para que seja no mínimo **zero**.
+
+### Exemplos
+
+Suponha uma questão com 2 alternativas verdadeiras (V) e 3 falsas
+(F). A pontuação de cada alternativa será:
+
+- $1/2 = 0,5$ para alternativas verdadeiras
+- $1/3 = 0,33$ para alternativas falsas
+
+Alguns cenários possíveis:
+
+- Ao marcar 2 V e 0 F, a nota será $1,00 - 0,00 = 1,00$.
+- Ao marcar 2 V e 1 F, a nota será $1,00 - 0,33 = 0,67$.
+- Ao marcar 2 V e 2 F, a nota será $1,00 - 0,66 = 0,34$.
+- Ao marcar 1 V e 1 F, a nota será $0,50 - 0,33 = 0,17$.
+- Ao marcar 1 V e 2 F, a nota será $0,50 - 0,66 = 0,00$.
+- Ao marcar 2 V e 3 F, a nota será $1,00 - 1,00 = 0,00$.
+
+Suponha uma questão com 4 alternativas verdadeiras (V) e 1 falsa
+(F). A pontuação de cada alternativa será:
+
+- $1/4 = 0,25$ para alternativas verdadeiras
+- $1/2 = 0,5$ para alternativa falsa (observe o detalhe da regra)
+
+Alguns cenários possíveis:
+
+- Ao marcar 4 V e 0 F, a nota será $1,00 - 0,00 = 1,00$.
+- Ao marcar 4 V e 1 F, a nota será $1,00 - 0,50 = 0,50$.
+- Ao marcar 3 V e 0 F, a nota será $0,75 - 0,00 = 0,75$.
+- Ao marcar 3 V e 1 F, a nota será $0,75 - 0,50 = 0,25$.
+- Ao marcar 2 V e 1 F, a nota será $0,50 - 0,50 = 0,00$.
+- Ao marcar 1 V e 1 F, a nota será $0,25 - 0,50 = 0,00$.
+
+### Tabelas de notas
+
+Abaixo você pode conferir as pontuações atríbuidas ao marcar um certo
+número de alternativas verdadeiras e falsas em questões com 1 a 5
+alternativas verdadeiras.
+
+As linhas das tabelas se referem ao número de alternativas verdadeiras
+marcadas, enquento que as colunas se referem ao número de alternativas
+falsas marcadas.
+
+```{r, echo=FALSE}
+z <- function(p, v, x, y, negative = FALSE, rule = "false2"){
+    stopifnot(rule %in% c("false2", "false"))
+    f <- 5 - v
+    if(rule == "false2"){
+        res <- ifelse(f < 2,
+                      x * p/v - y * p/2,
+                      x * p/v - y * p/f)
+    } else{
+        res <- x * p/v - y * p/f
+    }
+    res <- ifelse(isFALSE(negative) & res < 0, 0, res)
     return(res)
 }
-round(statm(notas.all), 2)
-```
-
-## Resumos por prova
-
-Box plot de cada prova
-
-```{r, fig.width=8, fig.height=6}
-## Boxplots comparando as notas entre sabatinas
-boxplot(notas[, notas.col], ylim = c(0, 10), ylab = "Notas")
-```
-
-Resumo dos cinco números, média, desvio-padrão, e número de provas não
-realizadas (NA):
-
-```{r}
-round(apply(notas[, notas.col], 2, statm), 2)
-```
-
-## Notas individuais
-
-**Aqui estão apenas as notas individuais de cada sabatina. Veja na seção
-abaixo as médias finais calculadas!**
-
-```{r, results='asis'}
-kable(notas[, c(1, notas.col)], align = "c")
-```
-
-## Resultados finais
-
-```{r, include=FALSE}
-##----------------------------------------------------------------------
-## Numero de aulas e frequencias
-
-## Numero de aulas geral no semestre
-## Datas iniciais e finais por dia da semana
-sini1 <- as.Date("2016-03-02")
-sini2 <- as.Date("2016-03-07")
-sfim1 <- as.Date("2016-06-29")
-sfim2 <- as.Date("2016-06-27")
-
-## Numero de aulas nos dias 1 e 2
-d1 <- length(seq(sini1, sfim1, by = "week"))
-d2 <- length(seq(sini2, sfim2, by = "week"))
-aulas <- d1 + d2
-
-## Desconto de dias
-## Dias iniciais
-desc1 <- 1
-## Feriados (quando realmente nao deveria ter aula e as presencas nao
-## deveriam ser computadas)
-feri <- 0
-## Outros dias sem aula
-out <- 6
-## Numero efetivo de aulas
-aulas.eff <- aulas - desc1 - feri - out
-
-## Numero de dias em que foi passada a chamada
-dcham <- 18
-
-## Numero de dias em que nao foi passada a chamada
-dscham <- aulas.eff - dcham
-
-## As frequencias na planilha correspondem ao numero de dias em que foi
-## passada a chamada. Para completar a frequencia com o numero de aulas
-## total (incluindo aqueles dias em que nao foi passada a chamada), sera
-## feita a soma do numero de dias em que nao foi passada a chamada (i.e.
-## sera dada presenca para todo mundo). No entanto, se a frequencia for
-## zero, ela sera mantida assim (pois sao desistencias)
-notas$Freq2 <- 0
-notas$Freq2[notas$Freq != 0] <- notas$Freq[notas$Freq != 0] + dscham
-
-## Frequencia relativa
-notas$Freq.rel <- notas$Freq2/aulas.eff
-
-## Arredonda para duas casas decimais a frequencia relativa
-notas$Freq.rel <- round(notas$Freq.rel, 2)
-
-## Funcao para obter as diferencas entre um valor e um objetivo
-difer <- function(x, obj){
-    obj - x
+makegrid <- function(p, v, ...){
+    f <- 5 - v
+    gx <- 0:v
+    gy <- 0:f
+    grid <- expand.grid(x = gx, y = gy)
+    for(i in 1:nrow(grid)){
+        grid$z[i] <- z(p = p, v = v, x = grid$x[i], y = grid$y[i], ...)
+    }
+    tab <- matrix(grid$z, nrow = length(unique(grid$x)),
+                  ncol = length(unique(grid$y)),
+                  dimnames = list(V = unique(grid$x),
+                                  F = unique(grid$y)))
+    return(round(tab, 2))
 }
-
-##----------------------------------------------------------------------
-## Regras para arredondar a frequencia relativa
-## 1) Se 0.7 <= Freq.rel < 0.75 entao SOMA difer
-
-## Cria uma nova coluna e a condicao
-notas$Freq.rel2 <- notas$Freq.rel
-cond.freq <- notas$Freq.rel >= 0.7 & notas$Freq.rel < 0.75
-
-## Soma as diferencas
-notas$Freq.rel2[cond.freq] <- notas$Freq.rel2[cond.freq] +
-    difer(notas$Freq.rel2[cond.freq], 0.75)
 ```
 
-Na tabela abaixo estão as notas consideradas para o cálculo da média
-final. Das 6 sabatinas, foram consideradas apenas as 4 com maiores notas
-(`N1`, `N2`, `N3`, `N4`). A frequência (`F`) é o percentual de presença.
+Questão com 1 alternativa verdadeira e 4 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 1, rule = "false2")
+```
+Questão com 2 alternativas verdadeiras e 3 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 2, rule = "false2")
+```
+Questão com 3 alternativas verdadeiras e 2 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 3, rule = "false2")
+```
+Questão com 4 alternativas verdadeiras e 1 falsa
+```{r, echo=FALSE}
+makegrid(p = 1, v = 4, rule = "false2")
+```
+Questão com 5 alternativas verdadeiras e 0 falsas
+```{r, echo=FALSE}
+makegrid(p = 1, v = 5, rule = "false2")
+```
 
-A média (`M`) foi calculada com estas 4 notas, e já **arredondada para
-cima** nos seguintes casos:
 
-- Médias finais maiores ou iguais a 6,5 e menores do que 7,0 foram
-  arredondadas para 7,0, SE a frequência do aluno foi maior ou igual a
-  75%.
-- Médias finais maiores ou iguais a 3,5 e menores do que 4,0 foram
-  arredondadas para 4,0, SE a frequência do aluno foi maior ou igual a
-  75%.
+## Detalhes técnicos
 
-**Observação**: a frequência só foi utilizada aqui para critério de
-arredondamento de nota. Mesmo que o aluno tenha frequência abaixo de
-75%, é permitido fazer o exame.
+### Atribuição de notas do pacote exams
 
-A coluna de situação (`S`) indica se o aluno foi aprovado (`Ap`), ficou
-em exame (`Ex`), ou foi reprovado (`Re`).
+A correção automática de questões do pacote **exams** segue uma das
+cinco regras implementadas na função `exams_eval()`, que possui os
+seguintes argumentos
+```{r}
+library(exams)
+args(exams_eval)
+```
+onde os argumentos são:
+
+- `partial = TRUE`: permite que questões de múltipla escolha possuam
+  créditos parciais. Do contrário, uma alternativa falsa marcada como
+  verdadeira anula toda a questão.
+- `negative = FALSE`: controla se a questão pode ter nota negativa (o
+  que pode acontecer de acordo com algumas regras de correção).
+- `rule`: as cinco regras implementadas (detalhes abaixo).
+
+### Regras de pontuação
+
+Em questões de múltipla escolha com créditos parciais, a fração
+atribuída para cada alternativa verdadeira selecionada será sempre
+$1/\text{V}$, onde $\text{V}$ é o número de alternativas corretas
+(verdadeiras). Quando uma alternativa errada (falsa) é selecionada, a
+pontuação (negativa) atribuída varia conforme uma das cinco regras. Para
+cada alternativa errada selecionada, a pontuação negativa atribuída
+será:
+
+- `false2` (default): $1/\max\{\text{F}, 2\}$, onde $\text{F}$ é o
+  número de alternativas erradas (falsas).
+- `false`: usa $1/\text{F}$.
+- `true`: usa $1/\text{V}$, de forma que cada alternativa errada
+  selecionada anula uma alternativa correta.
+- `all`: usa $1$, de forma que uma única alternativa errada selecionada
+  anula todas as corretas selecionadas.
+- `none`: usa $0$, de forma que marcar alternativas erradas não desconta
+  nenhuma fração da nota.
+
+Por exemplo, uma questão com 2 alternativas verdadeiras e 3 falsas terá
+as seguintes pontuações de acordo com cada uma das regras:
+```{r}
+## false2
+eef2 <- exams_eval(partial = TRUE, negative = FALSE, rule = "false2")
+eef2$pointvec("11000")
+## false
+eef <- exams_eval(partial = TRUE, negative = FALSE, rule = "false")
+eef$pointvec("11000")
+## true
+eet <- exams_eval(partial = TRUE, negative = FALSE, rule = "true")
+eet$pointvec("11000")
+## all
+eea <- exams_eval(partial = TRUE, negative = FALSE, rule = "all")
+eea$pointvec("11000")
+## none
+een <- exams_eval(partial = TRUE, negative = FALSE, rule = "none")
+een$pointvec("11000")
+```
+
+Pela definição das regras, a diferença entre `false2` e `false` ocorre
+apenas quando existirem uma ou nenhuma alternativa errada. Veja os
+exemplos:
+```{r}
+## Uma errada ----------------------------------------------------------
+## false2
+eef2$pointvec("11110")
+## false
+eef$pointvec("11110")
+## Nenhuma errada ------------------------------------------------------
+## false2
+eef2$pointvec("11111")
+## false
+eef$pointvec("11111")
+```
+O que ocorre é que `false2` considera que no mínimo sempre haverão duas
+alternativas erradas, para que a pontuação máxima a ser descontada não
+seja maior do que $0.5$ e a questão não seja anulada.
+
+### Cálculo das notas
+
+A nota final de uma questão será portanto dependente de dois fatores:
+
+1. A regra de pontuação adotada.
+2. O número de alternativas verdadeiras/falsas.
+
+Para simplificar, vamos focar apenas nas regras `false2` (a padrão) e
+`false`. De maneira geral, a nota final ($Z$) de uma questão usando a
+regra `false2` será
+
+\[z = \left\{
+  \begin{array}{lr}
+    x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{2},
+    &  \text{se } \text{F} < 2\\
+    x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{\text{F}},
+    &  \text{se } \text{F} \geqslant 2\\
+  \end{array}
+\right.
+\]
+
+onde $X$ é o número de alternativas corretas marcadas, $Y$ é o número de
+alternativas erradas marcadas, $\text{P}$ é a pontuação da questão, e
+$\text{V}$ e $\text{F}$ são o número de alternativas verdadeiras e
+falsas, respectivamente. Para a regra `false`, o cálculo da pontuação
+simplifica apenas para
+$$
+z = x \frac{\text{P}}{\text{V}} - y \frac{\text{P}}{\text{F}}
+$$
+
+Os exemplos abaixo mostram a pontuação final em dois cenários:
+
+1. Uma questão com 1 alternativa verdadeira.
+2. Uma questão com 4 alternativas verdadeiras.
 
 ```{r}
-##----------------------------------------------------------------------
-## Tabela com as notas finais
-
-## Ordena pelas maiores notas
-notas2 <- apply(notas[, notas.col], 1, sort,
-                decreasing = TRUE, na.last = TRUE)
-
-## Numero de provas consideradas
-np <- 4
-
-## Tabela com as np maiores notas
-notas2 <- t(notas2[1:np, ])
-
-## Calcula a media
-notas2 <- cbind(notas2,
-                apply(notas2, 1, function(x) sum(x, na.rm = TRUE)/np))
-
-## Insere o GRR
-notas2 <- as.data.frame(cbind(notas$Matricula, notas2))
-names(notas2) <- c("Matricula", paste0("N", 1:np), "Media")
-
-## Insere a frequencia (Freq.rel2 de notas)
-notas2$Freq.rel <- ceiling(notas$Freq.rel2*100)
-
-## Arredonda a media para duas casa decimais
-notas2$Media <- round(notas2$Media, 2)
-
-## Regras para ser aprovado
-## 1) Se 6.5 <= MF < 7.0 E Freq >= 75 entao SOMA difer
-
-## Cria nova coluna e condicoes
-notas2$Media2 <- notas2$Media
-cond.nota1 <- notas2$Media >=6.5 & notas2$Media < 7
-cond.nota2 <- notas2$Freq.rel >= 75
-
-## Soma as diferencas
-notas2$Media2[cond.nota1 & cond.nota2] <-
-    notas2$Media2[cond.nota1 & cond.nota2] +
-    difer(notas2$Media2[cond.nota1 & cond.nota2], 7)
-
-## Regras para ir para exame
-## 1) Se 3.5 <= MF < 4.0 E Freq >= 75 entao SOMA difer
-
-## Cria condicoes
-cond.exam1 <- notas2$Media >=3.5 & notas2$Media < 4
-
-## Soma as diferencas
-notas2$Media2[cond.exam1 & cond.nota2] <-
-    notas2$Media2[cond.exam1 & cond.nota2] +
-    difer(notas2$Media2[cond.exam1 & cond.nota2], 4)
-
-##----------------------------------------------------------------------
-## BONUS: aqui tem uma aluna que acertou uma questao bonus e ficou com
-## uma prova com nota '12'. Portanto, deveria distribuir essa nota entre
-## as outras provas dela. Como as outras tambem eram quase 10, vou
-## atribuir 10 para todas as provas dela.
-## grr <- 20154966
-## notas2[notas2$Matricula == grr, ]
-## Como ja esta com 10 nas 4 maiores nao precisa fazer isso.
-##----------------------------------------------------------------------
-
-##----------------------------------------------------------------------
-## Tabela final
-notas.fim <- notas2[, 1:5]
-notas.fim$M <- notas2$Media2
-notas.fim$F <- notas2$Freq.rel
+## (1) Questão com 1 alternativa verdadeira ----------------------------
+## Uma verdadeira marcada
+eef2$pointsum("10000", "10000") # false2
+eef$pointsum("10000", "10000")  # false
+## Uma verdadeira e uma errada marcadas
+eef2$pointsum("10000", "10001") # false2
+eef$pointsum("10000", "10001")  # false
+## (2) Questão com 4 alternativas verdadeiras --------------------------
+## Quatro verdadeira marcada
+eef2$pointsum("11110", "11110") # false2
+eef$pointsum("11110", "11110")  # false
+## Quatro verdadeiras e uma errada marcadas
+eef2$pointsum("11110", "11111") # false2
+eef$pointsum("11110", "11111")  # false
 ```
+
+Com essas regras gerais, podemos definir uma função para fazer o cálculo
+das notas seguindo estas duas regras.
+```{r}
+z <- function(p, v, x, y, negative = FALSE, rule = "false2"){
+    stopifnot(rule %in% c("false2", "false"))
+    f <- 5 - v
+    if(rule == "false2"){
+        res <- ifelse(f < 2,
+                      x * p/v - y * p/2,
+                      x * p/v - y * p/f)
+    } else{
+        res <- x * p/v - y * p/f
+    }
+    res <- ifelse(isFALSE(negative) & res < 0, 0, res)
+    return(res)
+}
+```
+
+Alguns exemplos similares aos cenários acima seriam
+```{r}
+## Uma alternativa verdadeira, uma verdadeira e uma errada marcadas
+z(p = 1, v = 1, x = 1, y = 1, rule = "false2")
+z(p = 1, v = 1, x = 1, y = 1, rule = "false")
+## Quatro alternativas verdadeiras, quatro verdadeiras e uma errada
+## marcadas
+z(p = 1, v = 4, x = 4, y = 1, rule = "false2")
+z(p = 1, v = 4, x = 4, y = 1, rule = "false")
+```
+
+Com isso, podemos criar uma função que gera uma tabela com todos os
+possíveis resultados para um número diferente de alternativas
+verdadeiras/falsas.
+```{r}
+makegrid <- function(p, v, ...){
+    f <- 5 - v
+    gx <- 0:v
+    gy <- 0:f
+    grid <- expand.grid(x = gx, y = gy)
+    for(i in 1:nrow(grid)){
+        grid$z[i] <- z(p = p, v = v, x = grid$x[i], y = grid$y[i], ...)
+    }
+    tab <- matrix(grid$z, nrow = length(unique(grid$x)),
+                  ncol = length(unique(grid$y)),
+                  dimnames = list(V = unique(grid$x),
+                                  F = unique(grid$y)))
+    return(round(tab, 2))
+}
+```
+
+Assim, temos todas as possibilidades para cada regra:
 
 ```{r}
-##----------------------------------------------------------------------
-## Antes do exame (Ex)
+## false2 --------------------------------------------------------------
+makegrid(p = 1, v = 0, rule = "false2")
+makegrid(p = 1, v = 1, rule = "false2")
+makegrid(p = 1, v = 2, rule = "false2")
+makegrid(p = 1, v = 3, rule = "false2")
+makegrid(p = 1, v = 4, rule = "false2")
+makegrid(p = 1, v = 5, rule = "false2")
 
-## Cria a coluna Situacao
-notas.fim$S <- "Ap"
-notas.fim$S[notas.fim$M >= 4 & notas.fim$M < 7] <- "Ex"
-notas.fim$S[notas.fim$M < 4] <- "Re"
-
-## Mostra tabela
-## kable(notas.fim, align = "c")
-```
-
-<!-- Número de alunos em cada situação: -->
-
-```{r, include=FALSE}
-## addmargins(table(notas.fim$S))
-```
-
-<!-- Gráfico de barras com os percentuais por situação: -->
-
-```{r, include=FALSE}
-## barplot(prop.table(table(notas.fim$S))*100,
-##         xlab = "Situação", ylab = "Frequência (%)")
-```
-
-**Após o exame**: as notas dos exames estão na coluna `E`. A média final
-(`MF`) é a mesma para quem não fez exame, e é a média entre a média
-final (`M`) e a nota do exame (`E`) para quem fez exame. A média final
-arredondada (`MFA`) é a nota que será lançada no sistema. A coluna `SF`
-mostra a situação final dos alunos após o exame.
-
-```{r}
-##----------------------------------------------------------------------
-## Após exame (Ex)
-
-## Insere notas do exame
-notas.fim$E <- notas$Ex
-
-## Calcula média final (MF), que é média da nota final com a nota do
-## exame (apenas para os que ficaram de exame)
-notas.fim$MF <- notas.fim$M
-notas.fim$MF[notas.fim$S == "Ex"] <- (notas.fim$M[notas.fim$S == "Ex"] +
-    notas.fim$E[notas.fim$S == "Ex"])/2
-notas.fim$MF <- round(notas.fim$MF, 2)
-
-## Calcula a média final arredonadada (MFA), que é a média multiplicada por
-## 10 e arredondada para cima (é como será lançada no sistema)
-notas.fim$MFA <- ceiling(notas.fim$MF*10)
-
-## Cria a coluna Situacao final (SF), que indica a situação após exame
-notas.fim$SF <- "Ap"
-notas.fim$SF[notas.fim$MFA < 50] <- "Re"
-
-## Mostra tabela
-kable(notas.fim, align = "c")
-```
-
-Número de alunos em cada situação:
-
-- Antes do exame
-```{r}
-addmargins(table(notas.fim$S))
-```
-- Após o exame
-```{r}
-addmargins(table(notas.fim$SF))
-```
-
-Gráfico de barras com os percentuais por situação:
-
-```{r}
-par(mfrow = c(1, 2))
-barplot(prop.table(table(notas.fim$S))*100,
-        xlab = "Situação", ylab = "Frequência (%)",
-        main = "Antes do exame")
-barplot(prop.table(table(notas.fim$SF))*100,
-        xlab = "Situação", ylab = "Frequência (%)",
-        main = "Após o exame")
-par(mfrow = c(1, 1))
-```
-
-```{r, echo=FALSE, include=FALSE, eval=FALSE}
-##----------------------------------------------------------------------
-## Monta a tabela final com as informacoes necessarias para digitar as
-## notas no sistema
-
-## Importa nomes
-nomes <- read.csv("~/Dropbox/UFPR/disciplinas/CE-003-FMI/nomes_ce003fmi_2016-01.csv")
-nomes$Matricula <- as.numeric(gsub("GRR", "", nomes$Matricula))
-
-## Faz o merge dos nomes com as notas
-notas.sis <- merge(nomes, notas.fim[, c("Matricula", "MFA")],
-                   by = "Matricula", sort = FALSE)
-
-## Faz o merge da coluna Freq2 de notas (que e o numero de presencas)
-notas.sis <- merge(notas.sis, notas[, c("Matricula", "Freq2")],
-                   by = "Matricula", sort = FALSE)
-
-## De acordo com o sistema, as faltas sao contadas em HORAS da carga
-## horaria semestral que é de 60 horas. Portanto, como são permitidos
-## 25% de faltas, isso corresponde a 15 horas das 60
-faltas.max <- 15 # max de faltas (de acordo com o sistema)
-## Considerando que cada aula tem 2 horas-aula, entao seriam 30 aulas no
-## semestre. Como a minha frequencia esta em numero de aulas (e nao em
-## horas), vou converter para horas. Antes é necessário expandir as
-## presenças  para 30 aulas
-notas.sis$Freq3 <- notas.sis$Freq2 + (30 - aulas.eff)
-## E agora calcula o numero de horas-aula de presença
-notas.sis$Freq4 <- notas.sis$Freq3 * 2
-## Finalmente calcula o numero de faltas em horas-aula
-notas.sis$Faltas <- 60 - notas.sis$Freq4
-
-## Cria uma coluna com a situação
-notas.sis$S <- "Ap"
-notas.sis$S[notas.sis$MFA < 50] <- "Re"
-
-## Mantem apenas as coluna de interesse
-col.sis <- c("Matricula", "Curso", "Nome", "Faltas", "MFA", "S")
-
-## Exporta tabela final
-write.table(notas.sis[, col.sis],
-            "~/Dropbox/UFPR/disciplinas/CE-003-FMI/final_ce003fmi_2016-01.csv",
-            sep = ",", dec = ".", col.names = TRUE, row.names = FALSE)
-
+## false ---------------------------------------------------------------
+makegrid(p = 1, v = 1, rule = "false")
+makegrid(p = 1, v = 2, rule = "false")
+makegrid(p = 1, v = 3, rule = "false")
+makegrid(p = 1, v = 4, rule = "false")
+makegrid(p = 1, v = 5, rule = "false")
 ```
