@@ -1,6 +1,6 @@
-﻿name: "estbas"
-output_dir: "docs"
+﻿name: "aulas-ufpr"
 exclude: ["README.md", "\\.sh", "cache"]
+output_dir: "."
 output:
   html_document:
     theme: flatly
@@ -13,7 +13,6 @@ output:
       collapsed: false
       smooth_scroll: false
     includes:
-      in_header: analytics.html
       after_body: footer.html
 navbar:
   title: "Estatística Básica"
@@ -26,11 +25,9 @@ navbar:
       href: referencias.html
     - text: "Programas"
       href: programas.html
-    - text: "Notas"
-      href: notas.html
     - text: "Análise Exploratória"
       href: 02_Analise_Exploratoria_de_Dados.html
   right:
     - text: GitHub
       icon: fa-github fa-lg
-      href: https://github.com/aulas-ufpr
+      href: https://github.com/luanfiorentin/aulas-ufpr

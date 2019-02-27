@@ -6,7 +6,7 @@ output:
 ---
 
 ```{r setup, include=FALSE, cache=FALSE}
-source("setup_knitr.R")
+source("knitr_setup.R")
 ```
 
 Abaixo está o cronograma inicial planejado para as disciplinas. (Pode

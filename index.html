@@ -4,49 +4,25 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
 
 
 
-<title>CE003 - Estatística II</title>
+<title>EstatÃ­stica BÃ¡sica</title>
 
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
-  ga('create', 'UA-38898840-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="libs/highlight/default.css"
-      type="text/css" />
-<script src="libs/highlight/highlight.js"></script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
 
 
 
@@ -161,7 +137,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -169,7 +144,9 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<script src="libs/navigation-1.1/codefolding.js"></script>
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 <script>
 $(document).ready(function () {
   window.initializeCodeFolding("hide" === "show");
@@ -180,9 +157,8 @@ $(document).ready(function () {
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -190,63 +166,35 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">CE003</a>
-      <!-- <a class="navbar-brand" href="#"> -->
-      <!--   <img alt="LEG" src="img/leg.png"> -->
-      <!-- </a> -->
+      <a class="navbar-brand" href="index.html">EstatÃ­stica BÃ¡sica</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Informações</a></li>
-        <li><a href="aulas.html">Aulas</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        <li><a href="recursos.html">Programas</a></li>
-        <li class="dropdown">
-          <a href="authoring" class="dropdown-toggle"
-          data-toggle="dropdown" role="button"
-          aria-expanded="false">Materiais <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-             <li class="dropdown-header">Introdução</li>
-             <li><a href="01_introducao_e_amostragem/01_Introducao_a_Estatistica_e_amostragem.pdf">Introducao
-             à Estatistica e amostragem [PDF]</a></li>
-             <!-- <li class="divider"></li> -->
-             <li class="dropdown-header">Estatística Descritiva</li>
-             <li><a href="02_Analise_Exploratoria_de_Dados.html">Análise
-                 Exploratória de dados</a></li>
-             <li><a href="03_Medidas_resumo/03_Medidas_resumo.pdf">Medidas
-                 resumo [PDF]</a></li>
-             <li class="dropdown-header">Probabilidade</li>
-             <li><a href="04_Probabilidade/04_Probabilidade.pdf">Probabilidade [PDF]</a></li>
-             <li><a href="05_Variaveis_aleatorias/05_Variaveis_Aleatorias.pdf">Variáveis
-             aleatórias e distribuições de probabilidade [PDF]</a></li>
-             <li class="dropdown-header">Inferência Estatística</li>
-             <li><a href="06_Estimacao_pontual/06_Estimacao_pontual.pdf">Estimação
-                 pontual e distribuições amostrais [PDF]</a></li>
-             <li><a href="07_Estimacao_intervalar/07_Estimacao_intervalar.pdf">Estimação
-                 intervalar e tamanho da amostra [PDF]</a></li>
-             <li><a href="08_Teste_de_hipotese/08_Teste_de_hipotese.pdf">Teste
-             de hipótese para uma população [PDF]</a></li>
-             <li class="divider"></li>
-             <li class="dropdown-header">Outros materiais</li>
-             <li><a href="misc/tabelasEST.pdf">Tabelas estatísticas
-                 [PDF]</a></li>
-             <li class="divider"></li>
-             <li class="dropdown-header">Exercícios</li>
-             <li><a href="exercicios/01_Amostragem_e_Exploratoria.pdf">Amostragem e análise
-                 exploratória de dados [PDF]</a></li>
-             <li><a href="exercicios/03_Medidas_resumo.pdf">Medidas
-                 resumo [PDF]</a></li>
-             <li><a href="exercicios/04_Probabilidade.pdf">Probabilidade [PDF]</a></li>
-          </ul>
-        </li>
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="aulas.html">Aulas</a>
+</li>
+<li>
+  <a href="referencias.html">ReferÃªncias</a>
+</li>
+<li>
+  <a href="programas.html">Programas</a>
+</li>
+<li>
+  <a href="02_Analise_Exploratoria_de_Dados.html">AnÃ¡lise ExploratÃ³ria</a>
+</li>
       </ul>
-      <div class="navbar-collapse collapse navbar-right" >
-        <ul class="nav navbar-nav">
-          <li><a class="btn btn-link" href="https://github.com/fernandomayer/ce003fmi-2016-01" role="button">
-              <i class="fa fa-github"></i> GitHub </a>
-          </li>
-        </ul>
-      </div><!--/.navbar-right -->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/luanfiorentin/aulas-ufpr">
+    <span class="fa fa-github fa-lg"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -263,60 +211,71 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">CE003 - Estatística II</h1>
+<h1 class="title toc-ignore">EstatÃ­stica BÃ¡sica</h1>
 
 </div>
 
 
-<p><a href="https://travis-ci.org/fernandomayer/ce003fmi-2016-01"><img src="https://travis-ci.org/fernandomayer/ce003fmi-2016-01.svg" alt="Build Status" /></a></p>
-<div class="alert alert-danger" role="alert">
-<strong>ATENÇÃO!</strong> O exame final será dia 13/07 (quarta-feira) no horário normal de aula.
+<p><!-- <div class="alert alert-danger" role="alert"> --> <!-- </div> --></p>
+<div id="disciplinas" class="section level1">
+<h1>Disciplinas</h1>
+<p>Esta pÃ¡gina abrange o conteÃºdo das seguintes disciplinas e cursos:</p>
+<ul>
+<li><strong>CE003 - EstatÃ­stica II</strong></li>
+<li>CiÃªncias Sociais (CS) - Matutino</li>
+<li><strong>CE009 - IntroduÃ§Ã£o Ã  EstatÃ­stica</strong></li>
+<li>GestÃ£o da InformaÃ§Ã£o (GI) - Matutino</li>
+</ul>
 </div>
 <div id="detalhes-da-oferta-da-disciplina" class="section level1">
 <h1>Detalhes da oferta da disciplina</h1>
 <ul>
-<li><strong>Curso:</strong> Engenharia de Bioprocessos e Biotecnologia (F), e Matemática Industrial (MI)</li>
-<li><strong>Período:</strong> primeiro semestre de 2016</li>
-<li><strong>Professor Responsável:</strong> <a href="http://www.leg.ufpr.br/~fernandomayer">Fernando de Pol Mayer</a>, (<a href="http://www.leg.ufpr.br">LEG</a>: Laboratório de Estatística e Geoinformação)</li>
-<li><strong>Horários e Locais:</strong>
+<li><strong>PerÃ­odo:</strong> primeiro semestre de 2019</li>
+<li><strong>Professores ResponsÃ¡veis:</strong></li>
+<li>Luan Demarco Fiorentin, /DEST/UFPR</li>
+<li>Contato: <a href="mailto:luanfiorentin@hotmail.com">luanfiorentin@hotmail.com</a></li>
+<li><strong>HorÃ¡rios e Locais:</strong></li>
+<li>CiÃªncias Sociais (CS):
 <ul>
-<li>Segunda, 13:30 - 15:10h, <strong>EQ13</strong></li>
-<li>Quarta, 13:30 - 15:10h, <strong>EQ13</strong></li>
+<li>TerÃ§a, 10:30 - 12:30h</li>
+<li>Quinta, 09:30 - 11:30h</li>
 </ul></li>
-<li><strong>Horários de atendimento do professor:</strong>
+<li>GestÃ£o da InformaÃ§Ã£o (GI)
 <ul>
-<li>Terças e quintas, 14:00-18:00 (preferenciais). Outros horários podem ser agendados previamente por email.</li>
+<li>Segunda, 07:30 - 09:30h</li>
+<li>Quarta, 07:30 - 09:30h</li>
 </ul></li>
-<li><strong>Monitores de CE-003 do Depto. de Estatística:</strong>
+<li><strong>HorÃ¡rios de atendimento dos professores:</strong>
 <ul>
-<li>Local: <strong>LABEST</strong> (Laboratório de Estatística)</li>
-<li>Horários de atendimento aos alunos: verificar no LABEST</li>
+<li>Sexta-feira, 10:00-12:00 e 13:30-15:30 (preferenciais). Outros horÃ¡rios podem ser agendados previamente por email.</li>
 </ul></li>
-<li><strong>Frequência</strong>: de acordo com as normas da Universidade, mínimo de 75%</li>
-<li><strong>Avaliação</strong>: sabatinas, aplicadas ao final de um módulo da disciplina
+<li><strong>FrequÃªncia</strong>: de acordo com as normas da Universidade, mÃ­nimo de 75%</li>
+<li><strong>AvaliaÃ§Ãµes</strong>:</li>
+<li>As trÃªs provas serÃ£o realizadas no Moodle.</li>
+<li><strong>MÃ©dia final (MF)</strong>: a mÃ©dia final serÃ¡ composta pela mÃ©dia geral simples, entÃ£o a mÃ©dia serÃ¡ dada por <span class="math inline">\(MF = (P1 + P2 + P3) / 3\)</span></li>
+<li><strong>Segunda chamada</strong>:</li>
+<li>Somente as provas discursivas poderÃ£o ter segunda chamada
 <ul>
-<li>As sabatinas são provas menores, e com conteúdo específico</li>
-<li>O número de sabatinas em um semestre pode variar conforme o andamento da disciplina (geralmente entre 6 e 10)</li>
-<li>As datas das sabtinas serão definidas durante o semestre, e sempre será avisado com antecedência</li>
-<li>A média final será a média das 75% maiores notas (as 25% menores notas serão descartadas)</li>
-<li><strong>Importante</strong>: nas sabatinas não há segunda chamada. Ao perder uma sabatina, a nota é 0, e automaticamente estará dentro das 25% menores notas que serão excluídas para o cálculo da média final</li>
+<li>SÃ³ serÃ¡ realizada segunda chamada para alunos que protocolarem o pedido, devidamente justificado, junto ao Departamento de EstatÃ­stica.</li>
+<li>As provas de segunda chamada sÃ³ serÃ£o realizadas ao final do semestre.</li>
 </ul></li>
-<li><strong>Datas importantes:</strong> De acordo com a <a href="http://www.ufpr.br/soc/descarregar_arquivo.php?cod=1064">Resolução 49/15 - CEPE</a>:
+<li><strong>Datas importantes:</strong> De acordo com a <a href="http://www.est.ufpr.br/calendario/cepe6418.pdf">ResoluÃ§Ã£o 64/18 - CEPE</a>:
 <ul>
-<li><strong>29/02</strong>: Início do semestre letivo</li>
-<li><strong>02/07</strong>: Final do semestre letivo</li>
-<li><strong>11/07-16/07</strong>: Período de exames</li>
+<li><strong>18/02</strong>: InÃ­cio do semestre letivo</li>
+<li><strong>22/06</strong>: Final do semestre letivo</li>
+<li><strong>27/06-03/07</strong>: PerÃ­odo de exames</li>
 </ul></li>
 </ul>
 </div>
 <div id="programaobjetivos-da-disciplina" class="section level1">
 <h1>Programa/objetivos da disciplina</h1>
-<p>O objetivo desta disciplina é capacitar os alunos em conceitos básicos de estatística que permitam a interpretação de resultados de análises e procedimentos estatísticos, bem como a execução de procedimentos e análises estatística básicas. O curso compreende três grandes tópicos:</p>
+<p>O objetivo desta disciplina Ã© capacitar os alunos em conceitos bÃ¡sicos de estatÃ­stica que permitam a interpretaÃ§Ã£o de resultados de anÃ¡lises e procedimentos estatÃ­sticos, bem como a execuÃ§Ã£o de procedimentos e anÃ¡lises estatÃ­stica bÃ¡sicas. O curso compreende trÃªs grandes tÃ³picos:</p>
 <ul>
-<li>Análise descritiva e exploratória de dados</li>
-<li>Noções de probabilidades e distribuições de probabilidades</li>
-<li>Introdução à procedimentos de inferência estatística</li>
+<li>AnÃ¡lise descritiva e exploratÃ³ria de dados.</li>
+<li>NoÃ§Ãµes de probabilidades e distribuiÃ§Ãµes de probabilidades.</li>
+<li>IntroduÃ§Ã£o Ã  procedimentos de inferÃªncia estatÃ­stica.</li>
 </ul>
+<!-- links -->
 </div>
 
 <center>
@@ -336,8 +295,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
@@ -348,7 +310,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
