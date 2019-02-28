@@ -15,7 +15,7 @@ source("knitr_setup.R")
 
 # Disciplinas
 
-A página abrange o conteúdo das seguintes disciplinas e cursos:
+Essa página abrange o conteúdo das seguintes disciplinas e cursos:
 
 - **CE003 - Estatística II**:
   - Ciências Sociais (CS) - Matutino
