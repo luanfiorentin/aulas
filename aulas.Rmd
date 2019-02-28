@@ -9,15 +9,15 @@ output:
 source("knitr_setup.R")
 ```
 
-Abaixo está o cronograma inicial planejado para as disciplinas (mas pode
-sofrer alterações).
+Abaixo estÃ¡ o cronograma inicial planejado para as disciplinas (mas pode
+sofrer alteraÃ§Ãµes durante o semetre).
 
 ## Escolha a aba de sua turma {.tabset}
 
-### Ciências Sociais (CS)
+### CiÃªncias Sociais (CS)
 
 ```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
+## Gera a lista com as datas de todas as aulas. O resultado do Ãºltimo
 ## comando pode ser copiado direto para o documento
 datas1 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
                       by = "week")
@@ -29,51 +29,51 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
            datas2, " (Qui)", "**:\n"))
 ```
 
-- **19/02 (Ter)**: Apresentação da disciplina.
-- **21/02 (Qui)**: (1) Introdução à análise exploratória de dados.
+- **19/02 (Ter)**: ApresentaÃ§Ã£o da disciplina.
+- **21/02 (Qui)**: (1) IntroduÃ§Ã£o Ã  anÃ¡lise exploratÃ³ria de dados.
 - **26/02 (Ter)**: (2) Medidas resumo.
 - **28/02 (Qui)**: (2) Medidas resumo.
 - **05/03 (Ter)**: *Feriado*.
-- **07/03 (Qui)**: Exercícios.
-- **12/03 (Ter)**: Exercícios.
+- **07/03 (Qui)**: ExercÃ­cios.
+- **12/03 (Ter)**: ExercÃ­cios.
 - **14/03 (Qui)**: (3) Probabilidade.
-- **19/03 (Ter)**: Exercícios.
+- **19/03 (Ter)**: ExercÃ­cios.
 - **21/03 (Qui)**: **Prova 1**
 
-- **26/03 (Ter)**: (3) Variáveis aleatórias.
-- **28/03 (Qui)**: Exercícios.
-- **02/04 (Ter)**: (4) Distribuições de probabilidade.
-- **04/04 (Qui)**: Exercícios.
-- **09/04 (Ter)**: Exercícios.
-- **11/04 (Qui)**: Exercícios.
-- **16/04 (Ter)**: (5) Inferência estatística - estimação pontual.
-- **18/04 (Qui)**: Exercícios.
-- **23/04 (Ter)**: Exercícios.
+- **26/03 (Ter)**: (3) VariÃ¡veis aleatÃ³rias.
+- **28/03 (Qui)**: ExercÃ­cios.
+- **02/04 (Ter)**: (4) DistribuiÃ§Ãµes de probabilidade.
+- **04/04 (Qui)**: ExercÃ­cios.
+- **09/04 (Ter)**: ExercÃ­cios.
+- **11/04 (Qui)**: ExercÃ­cios.
+- **16/04 (Ter)**: (5) InferÃªncia estatÃ­stica - estimaÃ§Ã£o pontual.
+- **18/04 (Qui)**: ExercÃ­cios.
+- **23/04 (Ter)**: ExercÃ­cios.
 - **25/04 (Qui)**: **Prova 2**
 
-- **30/04 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **02/05 (Qui)**: Exercícios.
-- **07/05 (Ter)**: Exercícios.
-- **09/05 (Qui)**: (7) Inferência estatística - testes de hipótese.
-- **14/05 (Ter)**: Exercícios.
-- **16/05 (Qui)**: Exercícios.
-- **21/05 (Ter)**: (8) Correlação e Regressão.
-- **23/05 (Qui)**: Exercícios.
-- **28/05 (Ter)**: Exercícios.
+- **30/04 (Ter)**: (6) InferÃªncia estatÃ­stica - estimaÃ§Ã£o intervalar.
+- **02/05 (Qui)**: ExercÃ­cios.
+- **07/05 (Ter)**: ExercÃ­cios.
+- **09/05 (Qui)**: (7) InferÃªncia estatÃ­stica - testes de hipÃ³tese.
+- **14/05 (Ter)**: ExercÃ­cios.
+- **16/05 (Qui)**: ExercÃ­cios.
+- **21/05 (Ter)**: (8) CorrelaÃ§Ã£o e RegressÃ£o.
+- **23/05 (Qui)**: ExercÃ­cios.
+- **28/05 (Ter)**: ExercÃ­cios.
 - **30/05 (Qui)**: **Prova 3**
 
-- **04/06 (Ter)**: (9) Tópicos especiais.
-- **06/06 (Qui)**: Exercícios.
-- **11/06 (Ter)**: Exercícios.
+- **04/06 (Ter)**: (9) TÃ³picos especiais.
+- **06/06 (Qui)**: ExercÃ­cios.
+- **11/06 (Ter)**: ExercÃ­cios.
 - **13/06 (Qui)**: **Prova 4**
-- **18/06 (Ter)**: Aula para dúvidas.
+- **18/06 (Ter)**: Aula para dÃºvidas.
 - **20/06 (Qui)**: **Feriado**.
 
 
-### Gestão da Informação (GI)
+### GestÃ£o da InformaÃ§Ã£o (GI)
 
 ```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
+## Gera a lista com as datas de todas as aulas. O resultado do Ãºltimo
 ## comando pode ser copiado direto para o documento
 datas1 <- seq.Date(as.Date("2019-02-18"), as.Date("2019-06-17"),
                       by = "week")
@@ -85,42 +85,42 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
            datas2, " (Qua)", "**:\n"))
 ```
 
-- **18/02 (Seg)**: Apresentação da disciplina.
-- **20/02 (Qua)**: (1) Introdução à análise exploratória de dados.
+- **18/02 (Seg)**: ApresentaÃ§Ã£o da disciplina.
+- **20/02 (Qua)**: (1) IntroduÃ§Ã£o Ã  anÃ¡lise exploratÃ³ria de dados.
 - **25/02 (Seg)**: (2) Medidas resumo.
 - **27/02 (Qua)**: (2) Medidas resumo.
 - **04/03 (Seg)**: **Feriado**.
 - **06/03 (Qua)**: **Feriado**.
-- **11/03 (Seg)**: Exercícios.
+- **11/03 (Seg)**: ExercÃ­cios.
 - **13/03 (Qua)**: (3) Probabilidades.
-- **18/03 (Seg)**: Exercícios.
+- **18/03 (Seg)**: ExercÃ­cios.
 - **20/03 (Qua)**: **Prova 1**.
 
-- **25/03 (Seg)**: (3) Variáveis aleatórias.
-- **27/03 (Qua)**: Exercícios.
-- **01/04 (Seg)**: (4) Distribuições de probabilidade.
-- **03/04 (Qua)**: Exercícios.
-- **08/04 (Seg)**: Exercícios.
-- **10/04 (Qua)**: Exercícios.
-- **15/04 (Seg)**: (5) Inferência estatística - estimação pontual.
-- **17/04 (Qua)**: Exercícios.
-- **22/04 (Seg)**: Exercícios.
+- **25/03 (Seg)**: (3) VariÃ¡veis aleatÃ³rias.
+- **27/03 (Qua)**: ExercÃ­cios.
+- **01/04 (Seg)**: (4) DistribuiÃ§Ãµes de probabilidade.
+- **03/04 (Qua)**: ExercÃ­cios.
+- **08/04 (Seg)**: ExercÃ­cios.
+- **10/04 (Qua)**: ExercÃ­cios.
+- **15/04 (Seg)**: (5) InferÃªncia estatÃ­stica - estimaÃ§Ã£o pontual.
+- **17/04 (Qua)**: ExercÃ­cios.
+- **22/04 (Seg)**: ExercÃ­cios.
 - **24/04 (Qua)**: **Prova 2**.
 
-- **29/04 (Seg)**: (6) Inferência estatística - estimação intervalar.
-- **01/05 (Qua)**: Exercícios.
-- **06/05 (Seg)**: Exercícios.
-- **08/05 (Qua)**: (7) Inferência estatística - testes de hipótese.
-- **13/05 (Seg)**: Exercícios.
-- **15/05 (Qua)**: Exercícios.
-- **20/05 (Seg)**: (8) Correlação e Regressão.
-- **22/05 (Qua)**: Exercícios.
-- **27/05 (Seg)**: Exercícios.
+- **29/04 (Seg)**: (6) InferÃªncia estatÃ­stica - estimaÃ§Ã£o intervalar.
+- **01/05 (Qua)**: ExercÃ­cios.
+- **06/05 (Seg)**: ExercÃ­cios.
+- **08/05 (Qua)**: (7) InferÃªncia estatÃ­stica - testes de hipÃ³tese.
+- **13/05 (Seg)**: ExercÃ­cios.
+- **15/05 (Qua)**: ExercÃ­cios.
+- **20/05 (Seg)**: (8) CorrelaÃ§Ã£o e RegressÃ£o.
+- **22/05 (Qua)**: ExercÃ­cios.
+- **27/05 (Seg)**: ExercÃ­cios.
 - **29/05 (Qua)**: **Prova 3**
 
-- **03/06 (Seg)**: (9) Tópicos especiais.
-- **05/06 (Qua)**: Exercícios.
-- **10/06 (Seg)**: Exercícios.
+- **03/06 (Seg)**: (9) TÃ³picos especiais.
+- **05/06 (Qua)**: ExercÃ­cios.
+- **10/06 (Seg)**: ExercÃ­cios.
 - **12/06 (Qua)**: **Prova 4**
-- **17/06 (Seg)**: Aula para dúvidas.
-- **19/06 (Qua)**: Aula para dúvidas.
+- **17/06 (Seg)**: Aula para dÃºvidas.
+- **19/06 (Qua)**: Aula para dÃºvidas.
