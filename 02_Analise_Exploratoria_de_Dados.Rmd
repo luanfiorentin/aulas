@@ -9,7 +9,7 @@ source("knitr_setup.R")
 
 # Introdução
 
-Nesta sessão vamos ver alguns (mas não todos!) métodos para fazer
+Nesta sesão vamos ver alguns (mas não todos!) métodos para fazer
 uma análise exploratória descritiva de um conjunto de dados.
 
 Uma boa forma de iniciar uma análise descritiva adequada é verificar os
@@ -65,9 +65,9 @@ Existe um número considerável de **pacotes estatísticos**, alguns
 específicos para algumas áreas e outros mais gerais. Qualquer que seja o
 programa a ser utilizado, existem três etapas que envolvem seu uso:
 
-1. Entrada de dados
-2. Execução da análise estatística
-3. Interpretação de resultados
+1. Entrada de dados.
+2. Execução da análise estatística.
+3. Interpretação de resultados.
 
 A entrada de dados deve assumir certas convenções:
 
