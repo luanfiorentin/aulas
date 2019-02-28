@@ -27,8 +27,8 @@ sexo ou idade, é denominada de uma **variável**.
 As *variáveis* podem assumir diferentes valores, que basicamente
 podem ser separados em
 
-- **Quantitativos** ou numéricos
-- **Qualitativos** ou não numéricos, ou *categóricos*
+- **Quantitativos** ou numéricos.
+- **Qualitativos** ou não numéricos, ou *categóricos*.
 
 ## Classificação de variáveis
 
