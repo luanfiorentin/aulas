@@ -89,8 +89,8 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **20/02 (Qua)**: (1) Introdução à análise exploratória de dados.
 - **25/02 (Seg)**: (2) Medidas resumo.
 - **27/02 (Qua)**: (2) Medidas resumo.
-- **04/03 (Seg)**: **Feriado**.
-- **06/03 (Qua)**: **Feriado**.
+- **04/03 (Seg)**: *Feriado*.
+- **06/03 (Qua)**: *Feriado*.
 - **11/03 (Seg)**: Exercícios.
 - **13/03 (Qua)**: (3) Probabilidades.
 - **18/03 (Seg)**: Exercícios.
