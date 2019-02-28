@@ -17,16 +17,16 @@ source("knitr_setup.R")
 
 Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 
-- **CE003 - Estatística II**
-  - Ciências Sociais (CS) - Matutino
-- **CE009 - Introdução à Estatística**
-  - Gestão da Informação (GI) - Matutino
+- **CE003 - Estatística II**:
+  - Ciências Sociais (CS) - Matutino.
+- **CE009 - Introdução à Estatística**:
+  - Gestão da Informação (GI) - Matutino.
 
 # Detalhes da oferta da disciplina
 
 - **Período:** primeiro semestre de 2019
 - **Professores Responsáveis:**
-  - Luan Demarco Fiorentin, /DEST/UFPR
+  - Luan Demarco Fiorentin, DEST, UFPR
   - Contato: luanfiorentin@hotmail.com
 - **Horários e Locais:**
   - Ciências Sociais (CS):
