@@ -7,10 +7,15 @@ output:
 
 ## Referências básicas
 
+Livro básico da disciplina:
+
 - Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
   [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
   São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2017 (9ª
   Edição).
+
+Livros complementares:
+
 - [Magalhães, MN](http://www.ime.usp.br/~marcos);
       [Lima, ACP](http://www.ime.usp.br/~acarlos).
       [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
