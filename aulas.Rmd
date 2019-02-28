@@ -9,7 +9,7 @@ output:
 source("knitr_setup.R")
 ```
 
-Abaixo está o cronograma inicial planejado para as disciplinas. (Pode
+Abaixo está o cronograma inicial planejado para as disciplinas (mas pode
 sofrer alterações).
 
 ## Escolha a aba de sua turma {.tabset}

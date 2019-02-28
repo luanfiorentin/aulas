@@ -17,9 +17,9 @@ source("knitr_setup.R")
 
 Esta página abrange o conteúdo das seguintes disciplinas e cursos:
 
-- **CE003 - Estatística II**
+- **CE003 - Estatística II**:
   - Ciências Sociais (CS) - Matutino
-- **CE009 - Introdução à Estatística**
+- **CE009 - Introdução à Estatística**:
   - Gestão da Informação (GI) - Matutino
 
 # Detalhes da oferta da disciplina
