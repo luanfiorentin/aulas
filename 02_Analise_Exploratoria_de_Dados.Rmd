@@ -9,7 +9,7 @@ source("knitr_setup.R")
 
 # Introdução
 
-Nesta sesão vamos ver alguns (mas não todos!) métodos para fazer
+Nessa sesão vamos ver alguns (mas não todos!) métodos para fazer
 uma análise exploratória descritiva de um conjunto de dados.
 
 Uma boa forma de iniciar uma análise descritiva adequada é verificar os

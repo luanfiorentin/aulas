@@ -11,7 +11,7 @@
 
 
 
-<title>Análise exploratória de dados</title>
+<title>AnÃ¡lise exploratÃ³ria de dados</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -449,7 +449,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Estatística Básica</a>
+      <a class="navbar-brand" href="index.html">EstatÃ­stica BÃ¡sica</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -460,13 +460,13 @@ div.tocify {
   <a href="aulas.html">Aulas</a>
 </li>
 <li>
-  <a href="referencias.html">Referências</a>
+  <a href="referencias.html">ReferÃªncias</a>
 </li>
 <li>
   <a href="recursos.html">Recursos</a>
 </li>
 <li>
-  <a href="02_Analise_Exploratoria_de_Dados.html">Análise Exploratória</a>
+  <a href="02_Analise_Exploratoria_de_Dados.html">AnÃ¡lise ExploratÃ³ria</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -494,36 +494,36 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Análise exploratória de dados</h1>
+<h1 class="title toc-ignore">AnÃ¡lise exploratÃ³ria de dados</h1>
 
 </div>
 
 
-<div id="introducao" class="section level1">
-<h1>Introdução</h1>
-<p>Nesta sesão vamos ver alguns (mas não todos!) métodos para fazer uma análise exploratória descritiva de um conjunto de dados.</p>
-<p>Uma boa forma de iniciar uma análise descritiva adequada é verificar os tipos de de variáveis disponíveis.</p>
+<div id="introduaao" class="section level1">
+<h1>IntroduÃ§Ã£o</h1>
+<p>Nessa sesÃ£o vamos ver alguns (mas nÃ£o todos!) mÃ©todos para fazer uma anÃ¡lise exploratÃ³ria descritiva de um conjunto de dados.</p>
+<p>Uma boa forma de iniciar uma anÃ¡lise descritiva adequada Ã© verificar os tipos de de variÃ¡veis disponÃ­veis.</p>
 <div id="variaveis" class="section level2">
-<h2>Variáveis</h2>
-<p>Quando fazemos uma <strong>amostragem</strong>, coletamos não apenas a informação sobre a característica de interesse, mas <em>diversas outras informações</em> que auxiliarão no entendimento desta característica.</p>
-<p>Cada uma das características da população amostrada, como peso, altura, sexo ou idade, é denominada de uma <strong>variável</strong>.</p>
-<p>As <em>variáveis</em> podem assumir diferentes valores, que basicamente podem ser separados em</p>
+<h2>VariÃ¡veis</h2>
+<p>Quando fazemos uma <strong>amostragem</strong>, coletamos nÃ£o apenas a informaÃ§Ã£o sobre a caracterÃ­stica de interesse, mas <em>diversas outras informaÃ§Ãµes</em> que auxiliarÃ£o no entendimento desta caracterÃ­stica.</p>
+<p>Cada uma das caracterÃ­sticas da populaÃ§Ã£o amostrada, como peso, altura, sexo ou idade, Ã© denominada de uma <strong>variÃ¡vel</strong>.</p>
+<p>As <em>variÃ¡veis</em> podem assumir diferentes valores, que basicamente podem ser separados em</p>
 <ul>
-<li><strong>Quantitativos</strong> ou numéricos.</li>
-<li><strong>Qualitativos</strong> ou não numéricos, ou <em>categóricos</em>.</li>
+<li><strong>Quantitativos</strong> ou numÃ©ricos.</li>
+<li><strong>Qualitativos</strong> ou nÃ£o numÃ©ricos, ou <em>categÃ³ricos</em>.</li>
 </ul>
 </div>
-<div id="classificacao-de-variaveis" class="section level2">
-<h2>Classificação de variáveis</h2>
-<p>As <em>variáveis quantitativas</em> ou numéricas podem ser</p>
+<div id="classificaaao-de-variaveis" class="section level2">
+<h2>ClassificaÃ§Ã£o de variÃ¡veis</h2>
+<p>As <em>variÃ¡veis quantitativas</em> ou numÃ©ricas podem ser</p>
 <ul>
-<li><strong>Discretas</strong>: assumem apenas valores inteiros. Ex.: número de irmãos, número de passageiros</li>
-<li><strong>Contínuas</strong>: assume qualquer valor no intervalo dos números reais. Ex.: peso, altura</li>
+<li><strong>Discretas</strong>: assumem apenas valores inteiros. Ex.: nÃºmero de irmÃ£os, nÃºmero de passageiros</li>
+<li><strong>ContÃ­nuas</strong>: assume qualquer valor no intervalo dos nÃºmeros reais. Ex.: peso, altura</li>
 </ul>
-<p>As <em>variáveis qualitativas</em> ou categóricas podem ser</p>
+<p>As <em>variÃ¡veis qualitativas</em> ou categÃ³ricas podem ser</p>
 <ul>
-<li><strong>Nominais</strong>: quando as categorias não possuem uma ordem natural. Ex.: nomes, cores, sexo.</li>
-<li><strong>Ordinais</strong>: quando as categorias podem ser ordenadas. Ex.: tamanho (pequeno, médio, grande), classe social (baixa, média, alta), grau de instrução (básico, médio, graduação, pós-graduação)</li>
+<li><strong>Nominais</strong>: quando as categorias nÃ£o possuem uma ordem natural. Ex.: nomes, cores, sexo.</li>
+<li><strong>Ordinais</strong>: quando as categorias podem ser ordenadas. Ex.: tamanho (pequeno, mÃ©dio, grande), classe social (baixa, mÃ©dia, alta), grau de instruÃ§Ã£o (bÃ¡sico, mÃ©dio, graduaÃ§Ã£o, pÃ³s-graduaÃ§Ã£o)</li>
 </ul>
 <div class="figure">
 <img src="img/classificacao_variaveis.png" />
@@ -531,34 +531,34 @@ div.tocify {
 </div>
 </div>
 </div>
-<div id="apresentacao-e-organizacao-de-dados" class="section level1">
-<h1>Apresentação e organização de dados</h1>
-<p>A <strong>organização</strong> dos dados coletados é fundamental para que não hajam erros de processamento e perda de informações. Deve ser feito em um programa apropriado. Exemplo: planilhas eletrônicas e bancos de dados.</p>
-<p>A <strong>apresentação</strong> dos dados depende do tipo de variável e daquilo que se quer mostrar.</p>
-<p><strong>Tabelas</strong> e <strong>gráficos</strong> podem mostrar a mesma informação, mas alguns são mais apropriados dependendo do objetivo.</p>
-<p>Existe um número considerável de <strong>pacotes estatísticos</strong>, alguns específicos para algumas áreas e outros mais gerais. Qualquer que seja o programa a ser utilizado, existem três etapas que envolvem seu uso:</p>
+<div id="apresentaaao-e-organizaaao-de-dados" class="section level1">
+<h1>ApresentaÃ§Ã£o e organizaÃ§Ã£o de dados</h1>
+<p>A <strong>organizaÃ§Ã£o</strong> dos dados coletados Ã© fundamental para que nÃ£o hajam erros de processamento e perda de informaÃ§Ãµes. Deve ser feito em um programa apropriado. Exemplo: planilhas eletrÃ´nicas e bancos de dados.</p>
+<p>A <strong>apresentaÃ§Ã£o</strong> dos dados depende do tipo de variÃ¡vel e daquilo que se quer mostrar.</p>
+<p><strong>Tabelas</strong> e <strong>grÃ¡ficos</strong> podem mostrar a mesma informaÃ§Ã£o, mas alguns sÃ£o mais apropriados dependendo do objetivo.</p>
+<p>Existe um nÃºmero considerÃ¡vel de <strong>pacotes estatÃ­sticos</strong>, alguns especÃ­ficos para algumas Ã¡reas e outros mais gerais. Qualquer que seja o programa a ser utilizado, existem trÃªs etapas que envolvem seu uso:</p>
 <ol style="list-style-type: decimal">
 <li>Entrada de dados.</li>
-<li>Execução da análise estatística.</li>
-<li>Interpretação de resultados.</li>
+<li>ExecuÃ§Ã£o da anÃ¡lise estatÃ­stica.</li>
+<li>InterpretaÃ§Ã£o de resultados.</li>
 </ol>
-<p>A entrada de dados deve assumir certas convenções:</p>
+<p>A entrada de dados deve assumir certas convenÃ§Ãµes:</p>
 <ul>
 <li>Os dados devem estar no formato de <strong>matriz</strong></li>
 <li>Cada linha da matriz corresponde a uma <strong>unidade experimental</strong>
 <ul>
-<li>Elemento da população ou amostra no qual observamos as variáveis</li>
+<li>Elemento da populaÃ§Ã£o ou amostra no qual observamos as variÃ¡veis</li>
 </ul></li>
-<li>Cada coluna da matriz corresponde a uma <strong>variável</strong></li>
+<li>Cada coluna da matriz corresponde a uma <strong>variÃ¡vel</strong></li>
 </ul>
 </div>
 <div id="dados-brutos" class="section level1">
 <h1>Dados brutos</h1>
-<p>Quando fazemos uma coleta de dados, e armazenamos de forma correta, temos em mãos o que se chama de <strong>dados brutos</strong>, pois consiste das observações “puras”, sem nenhum tipo de processamento ou resumo.</p>
-<p>Uma análise de dados sempre deve começar com uma planilha de dados brutos, pois será a partir deles que iremos resumir e visualizar as informações de interesse.</p>
+<p>Quando fazemos uma coleta de dados, e armazenamos de forma correta, temos em mÃ£os o que se chama de <strong>dados brutos</strong>, pois consiste das observaÃ§Ãµes “puras”, sem nenhum tipo de processamento ou resumo.</p>
+<p>Uma anÃ¡lise de dados sempre deve comeÃ§ar com uma planilha de dados brutos, pois serÃ¡ a partir deles que iremos resumir e visualizar as informaÃ§Ãµes de interesse.</p>
 <div id="o-conjunto-de-dados-milsa" class="section level2">
 <h2>O conjunto de dados <code>milsa</code></h2>
-<p>O livro “Estatística Básica” de W. O. Bussab e P. A. Morettin traz no segundo capítulo um conjunto de dados hipotético de atributos de 36 funcionários da companhia “Milsa”. Os dados estão reproduzidos na tabela abaixo.</p>
+<p>O livro “EstatÃ­stica BÃ¡sica” de W. O. Bussab e P. A. Morettin traz no segundo capÃ­tulo um conjunto de dados hipotÃ©tico de atributos de 36 funcionÃ¡rios da companhia “Milsa”. Os dados estÃ£o reproduzidos na tabela abaixo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Importando os dados para o R
 milsa &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;dados/milsa.csv&quot;</span>)</code></pre></div>
 <table>
@@ -937,22 +937,22 @@ milsa &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class
 </tr>
 </tbody>
 </table>
-<p>Estes dados estão disponíveis em um arquivo <code>csv</code> no endereço <a href="http://www.leg.ufpr.br/~fernandomayer/dados/milsa.csv" class="uri">http://www.leg.ufpr.br/~fernandomayer/dados/milsa.csv</a>.</p>
+<p>Estes dados estÃ£o disponÃ­veis em um arquivo <code>csv</code> no endereÃ§o <a href="http://www.leg.ufpr.br/~fernandomayer/dados/milsa.csv" class="uri">http://www.leg.ufpr.br/~fernandomayer/dados/milsa.csv</a>.</p>
 <div class="panel panel-success">
 <div class="panel-heading">
-Observação
+ObservaÃ§Ã£o
 </div>
 <div class="panel-body">
-Um arquivo <code>csv</code> é um arquivo de texto (assim como um <code>txt</code>), mas as colunas de um conjunto de dados são separados por vírgula (<em>csv</em> = <em>comma separated values</em>). Arquivos de texto como esse podem ser abertos em qualquer editor de texto, e também em planilhas eletrônicas.
+Um arquivo <code>csv</code> Ã© um arquivo de texto (assim como um <code>txt</code>), mas as colunas de um conjunto de dados sÃ£o separados por vÃ­rgula (<em>csv</em> = <em>comma separated values</em>). Arquivos de texto como esse podem ser abertos em qualquer editor de texto, e tambÃ©m em planilhas eletrÃ´nicas.
 </div>
 </div>
-<p>O nosso objetivo agora é então fazer uma análise descritiva destes dados, com a intenção de se identificar padrões e relações (se houverem).</p>
-<p>Portanto, o primeiro passo é classificar todas as variáveis desse conjunto de dados:</p>
+<p>O nosso objetivo agora Ã© entÃ£o fazer uma anÃ¡lise descritiva destes dados, com a intenÃ§Ã£o de se identificar padrÃµes e relaÃ§Ãµes (se houverem).</p>
+<p>Portanto, o primeiro passo Ã© classificar todas as variÃ¡veis desse conjunto de dados:</p>
 <table>
 <thead>
 <tr class="header">
-<th>Variável</th>
-<th>Classificação</th>
+<th>VariÃ¡vel</th>
+<th>ClassificaÃ§Ã£o</th>
 </tr>
 </thead>
 <tbody>
@@ -974,7 +974,7 @@ Um arquivo <code>csv</code> é um arquivo de texto (assim como um <code>txt</cod
 </tr>
 <tr class="odd">
 <td><code>Salario</code></td>
-<td>Quantitativa contínua</td>
+<td>Quantitativa contÃ­nua</td>
 </tr>
 <tr class="even">
 <td><code>Anos</code></td>
@@ -990,62 +990,62 @@ Um arquivo <code>csv</code> é um arquivo de texto (assim como um <code>txt</cod
 </tr>
 </tbody>
 </table>
-<p>Naturalmente as variáveis <code>Anos</code> e <code>Meses</code>, por se tratarem de tempo, são contínuas. No entanto, da maneira como foram coletadas, nós podemos classificá-las como discretas, sem muita perda de informação. Esse processo é denominado de <strong>discretização</strong> de uma variável contínua, e pode ser utilzado em pelo menos dois casos:</p>
+<p>Naturalmente as variÃ¡veis <code>Anos</code> e <code>Meses</code>, por se tratarem de tempo, sÃ£o contÃ­nuas. No entanto, da maneira como foram coletadas, nÃ³s podemos classificÃ¡-las como discretas, sem muita perda de informaÃ§Ã£o. Esse processo Ã© denominado de <strong>discretizaÃ§Ã£o</strong> de uma variÃ¡vel contÃ­nua, e pode ser utilzado em pelo menos dois casos:</p>
 <ol style="list-style-type: decimal">
-<li>Quando não há perda de informação ao discretizar a variável (como nesse caso), ou quando o detalhamento não é fundamental para o entendimento da característica.</li>
-<li>Quando uma variável contínua é medida por um equipamento que não é capaz de mensurar com uma determinada precisão. Por exemplo, se o peso de uma pessoa for medido por uma balança que só mede em escala de 1 em 1 kg, o peso seria considerado como variável discreta mesmo que saibamos que de fato é contínua.</li>
+<li>Quando nÃ£o hÃ¡ perda de informaÃ§Ã£o ao discretizar a variÃ¡vel (como nesse caso), ou quando o detalhamento nÃ£o Ã© fundamental para o entendimento da caracterÃ­stica.</li>
+<li>Quando uma variÃ¡vel contÃ­nua Ã© medida por um equipamento que nÃ£o Ã© capaz de mensurar com uma determinada precisÃ£o. Por exemplo, se o peso de uma pessoa for medido por uma balanÃ§a que sÃ³ mede em escala de 1 em 1 kg, o peso seria considerado como variÃ¡vel discreta mesmo que saibamos que de fato Ã© contÃ­nua.</li>
 </ol>
-<p>Estes são dados no “estilo planilha”, com variáveis de diferentes tipos: categóricas e numéricas (qualitativas e quantitativas). Portanto segue as normas que estabelecemos anteriormente:</p>
+<p>Estes sÃ£o dados no “estilo planilha”, com variÃ¡veis de diferentes tipos: categÃ³ricas e numÃ©ricas (qualitativas e quantitativas). Portanto segue as normas que estabelecemos anteriormente:</p>
 <ul>
-<li>Cada linha corresponde a uma unidade amostral, nesse caso à uma pessoa</li>
-<li>Cada coluna corresponde a uma variável diferente</li>
+<li>Cada linha corresponde a uma unidade amostral, nesse caso Ã  uma pessoa</li>
+<li>Cada coluna corresponde a uma variÃ¡vel diferente</li>
 </ul>
 <p>NOTE algumas coisas importantes:</p>
 <ul>
-<li>Cada variável possui um tipo de resposta, e estas respostas seguem sempre o mesmo padrão. Por exemplo, na variável <code>Est.civil</code> as possíveis respostas são: <code>solteiro</code> e <code>casado</code>. Se por acaso houvesse o termo <code>Casado</code>, poderia haver confusão na maioria dos pacotes estatísticos, e este termo poderia ser (erroneamente) uma terceira categoria de resposta.</li>
-<li>Quando a informação de uma (ou mais) variáveis não estiver disponível (por exemplo: falta de resposta, rasura na marcação da resposta, ou simplesmente não foi possível coletar aquela informação para aquele indivíduo), esta informação deve ser marcada (ou indicada) com algum símbolo especial. Em planilhas eletrônicas, normalmente a célula fica em branco, mas na maioria dos pacotes estatísticos é necessário preencher estas células com um símbolo (que varia entre os pacotes). Aqui, por exemplo, usamos o símbolo <code>NA</code> (de <code>N</code>ot <code>A</code>vailable) para indicar estas observações.</li>
+<li>Cada variÃ¡vel possui um tipo de resposta, e estas respostas seguem sempre o mesmo padrÃ£o. Por exemplo, na variÃ¡vel <code>Est.civil</code> as possÃ­veis respostas sÃ£o: <code>solteiro</code> e <code>casado</code>. Se por acaso houvesse o termo <code>Casado</code>, poderia haver confusÃ£o na maioria dos pacotes estatÃ­sticos, e este termo poderia ser (erroneamente) uma terceira categoria de resposta.</li>
+<li>Quando a informaÃ§Ã£o de uma (ou mais) variÃ¡veis nÃ£o estiver disponÃ­vel (por exemplo: falta de resposta, rasura na marcaÃ§Ã£o da resposta, ou simplesmente nÃ£o foi possÃ­vel coletar aquela informaÃ§Ã£o para aquele indivÃ­duo), esta informaÃ§Ã£o deve ser marcada (ou indicada) com algum sÃ­mbolo especial. Em planilhas eletrÃ´nicas, normalmente a cÃ©lula fica em branco, mas na maioria dos pacotes estatÃ­sticos Ã© necessÃ¡rio preencher estas cÃ©lulas com um sÃ­mbolo (que varia entre os pacotes). Aqui, por exemplo, usamos o sÃ­mbolo <code>NA</code> (de <code>N</code>ot <code>A</code>vailable) para indicar estas observaÃ§Ãµes.</li>
 </ul>
 <div class="panel panel-info">
 <div class="panel-heading">
 Importante!
 </div>
 <div class="panel-body">
-Não preencha casos perdidos com 0 (zero), pois o zero não significa falta de informação, e sim uma quantidade que foi medida, mas foi verificada como nula.
+NÃ£o preencha casos perdidos com 0 (zero), pois o zero nÃ£o significa falta de informaÃ§Ã£o, e sim uma quantidade que foi medida, mas foi verificada como nula.
 </div>
 </div>
-<p>Agora que os dados estão prontos podemos começar a análise descritiva. A seguir mostramos como fazer análises descritivas uni e bi-variadas. Sugiro ainda que você use algum programa ou pacote estatístico para reproduzir os resultados mostrados aqui.</p>
+<p>Agora que os dados estÃ£o prontos podemos comeÃ§ar a anÃ¡lise descritiva. A seguir mostramos como fazer anÃ¡lises descritivas uni e bi-variadas. Sugiro ainda que vocÃª use algum programa ou pacote estatÃ­stico para reproduzir os resultados mostrados aqui.</p>
 </div>
 </div>
 <div id="analise-univariada" class="section level1">
-<h1>Análise univariada</h1>
-<p>A análise univariada consiste basicamente em, para cada uma das variáveis individualmente:</p>
+<h1>AnÃ¡lise univariada</h1>
+<p>A anÃ¡lise univariada consiste basicamente em, para cada uma das variÃ¡veis individualmente:</p>
 <ul>
-<li>Classificar a variável quanto a seu tipo: qualitativa (nominal ou ordinal) ou quantitativa (discreta ou contínua)</li>
-<li>Obter tabelas, gráficos e/ou medidas que resumam a variável</li>
+<li>Classificar a variÃ¡vel quanto a seu tipo: qualitativa (nominal ou ordinal) ou quantitativa (discreta ou contÃ­nua)</li>
+<li>Obter tabelas, grÃ¡ficos e/ou medidas que resumam a variÃ¡vel</li>
 </ul>
-<p>A partir destes resultados pode-se montar um resumo geral dos dados. Quando se estuda uma variável, o maior intersse do pesquisador é conhecer o <em>comportamento</em> dessa variável, analisando a ocorrência de suas possíveis realizações. Nesse sentido, as <strong>distribuições de frequência</strong> serão o principal recurso que utilizaremos para resumir uma única variável.</p>
-<p>A seguir vamos mostrar como obter tabelas e gráficos simples. Para isto vamos selecionar uma variável de cada tipo para que o leitor possa, por analogia, obter resultados para as demais.</p>
+<p>A partir destes resultados pode-se montar um resumo geral dos dados. Quando se estuda uma variÃ¡vel, o maior intersse do pesquisador Ã© conhecer o <em>comportamento</em> dessa variÃ¡vel, analisando a ocorrÃªncia de suas possÃ­veis realizaÃ§Ãµes. Nesse sentido, as <strong>distribuiÃ§Ãµes de frequÃªncia</strong> serÃ£o o principal recurso que utilizaremos para resumir uma Ãºnica variÃ¡vel.</p>
+<p>A seguir vamos mostrar como obter tabelas e grÃ¡ficos simples. Para isto vamos selecionar uma variÃ¡vel de cada tipo para que o leitor possa, por analogia, obter resultados para as demais.</p>
 <div id="variavel-qualitativa-nominal" class="section level2">
-<h2>Variável Qualitativa Nominal</h2>
-<p>A variável <code>Est.civil</code> é uma qualitativa nominal. Desta forma podemos obter:</p>
+<h2>VariÃ¡vel Qualitativa Nominal</h2>
+<p>A variÃ¡vel <code>Est.civil</code> Ã© uma qualitativa nominal. Desta forma podemos obter:</p>
 <ol style="list-style-type: decimal">
-<li>Uma tabela de frequências (absolutas e/ou relativas)</li>
-<li>Um gráfico de barras ou de setores</li>
-<li>A “moda”, <em>i.e.</em> o valor que ocorre com maior frequência</li>
+<li>Uma tabela de frequÃªncias (absolutas e/ou relativas)</li>
+<li>Um grÃ¡fico de barras ou de setores</li>
+<li>A “moda”, <em>i.e.</em> o valor que ocorre com maior frequÃªncia</li>
 </ol>
-<p>Por ser uma variável qualitativa, para obter a distribuição de frequência desta variável, basta contarmos quantas vezes ocorre cada categoria (ou nível), e organizar em uma tabela.</p>
+<p>Por ser uma variÃ¡vel qualitativa, para obter a distribuiÃ§Ã£o de frequÃªncia desta variÃ¡vel, basta contarmos quantas vezes ocorre cada categoria (ou nÃ­vel), e organizar em uma tabela.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">civil.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Est.civil)
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span>civil.tb)</code></pre></div>
 <pre><code>          f
 casado   20
 solteiro 16</code></pre>
-<p>Esta simples contagem é chamada de <strong>frequência absoluta</strong>. Podemos também incluir nessa tabela a soma total de observações de todas as categorias.</p>
+<p>Esta simples contagem Ã© chamada de <strong>frequÃªncia absoluta</strong>. Podemos tambÃ©m incluir nessa tabela a soma total de observaÃ§Ãµes de todas as categorias.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(civil.tb))</code></pre></div>
 <pre><code>          f
 casado   20
 solteiro 16
 Sum      36</code></pre>
-<p>Com essa informação adicional, podemos agora calcular a <strong>frequência relativa</strong>, ou seja, a frequência absoluta de cada categoria, dividida pelo total.</p>
+<p>Com essa informaÃ§Ã£o adicional, podemos agora calcular a <strong>frequÃªncia relativa</strong>, ou seja, a frequÃªncia absoluta de cada categoria, dividida pelo total.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">prop.table</span>(civil.tb))</code></pre></div>
 <pre><code>                fr
 casado   0.5555556
@@ -1056,41 +1056,41 @@ solteiro 0.4444444</code></pre>
 casado   0.5555556
 solteiro 0.4444444
 Sum      1.0000000</code></pre>
-<p>Com isso, podemos definir alguns tipos de frequência.</p>
+<p>Com isso, podemos definir alguns tipos de frequÃªncia.</p>
 <div class="panel panel-primary">
 <div class="panel-heading">
-Tipos de frequência
+Tipos de frequÃªncia
 </div>
 <div class="panel-body">
 <ul>
-<li>Frequência absoluta (<span class="math inline">\(f_i\)</span>): número total de elementos em cada classe</li>
-<li>Frequência relativa (<span class="math inline">\(fr_i\)</span>): razão entre cada valor da frequência absoluta e o total de observações <span class="math display">\[
+<li>FrequÃªncia absoluta (<span class="math inline">\(f_i\)</span>): nÃºmero total de elementos em cada classe</li>
+<li>FrequÃªncia relativa (<span class="math inline">\(fr_i\)</span>): razÃ£o entre cada valor da frequÃªncia absoluta e o total de observaÃ§Ãµes <span class="math display">\[
   fr_i = \frac{f_i}{\sum f_i}
   \]</span></li>
-<li>Frequência percentual (<span class="math inline">\(fp_i\)</span>): frequência relativa em porcentagem <span class="math display">\[
+<li>FrequÃªncia percentual (<span class="math inline">\(fp_i\)</span>): frequÃªncia relativa em porcentagem <span class="math display">\[
   fp_i = fr_i \times 100
   \]</span>
 </div></li>
 </ul>
 </div>
-<p>Os gráficos de barras e de setores são adequados para representar esta variável. O <strong>gráfico de barras</strong> é formado pelas categorias no eixo X, e pela frequência no eixo Y. A frequência utilizada pode ser tanto a absoluta quanto a relativa, conforme for o caso.</p>
+<p>Os grÃ¡ficos de barras e de setores sÃ£o adequados para representar esta variÃ¡vel. O <strong>grÃ¡fico de barras</strong> Ã© formado pelas categorias no eixo X, e pela frequÃªncia no eixo Y. A frequÃªncia utilizada pode ser tanto a absoluta quanto a relativa, conforme for o caso.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))
-<span class="kw">barplot</span>(civil.tb, <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>)
-<span class="kw">barplot</span>(<span class="kw">prop.table</span>(civil.tb), <span class="dt">ylab =</span> <span class="st">&quot;Frequência relativa&quot;</span>,
+<span class="kw">barplot</span>(civil.tb, <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia absoluta&quot;</span>)
+<span class="kw">barplot</span>(<span class="kw">prop.table</span>(civil.tb), <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia relativa&quot;</span>,
         <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, .<span class="dv">6</span>))
 <span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
 <p><img src="figures/bar-quali-nom-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>O <strong>gráfico de setores</strong> (ou de pizza, ou torta, ou diagrama circular) também pode ser utilizado, mas apresenta uma maior limitação. Independente da frequência utilizada, cada setor terá a mesma área. Além disso, quando existem muitas categorias, e/ou as categorias possuem frequências semelhantes, a diferenciação dos setores é dificultada.</p>
+<p>O <strong>grÃ¡fico de setores</strong> (ou de pizza, ou torta, ou diagrama circular) tambÃ©m pode ser utilizado, mas apresenta uma maior limitaÃ§Ã£o. Independente da frequÃªncia utilizada, cada setor terÃ¡ a mesma Ã¡rea. AlÃ©m disso, quando existem muitas categorias, e/ou as categorias possuem frequÃªncias semelhantes, a diferenciaÃ§Ã£o dos setores Ã© dificultada.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pie</span>(civil.tb)</code></pre></div>
 <p><img src="figures/pie-quali-nom-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>A <strong>moda</strong> de qualquer variável é definida como o valor mais frequente encontrado na amostra. No caso de variáveis qualitativas, a moda é a categoria que apresenta maior frequência. Nesse exemplo, a moda seria então</p>
+<p>A <strong>moda</strong> de qualquer variÃ¡vel Ã© definida como o valor mais frequente encontrado na amostra. No caso de variÃ¡veis qualitativas, a moda Ã© a categoria que apresenta maior frequÃªncia. Nesse exemplo, a moda seria entÃ£o</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(civil.tb)[<span class="kw">which.max</span>(civil.tb)]</code></pre></div>
 <pre><code>[1] &quot;casado&quot;</code></pre>
 </div>
 <div id="variavel-qualitativa-ordinal" class="section level2">
-<h2>Variável Qualitativa Ordinal</h2>
-<p>Para exemplificar como obter análises para uma variável qualitativa ordinal vamos selecionar a variável <code>Inst</code>, que verificou o grau de instrução dos funcionários.</p>
-<p>As tabelas de frequências são obtidas de forma semelhante à mostrada anteriormente. A frequência absoluta é a contagem do número de vezes que cada categoria foi observada. Note que aqui, a ordem tem importância, portanto, a tabela também deve seguir a ordem natural das categorias. Abaixo, mostramos a tabela de frequência absoluta já com o somatório de todas as classes.</p>
+<h2>VariÃ¡vel Qualitativa Ordinal</h2>
+<p>Para exemplificar como obter anÃ¡lises para uma variÃ¡vel qualitativa ordinal vamos selecionar a variÃ¡vel <code>Inst</code>, que verificou o grau de instruÃ§Ã£o dos funcionÃ¡rios.</p>
+<p>As tabelas de frequÃªncias sÃ£o obtidas de forma semelhante Ã  mostrada anteriormente. A frequÃªncia absoluta Ã© a contagem do nÃºmero de vezes que cada categoria foi observada. Note que aqui, a ordem tem importÃ¢ncia, portanto, a tabela tambÃ©m deve seguir a ordem natural das categorias. Abaixo, mostramos a tabela de frequÃªncia absoluta jÃ¡ com o somatÃ³rio de todas as classes.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">inst.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Inst)
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(inst.tb))</code></pre></div>
 <pre><code>          f
@@ -1098,7 +1098,7 @@ Tipos de frequência
 2o Grau  18
 Superior  6
 Sum      36</code></pre>
-<p>As frequências relativas também são obtidas através da divisão da frequência absoluta de cada classe pelo total, ou seja,</p>
+<p>As frequÃªncias relativas tambÃ©m sÃ£o obtidas atravÃ©s da divisÃ£o da frequÃªncia absoluta de cada classe pelo total, ou seja,</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(inst.tb),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(inst.tb)))</code></pre></div>
 <pre><code>          f        fr
@@ -1106,10 +1106,10 @@ Sum      36</code></pre>
 2o Grau  18 0.5000000
 Superior  6 0.1666667
 Sum      36 1.0000000</code></pre>
-<p>O gráfico de setores não é adequado para este tipo de variável por não expressar a ordem dos possíveis valores. Usamos então apenas um gráfico de barras conforme mostrado abaixo</p>
+<p>O grÃ¡fico de setores nÃ£o Ã© adequado para este tipo de variÃ¡vel por nÃ£o expressar a ordem dos possÃ­veis valores. Usamos entÃ£o apenas um grÃ¡fico de barras conforme mostrado abaixo</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(inst.tb)</code></pre></div>
 <p><img src="figures/bar-quali-ord1-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>Em alguns casos podemos querer mostrar o gráfico de barras com as barras classificadas da menor para a maior, ou vice-versa, independente da ordem dos níveis. O importante é sempre deixar claro as categorias de cada barra.</p>
+<p>Em alguns casos podemos querer mostrar o grÃ¡fico de barras com as barras classificadas da menor para a maior, ou vice-versa, independente da ordem dos nÃ­veis. O importante Ã© sempre deixar claro as categorias de cada barra.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 ## Menor para maior
 <span class="kw">barplot</span>(<span class="kw">sort</span>(inst.tb))
@@ -1117,15 +1117,15 @@ Sum      36 1.0000000</code></pre>
 <span class="kw">barplot</span>(<span class="kw">sort</span>(inst.tb, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>))
 <span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
 <p><img src="figures/bar-quali-ord2-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>Para uma variável ordinal, a moda também é especificada como a categoria de maior frequência, ou seja,</p>
+<p>Para uma variÃ¡vel ordinal, a moda tambÃ©m Ã© especificada como a categoria de maior frequÃªncia, ou seja,</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(inst.tb)[<span class="kw">which.max</span>(inst.tb)]</code></pre></div>
 <pre><code>[1] &quot;2o Grau&quot;</code></pre>
 </div>
 <div id="variavel-quantitativa-discreta" class="section level2">
-<h2>Variável quantitativa discreta</h2>
-<p>Vamos agora usar a variável <code>Filhos</code> (número de filhos) para ilustrar algumas análises que podem ser feitas com uma quantitativa discreta.</p>
-<p>Frequências absolutas e relativas são obtidas como anteriormente. Nesse caso, assumimos que cada valor numérico é uma categoria, e construímos as tabelas de frequência como se a variável fosse qualitativa ordinal. Note, no entanto, que quando existem poucos valores numéricos, essa abordagem é viável. Mas contagens podem assumir muitos valores diferentes, e nesses casos, fazer uma tabela de frequência pode não ajudar a resumir aquela variável. Quando esse for o caso, adotaremos a mesma técnica que usamos para resumir variáveis quantitativas contínuas, como veremos na próxima sessão.</p>
-<p>Abaixo, temos a frequência absoluta, com o total de observações</p>
+<h2>VariÃ¡vel quantitativa discreta</h2>
+<p>Vamos agora usar a variÃ¡vel <code>Filhos</code> (nÃºmero de filhos) para ilustrar algumas anÃ¡lises que podem ser feitas com uma quantitativa discreta.</p>
+<p>FrequÃªncias absolutas e relativas sÃ£o obtidas como anteriormente. Nesse caso, assumimos que cada valor numÃ©rico Ã© uma categoria, e construÃ­mos as tabelas de frequÃªncia como se a variÃ¡vel fosse qualitativa ordinal. Note, no entanto, que quando existem poucos valores numÃ©ricos, essa abordagem Ã© viÃ¡vel. Mas contagens podem assumir muitos valores diferentes, e nesses casos, fazer uma tabela de frequÃªncia pode nÃ£o ajudar a resumir aquela variÃ¡vel. Quando esse for o caso, adotaremos a mesma tÃ©cnica que usamos para resumir variÃ¡veis quantitativas contÃ­nuas, como veremos na prÃ³xima sessÃ£o.</p>
+<p>Abaixo, temos a frequÃªncia absoluta, com o total de observaÃ§Ãµes</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Filhos)
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb))</code></pre></div>
 <pre><code>     f
@@ -1135,7 +1135,7 @@ Sum      36 1.0000000</code></pre>
 3    3
 5    1
 Sum 20</code></pre>
-<p>Note que a soma foi 20, ao invés das 36 observações totais da planilha original. Como você deve imaginar ao ter inspecionado a tabela, isso ocorre pelo fato de que existem algumas observações <em>perdidas</em> para essa variável. Mais especificamente, existem 16 observações faltantes, aquelas marcadas com <code>NA</code>. Se for desejável, pode-se incluir a contagem de observações faltantes na tabela de frequência.</p>
+<p>Note que a soma foi 20, ao invÃ©s das 36 observaÃ§Ãµes totais da planilha original. Como vocÃª deve imaginar ao ter inspecionado a tabela, isso ocorre pelo fato de que existem algumas observaÃ§Ãµes <em>perdidas</em> para essa variÃ¡vel. Mais especificamente, existem 16 observaÃ§Ãµes faltantes, aquelas marcadas com <code>NA</code>. Se for desejÃ¡vel, pode-se incluir a contagem de observaÃ§Ãµes faltantes na tabela de frequÃªncia.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">table</span>(milsa<span class="op">$</span>Filhos, <span class="dt">useNA =</span> <span class="st">&quot;always&quot;</span>)))</code></pre></div>
 <pre><code>      f
 0     4
@@ -1145,7 +1145,7 @@ Sum 20</code></pre>
 5     1
 &lt;NA&gt; 16
 Sum  36</code></pre>
-<p>Por ora, vamos usar a tabela de frequência sem a contagem destes valores perdidos. Nestes casos, é importante ter cuidado com as frequências relativas, que devem ser calculadas com o total da tabela, e não com o total de observações. Portanto, para esse exemplo, as frequências relativas seriam</p>
+<p>Por ora, vamos usar a tabela de frequÃªncia sem a contagem destes valores perdidos. Nestes casos, Ã© importante ter cuidado com as frequÃªncias relativas, que devem ser calculadas com o total da tabela, e nÃ£o com o total de observaÃ§Ãµes. Portanto, para esse exemplo, as frequÃªncias relativas seriam</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)))</code></pre></div>
 <pre><code>     f   fr
@@ -1155,7 +1155,7 @@ Sum  36</code></pre>
 3    3 0.15
 5    1 0.05
 Sum 20 1.00</code></pre>
-<p>Para variáveis cujos valores possuem ordenação natural (qualitativas ordinais e quantitativas em geral), faz sentido calcularmos também as <strong>frequências acumuladas</strong>. A frequência acumulada até um certo valor é obtida pela soma das frequências de todos os valores da variável, <em>menores ou iguais ao valor considerado</em>.</p>
+<p>Para variÃ¡veis cujos valores possuem ordenaÃ§Ã£o natural (qualitativas ordinais e quantitativas em geral), faz sentido calcularmos tambÃ©m as <strong>frequÃªncias acumuladas</strong>. A frequÃªncia acumulada atÃ© um certo valor Ã© obtida pela soma das frequÃªncias de todos os valores da variÃ¡vel, <em>menores ou iguais ao valor considerado</em>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tba &lt;-<span class="st"> </span><span class="kw">as.table</span>(<span class="kw">cumsum</span>(filhos.tb))
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)),
@@ -1167,7 +1167,7 @@ Sum 20 1.00</code></pre>
 3    3 0.15 19
 5    1 0.05 20
 Sum 20 1.00 NA</code></pre>
-<p>Também podemos definir a <strong>frequência acumulada relativa</strong>, que é o resultado da divisão das frequências acumuladas pelo total de observações, ou seja</p>
+<p>TambÃ©m podemos definir a <strong>frequÃªncia acumulada relativa</strong>, que Ã© o resultado da divisÃ£o das frequÃªncias acumuladas pelo total de observaÃ§Ãµes, ou seja</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tba &lt;-<span class="st"> </span><span class="kw">as.table</span>(<span class="kw">cumsum</span>(filhos.tb))
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)),
@@ -1180,95 +1180,95 @@ Sum 20 1.00 NA</code></pre>
 3    3 0.15 19 0.95
 5    1 0.05 20 1.00
 Sum 20 1.00 NA   NA</code></pre>
-<p>Com isso, definimos também as frequências acumuladas.</p>
+<p>Com isso, definimos tambÃ©m as frequÃªncias acumuladas.</p>
 <div class="panel panel-primary">
 <div class="panel-heading">
-Tipos de frequência acumulada
+Tipos de frequÃªncia acumulada
 </div>
 <div class="panel-body">
 <ul>
-<li>Frequência acumulada (<span class="math inline">\(F_i\)</span>): soma das frequências simples de uma classe com a frequência simples da classe anterior</li>
-<li>Frequência acumulada relativa (<span class="math inline">\(Fr_i\)</span>): frequência acumulada da classe dividida pelo total de observações <span class="math display">\[
+<li>FrequÃªncia acumulada (<span class="math inline">\(F_i\)</span>): soma das frequÃªncias simples de uma classe com a frequÃªncia simples da classe anterior</li>
+<li>FrequÃªncia acumulada relativa (<span class="math inline">\(Fr_i\)</span>): frequÃªncia acumulada da classe dividida pelo total de observaÃ§Ãµes <span class="math display">\[
   Fr_i = \frac{F_i}{\sum f_i}
   \]</span></li>
-<li>Frequência acumulada percentual (<span class="math inline">\(Fp_i\)</span>): frequência acumulada relativa em porcentagem <span class="math display">\[
+<li>FrequÃªncia acumulada percentual (<span class="math inline">\(Fp_i\)</span>): frequÃªncia acumulada relativa em porcentagem <span class="math display">\[
   Fp_i = Fr_i \times 100
   \]</span>
 </div></li>
 </ul>
 </div>
-<p>O gráfico adequado para frequências absolutas, relativas, ou acumuladas de uma variável discreta é parecido com um gráfico de barras, mas nesse caso, as frequências são indicadas por linhas.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(filhos.tb, <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>)</code></pre></div>
+<p>O grÃ¡fico adequado para frequÃªncias absolutas, relativas, ou acumuladas de uma variÃ¡vel discreta Ã© parecido com um grÃ¡fico de barras, mas nesse caso, as frequÃªncias sÃ£o indicadas por linhas.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(filhos.tb, <span class="dt">xlab =</span> <span class="st">&quot;NÃºmero de filhos&quot;</span>,
+     <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia absoluta&quot;</span>)</code></pre></div>
 <p><img src="figures/bar-quant-discr1-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>Outra possibilidade seria fazer gráficos de frequências relativa e de frequências relativas acumuladas conforme mostrado nas figuras abaixo.</p>
+<p>Outra possibilidade seria fazer grÃ¡ficos de frequÃªncias relativa e de frequÃªncias relativas acumuladas conforme mostrado nas figuras abaixo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
-## Frequência relativa
-<span class="kw">plot</span>(<span class="kw">prop.table</span>(filhos.tb), <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência relativa&quot;</span>)
-## Frequência relativa acumulada
+## FrequÃªncia relativa
+<span class="kw">plot</span>(<span class="kw">prop.table</span>(filhos.tb), <span class="dt">xlab =</span> <span class="st">&quot;NÃºmero de filhos&quot;</span>,
+     <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia relativa&quot;</span>)
+## FrequÃªncia relativa acumulada
 <span class="kw">plot</span>(filhos.tba<span class="op">/</span><span class="dv">20</span>, <span class="dt">type =</span> <span class="st">&quot;S&quot;</span>, <span class="co"># tipo step (escada)</span>
-     <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência acumulada relativa&quot;</span>)
+     <span class="dt">xlab =</span> <span class="st">&quot;NÃºmero de filhos&quot;</span>,
+     <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia acumulada relativa&quot;</span>)
 <span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
 <p><img src="figures/bar-quant-discr2-1.png" width="800" style="display: block; margin: auto;" /></p>
 </div>
-<div id="variavel-quantitativa-continua" class="section level2">
-<h2>Variável quantitativa contínua</h2>
-<p>Para concluir os exemplos para análise univariada vamos considerar a variável quantitativa contínua <code>Salario</code>.</p>
-<p>Para se fazer uma tabela de frequências de uma variável contínua, é preciso primeiro agrupar os dados em classes pré-estabelecidas. A escolha dos <strong>intervalos de classe</strong> geralmente é arbitrária, e a familiaridade do pesquisador com os dados é que lhe indicará quantas e quais classes devem ser utilizadas. No entanto, algumas regras simples podem ser úteis para auxiliar na construção das classes. Uma forma seria calcular a <strong>amplitude de classe</strong> (<span class="math inline">\(h\)</span>) através da relação</p>
+<div id="variavel-quantitativa-contanua" class="section level2">
+<h2>VariÃ¡vel quantitativa contÃ­nua</h2>
+<p>Para concluir os exemplos para anÃ¡lise univariada vamos considerar a variÃ¡vel quantitativa contÃ­nua <code>Salario</code>.</p>
+<p>Para se fazer uma tabela de frequÃªncias de uma variÃ¡vel contÃ­nua, Ã© preciso primeiro agrupar os dados em classes prÃ©-estabelecidas. A escolha dos <strong>intervalos de classe</strong> geralmente Ã© arbitrÃ¡ria, e a familiaridade do pesquisador com os dados Ã© que lhe indicarÃ¡ quantas e quais classes devem ser utilizadas. No entanto, algumas regras simples podem ser Ãºteis para auxiliar na construÃ§Ã£o das classes. Uma forma seria calcular a <strong>amplitude de classe</strong> (<span class="math inline">\(h\)</span>) atravÃ©s da relaÃ§Ã£o</p>
 <p><span class="math display">\[
 h = \frac{AT}{k}
 \]</span></p>
-<p>onde <span class="math inline">\(AT = \max{\mathbf{x}} - \min{\mathbf{x}}\)</span> é a <strong>amplitude total</strong> dos dados, e <span class="math inline">\(k = \sqrt{n}\)</span> é um número <em>estimado</em> de intervalos de classes para um conjunto de dados com <span class="math inline">\(n\)</span> observações (<span class="math inline">\(k\)</span> pode ser calculado por outras definições, como a regra de Sturges, por exemplo).</p>
-<p>Note que, para facilitar o cálculo da amplitude de classe e posteriormente para montar a tabela de distribuição de frequência, podemos <strong>ordenar</strong> o vetor de dados brutos. Por exemplo, os valores ordenados (em ordem crescente) de <code>Salario</code> são</p>
+<p>onde <span class="math inline">\(AT = \max{\mathbf{x}} - \min{\mathbf{x}}\)</span> Ã© a <strong>amplitude total</strong> dos dados, e <span class="math inline">\(k = \sqrt{n}\)</span> Ã© um nÃºmero <em>estimado</em> de intervalos de classes para um conjunto de dados com <span class="math inline">\(n\)</span> observaÃ§Ãµes (<span class="math inline">\(k\)</span> pode ser calculado por outras definiÃ§Ãµes, como a regra de Sturges, por exemplo).</p>
+<p>Note que, para facilitar o cÃ¡lculo da amplitude de classe e posteriormente para montar a tabela de distribuiÃ§Ã£o de frequÃªncia, podemos <strong>ordenar</strong> o vetor de dados brutos. Por exemplo, os valores ordenados (em ordem crescente) de <code>Salario</code> sÃ£o</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sort</span>(milsa<span class="op">$</span>Salario)</code></pre></div>
 <pre><code> [1]  4.00  4.56  5.25  5.73  6.26  6.66  6.86  7.39  7.44  7.59  8.12
 [12]  8.46  8.74  8.95  9.13  9.35  9.77  9.80 10.53 10.76 11.06 11.59
 [23] 12.00 12.79 13.23 13.60 13.85 14.69 14.71 15.99 16.22 16.61 17.26
 [34] 18.75 19.40 23.30</code></pre>
-<p>Com isso, naturalmente já visualizamos os valores máximo e mínimo, e sabemos que a amplitude total é</p>
+<p>Com isso, naturalmente jÃ¡ visualizamos os valores mÃ¡ximo e mÃ­nimo, e sabemos que a amplitude total Ã©</p>
 <p><span class="math display">\[
 AT = 23.3 - 4 =
     19.3
 \]</span></p>
-<p>Como temos 36 observações, o número estimado de classes é <span class="math inline">\(k = \sqrt{n} = \sqrt{36} = 6\)</span>. Portanto, a amplitude de classe é</p>
+<p>Como temos 36 observaÃ§Ãµes, o nÃºmero estimado de classes Ã© <span class="math inline">\(k = \sqrt{n} = \sqrt{36} = 6\)</span>. Portanto, a amplitude de classe Ã©</p>
 <p><span class="math display">\[
 h = \frac{AT}{k} = \frac{19.3}
     {6} =
     3.2166667
 \]</span></p>
-<p>O valor de amplitude de classe pode ser arredondado para um número inteiro, geralmente para facilitar a interpretação da tabela. Nesse caso, poderíamos arredondar a amplitude para 3 ou para 4 (inteiros mais próximos). Como o valor mínimo é 4 e o máximo está próximo de 24, é natural arredondarmos a amplitude para 4. Após esse arredondamento, vamos denominar a amplitude de classe definitiva por <span class="math inline">\(\Delta\)</span>, apenas para diferenciar do valor calculado em <span class="math inline">\(h\)</span>.</p>
-<p>Dessa forma, as classes seriam formadas pela sequência, ou “quebra de classes” definida por</p>
+<p>O valor de amplitude de classe pode ser arredondado para um nÃºmero inteiro, geralmente para facilitar a interpretaÃ§Ã£o da tabela. Nesse caso, poderÃ­amos arredondar a amplitude para 3 ou para 4 (inteiros mais prÃ³ximos). Como o valor mÃ­nimo Ã© 4 e o mÃ¡ximo estÃ¡ prÃ³ximo de 24, Ã© natural arredondarmos a amplitude para 4. ApÃ³s esse arredondamento, vamos denominar a amplitude de classe definitiva por <span class="math inline">\(\Delta\)</span>, apenas para diferenciar do valor calculado em <span class="math inline">\(h\)</span>.</p>
+<p>Dessa forma, as classes seriam formadas pela sequÃªncia, ou “quebra de classes” definida por</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(quebra &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">4</span>))</code></pre></div>
 <pre><code>[1]  4  8 12 16 20 24</code></pre>
-<p>Portanto, ficamos com um total de 5 classes. A última etapa é definir os extremos de classe que serão abertos (permitem incluir aquele valor exato) ou fechados (não incluem aquele valor). Para isso, usaremos a notação a seguir</p>
+<p>Portanto, ficamos com um total de 5 classes. A Ãºltima etapa Ã© definir os extremos de classe que serÃ£o abertos (permitem incluir aquele valor exato) ou fechados (nÃ£o incluem aquele valor). Para isso, usaremos a notaÃ§Ã£o a seguir</p>
 <table>
 <thead>
 <tr class="header">
 <th align="left">Classe</th>
-<th align="left">Notação</th>
-<th align="left">Denominação</th>
-<th align="left">Resultado</th>
+<th align="left">NotaÃ§Ã£o</th>
+<th align="center">DenominaÃ§Ã£o</th>
+<th align="center">Resultado</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">[a,b)</td>
 <td align="left"><span class="math inline">\(a \vdash b\)</span></td>
-<td align="left">Fechado em a, aberto em b</td>
-<td align="left">Inclui a, não inclui b</td>
+<td align="center">Fechado em a, aberto em b</td>
+<td align="center">Inclui a, nÃ£o inclui b</td>
 </tr>
 <tr class="even">
 <td align="left">(a,b]</td>
 <td align="left"><span class="math inline">\(a \dashv b\)</span></td>
-<td align="left">Aberto em a, fechado em b</td>
-<td align="left">Não inclui a, inclui b</td>
+<td align="center">Aberto em a, fechado em b</td>
+<td align="center">NÃ£o inclui a, inclui b</td>
 </tr>
 </tbody>
 </table>
-<p>Nesse exemplo, vamos usar intervalos do tipo fechados à esquerda (abertos à direita), pois o primeiro valor de quebra de classe é o igual ao valor mínimo do conjunto de dados, e dessa forma garantimos que todos os valores pertençam a alguma das classes.</p>
-<p>Portanto, as classes completas com suas respectivas frequências absolutas estão na tabela abaixo.</p>
+<p>Nesse exemplo, vamos usar intervalos do tipo fechados Ã  esquerda (abertos Ã  direita), pois o primeiro valor de quebra de classe Ã© o igual ao valor mÃ­nimo do conjunto de dados, e dessa forma garantimos que todos os valores pertenÃ§am a alguma das classes.</p>
+<p>Portanto, as classes completas com suas respectivas frequÃªncias absolutas estÃ£o na tabela abaixo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">classes &lt;-<span class="st"> </span><span class="kw">cut</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>)
 classes.tab &lt;-<span class="st"> </span><span class="kw">table</span>(classes)
 <span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab))</code></pre></div>
@@ -1279,7 +1279,7 @@ classes.tab &lt;-<span class="st"> </span><span class="kw">table</span>(classes)
 [16,20)  5
 [20,24)  1
 Sum     36</code></pre>
-<p>Para completar esta tabela, podemos obter os demais tipos de frequência, conforme visto anteriormente: <span class="math inline">\(f_r\)</span> (frequência relativa), <span class="math inline">\(F\)</span> (frequência acumulada), e <span class="math inline">\(F_r\)</span> (frequência acumulada relativa).</p>
+<p>Para completar esta tabela, podemos obter os demais tipos de frequÃªncia, conforme visto anteriormente: <span class="math inline">\(f_r\)</span> (frequÃªncia relativa), <span class="math inline">\(F\)</span> (frequÃªncia acumulada), e <span class="math inline">\(F_r\)</span> (frequÃªncia acumulada relativa).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(classes.tab)),
       <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>),
@@ -1291,17 +1291,17 @@ Sum     36</code></pre>
 [16,20)  5 0.13888889 35 0.9722222
 [20,24)  1 0.02777778 36 1.0000000
 Sum     36 1.00000000 NA        NA</code></pre>
-<p>Na sequência vamos mostrar três possíveis gráficos para variáveis contínuas: o de dispersão, o histograma, e o de ramo-e-folhas.</p>
-<p>O gráfico de dispersão unidimensional consiste da variável de interesse no eixo Y, plotada com seus respectivos índices (entrada) da tabela de dados. Nesse exemplo, o gráfico seria</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(milsa<span class="op">$</span>Salario, <span class="dt">xlab =</span> <span class="st">&quot;Índice&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Salário&quot;</span>)</code></pre></div>
+<p>Na sequÃªncia vamos mostrar trÃªs possÃ­veis grÃ¡ficos para variÃ¡veis contÃ­nuas: o de dispersÃ£o, o histograma, e o de ramo-e-folhas.</p>
+<p>O grÃ¡fico de dispersÃ£o unidimensional consiste da variÃ¡vel de interesse no eixo Y, plotada com seus respectivos Ã­ndices (entrada) da tabela de dados. Nesse exemplo, o grÃ¡fico seria</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(milsa<span class="op">$</span>Salario, <span class="dt">xlab =</span> <span class="st">&quot;Ãndice&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;SalÃ¡rio&quot;</span>)</code></pre></div>
 <p><img src="figures/unnamed-chunk-20-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>Note que, como os dados nesta tabela estão ordenados (em ordem crescente) pelos salários, então vemos esse padrão de cresimento. Mas a ordenação não é um pré-requisito para fazer esse gráfico. A interpretação desse gráfico é limitada pelo fato de que só faz sentido dizer alguma coisa sobre os salários se os índices (nesse caso, os funcionários) tivessem algum tipo de identificação. Por esse motivo, o histograma é uma forma mais eficiente de resumir variáveis contínuas.</p>
-<p>O <strong>histograma</strong> é um gráfico de barras <em>contíguas</em>, com as bases proporcionais aos intervalos de classe, e a área de cada retângulo proporcional à respectiva frequência.</p>
-<p>Pode-se usar tanto a frequêcia absoluta (<span class="math inline">\(f_i\)</span>) quanto a relativa (<span class="math inline">\(fr_i\)</span>). Indicamos a amplitude do <span class="math inline">\(i\)</span>-ésimo intervalo por <span class="math inline">\(\Delta_i\)</span>. Para que a área do retângulo respectivo seja proporcional a <span class="math inline">\(fr_i\)</span>, a sua altura deve ser proporcional a <span class="math inline">\(fr_i/\Delta_i\)</span>, que é chamada <strong>densidade de frequência</strong>, ou simplesmente <strong>densidade</strong> da <span class="math inline">\(i\)</span>-ésima classe. Quando todos os intervalos de classe forem iguais a <span class="math inline">\(\Delta\)</span> (como é o caso nesse exemplo), então a densidade de frequência simplifica para <span class="math inline">\(fr_i/\Delta\)</span>. Com essa convenção, garantimos que a área total do histograma será igual a um, uma propriedade que será importante quando estudarmos probabilidade.</p>
-<p>Abaixo, vemos os histogramas com as frequências absolutas, e com a densidade de frequência.</p>
+<p>Note que, como os dados nesta tabela estÃ£o ordenados (em ordem crescente) pelos salÃ¡rios, entÃ£o vemos esse padrÃ£o de cresimento. Mas a ordenaÃ§Ã£o nÃ£o Ã© um prÃ©-requisito para fazer esse grÃ¡fico. A interpretaÃ§Ã£o desse grÃ¡fico Ã© limitada pelo fato de que sÃ³ faz sentido dizer alguma coisa sobre os salÃ¡rios se os Ã­ndices (nesse caso, os funcionÃ¡rios) tivessem algum tipo de identificaÃ§Ã£o. Por esse motivo, o histograma Ã© uma forma mais eficiente de resumir variÃ¡veis contÃ­nuas.</p>
+<p>O <strong>histograma</strong> Ã© um grÃ¡fico de barras <em>contÃ­guas</em>, com as bases proporcionais aos intervalos de classe, e a Ã¡rea de cada retÃ¢ngulo proporcional Ã  respectiva frequÃªncia.</p>
+<p>Pode-se usar tanto a frequÃªcia absoluta (<span class="math inline">\(f_i\)</span>) quanto a relativa (<span class="math inline">\(fr_i\)</span>). Indicamos a amplitude do <span class="math inline">\(i\)</span>-Ã©simo intervalo por <span class="math inline">\(\Delta_i\)</span>. Para que a Ã¡rea do retÃ¢ngulo respectivo seja proporcional a <span class="math inline">\(fr_i\)</span>, a sua altura deve ser proporcional a <span class="math inline">\(fr_i/\Delta_i\)</span>, que Ã© chamada <strong>densidade de frequÃªncia</strong>, ou simplesmente <strong>densidade</strong> da <span class="math inline">\(i\)</span>-Ã©sima classe. Quando todos os intervalos de classe forem iguais a <span class="math inline">\(\Delta\)</span> (como Ã© o caso nesse exemplo), entÃ£o a densidade de frequÃªncia simplifica para <span class="math inline">\(fr_i/\Delta\)</span>. Com essa convenÃ§Ã£o, garantimos que a Ã¡rea total do histograma serÃ¡ igual a um, uma propriedade que serÃ¡ importante quando estudarmos probabilidade.</p>
+<p>Abaixo, vemos os histogramas com as frequÃªncias absolutas, e com a densidade de frequÃªncia.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
 <span class="kw">hist</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>,
-     <span class="dt">xlab =</span> <span class="st">&quot;Classes&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>,
+     <span class="dt">xlab =</span> <span class="st">&quot;Classes&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;FrequÃªncia absoluta&quot;</span>,
      <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">24</span>), <span class="dt">labels =</span> <span class="ot">TRUE</span>, <span class="dt">axes =</span> <span class="ot">FALSE</span>)
 <span class="kw">axis</span>(<span class="dv">1</span>, <span class="dt">at =</span> quebra, <span class="dt">labels =</span> quebra); <span class="kw">axis</span>(<span class="dv">2</span>)
 h &lt;-<span class="st"> </span><span class="kw">hist</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>,
@@ -1311,7 +1311,7 @@ h &lt;-<span class="st"> </span><span class="kw">hist</span>(milsa<span class="o
 <span class="kw">text</span>(h<span class="op">$</span>mids, h<span class="op">$</span>density, <span class="dt">labels =</span> <span class="kw">round</span>(h<span class="op">$</span>density <span class="op">*</span><span class="st"> </span><span class="dv">4</span>, <span class="dv">2</span>), <span class="dt">pos =</span> <span class="dv">3</span>)
 <span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
 <p><img src="figures/hist-1.png" width="800" style="display: block; margin: auto;" /></p>
-<p>Note que, para construir o gráfico com as densidades, precisamos então de mais uma coluna na tabela, que seria a densidade <span class="math inline">\(fr_i/\Delta = fr_i/4\)</span>.</p>
+<p>Note que, para construir o grÃ¡fico com as densidades, precisamos entÃ£o de mais uma coluna na tabela, que seria a densidade <span class="math inline">\(fr_i/\Delta = fr_i/4\)</span>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab),
       <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(classes.tab)),
       <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>),
@@ -1327,18 +1327,18 @@ Sum     36 1.00000000 NA        NA          NA</code></pre>
 <p>O que devemos observar em um histograma:</p>
 <ul>
 <li>Amplitude de valores</li>
-<li>Forma da distribuição (assimetria):
+<li>Forma da distribuiÃ§Ã£o (assimetria):
 <ul>
 <li>Positiva</li>
 <li>Negativa</li>
-<li>Simétrica</li>
+<li>SimÃ©trica</li>
 </ul></li>
-<li>Tendência central</li>
+<li>TendÃªncia central</li>
 <li>Valores extremos</li>
 </ul>
-<p>Tanto o histograma quanto os gráficos de barra, dão uma ideia da <strong>forma da distribuição</strong> de uma variável. Existem várias medidas para resumir uma variável, como veremos mais adiante, mas a forma da distribuição é tão importante quanto estas medidas. Por exemplo, saber que a média de salários da empresa “Milsa” é 11.12 é importante, mas saber como os salários se distribuem entre os funcionários da empresa (como vimos pelo histograma) pode ser mais importante.</p>
-<p>Outro método para se resumir uma variável com o objetivo de obter uma ideia da forma de sua distribuição, é através do “gráfico” de <strong>ramo-e-folhas</strong>. Este é um método bem simples, e foi criado na época em que fazer gráficos no computador era uma tarefa difícil. Mas ainda hoje é uma forma de visualização muito efetiva. Uma vantagem sobre o histograma é que não perdemos (ou perdemos muito pouca) informação sobre os dados em si.</p>
-<p>Não existe uma regra fixa para construir o ramo-e-folhas, mas a ideia básica é dividir cada observação em duas partes: a primeira (o <em>ramo</em>) é colocada no lado esquerdo de uma linha vertical, e a segunda (a <em>folha</em>) é colocada à direita. Geralmente, a divisão natural é separar um número contínuo em sua parte inteira à esquerda, e a parte decimal à direita. Dessa forma o ramo-e-folha para a variável <code>Salario</code> está abaixo.</p>
+<p>Tanto o histograma quanto os grÃ¡ficos de barra, dÃ£o uma ideia da <strong>forma da distribuiÃ§Ã£o</strong> de uma variÃ¡vel. Existem vÃ¡rias medidas para resumir uma variÃ¡vel, como veremos mais adiante, mas a forma da distribuiÃ§Ã£o Ã© tÃ£o importante quanto estas medidas. Por exemplo, saber que a mÃ©dia de salÃ¡rios da empresa “Milsa” Ã© 11.12 Ã© importante, mas saber como os salÃ¡rios se distribuem entre os funcionÃ¡rios da empresa (como vimos pelo histograma) pode ser mais importante.</p>
+<p>Outro mÃ©todo para se resumir uma variÃ¡vel com o objetivo de obter uma ideia da forma de sua distribuiÃ§Ã£o, Ã© atravÃ©s do “grÃ¡fico” de <strong>ramo-e-folhas</strong>. Este Ã© um mÃ©todo bem simples, e foi criado na Ã©poca em que fazer grÃ¡ficos no computador era uma tarefa difÃ­cil. Mas ainda hoje Ã© uma forma de visualizaÃ§Ã£o muito efetiva. Uma vantagem sobre o histograma Ã© que nÃ£o perdemos (ou perdemos muito pouca) informaÃ§Ã£o sobre os dados em si.</p>
+<p>NÃ£o existe uma regra fixa para construir o ramo-e-folhas, mas a ideia bÃ¡sica Ã© dividir cada observaÃ§Ã£o em duas partes: a primeira (o <em>ramo</em>) Ã© colocada no lado esquerdo de uma linha vertical, e a segunda (a <em>folha</em>) Ã© colocada Ã  direita. Geralmente, a divisÃ£o natural Ã© separar um nÃºmero contÃ­nuo em sua parte inteira Ã  esquerda, e a parte decimal Ã  direita. Dessa forma o ramo-e-folha para a variÃ¡vel <code>Salario</code> estÃ¡ abaixo.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">stem</span>(milsa<span class="op">$</span>Salario, <span class="dt">scale =</span> <span class="dv">2</span>)</code></pre></div>
 <pre><code>
   The decimal point is at the |
@@ -1363,36 +1363,37 @@ Sum     36 1.00000000 NA        NA          NA</code></pre>
   21 | 
   22 | 
   23 | 3</code></pre>
-<p>Note que, por simplificação, os valores foram arredondados para uma casa decimal, assim, por exemplo, o segundo valor de 4,56 foi arredondado para 4,6, e representado na primeira linha do gráfico, junto com o primeiro valor que é 4,0.</p>
-<p>Algumas informações que podemos obter a partir do ramo-e-folhas:</p>
+<p>Note que, por simplificaÃ§Ã£o, os valores foram arredondados para uma casa decimal, assim, por exemplo, o segundo valor de 4,56 foi arredondado para 4,6, e representado na primeira linha do grÃ¡fico, junto com o primeiro valor que Ã© 4,0.</p>
+<p>Algumas informaÃ§Ãµes que podemos obter a partir do ramo-e-folhas:</p>
 <ul>
-<li>Há um destaque para o valor 23,3.</li>
+<li>HÃ¡ um destaque para o valor 23,3.</li>
 <li>Os demais valores se concentram mais fortemente entre 4,0 e 14,7.</li>
-<li>Um valor mais ou menos típico para essa variável seria em torno de 9.</li>
-<li>Há uma leve assimetria em direção aos valores grandes.</li>
+<li>Um valor mais ou menos tÃ­pico para essa variÃ¡vel seria em torno de 9.</li>
+<li>HÃ¡ uma leve assimetria em direÃ§Ã£o aos valores grandes.</li>
 </ul>
-<p>Existem diversas variações do gráfico de ramo-e-folhas, mas não entraremos em detalhes.</p>
+<p>Existem diversas variaÃ§Ãµes do grÃ¡fico de ramo-e-folhas, mas nÃ£o entraremos em detalhes.</p>
 </div>
 </div>
-<div id="exercicios" class="section level1">
-<h1>Exercícios</h1>
+<div id="exercacios" class="section level1">
+<h1>ExercÃ­cios</h1>
 <ol style="list-style-type: decimal">
-<li>Em um questionário aplicado aos estudantes que frequentavam a livraria do campus, foi perguntado como classificariam o serviço prestado. As respostas foram:</li>
+<li>Em um questionÃ¡rio aplicado aos estudantes que frequentavam a livraria do campus, foi perguntado como classificariam o serviÃ§o prestado. As respostas foram:</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ex &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>,
-   <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>,
-   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>,
-   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>,
-   <span class="st">&quot;péssimo&quot;</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ex &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;pÃ©ssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>,
+   <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>,
+   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;pÃ©ssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;pÃ©ssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;pÃ©ssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>,
+   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;pÃ©ssimo&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;Ã³timo&quot;</span>, <span class="st">&quot;bom&quot;</span>,
+   <span class="st">&quot;pÃ©ssimo&quot;</span>)
 ex</code></pre></div>
-<pre><code> [1] &quot;ótimo&quot;   &quot;bom&quot;     &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;bom&quot;     &quot;ótimo&quot;  
- [8] &quot;ótimo&quot;   &quot;bom&quot;     &quot;ótimo&quot;   &quot;bom&quot;     &quot;ótimo&quot;   &quot;bom&quot;     &quot;bom&quot;    
-[15] &quot;ótimo&quot;   &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;péssimo&quot;
-[22] &quot;bom&quot;     &quot;bom&quot;     &quot;bom&quot;     &quot;bom&quot;     &quot;ótimo&quot;   &quot;bom&quot;     &quot;péssimo&quot;
-[29] &quot;ótimo&quot;   &quot;ótimo&quot;   &quot;bom&quot;     &quot;péssimo&quot;</code></pre>
+<pre><code> [1] &quot;Ã³timo&quot;   &quot;bom&quot;      &quot;bom&quot;      &quot;pÃ©ssimo&quot; &quot;bom&quot;      &quot;bom&quot;     
+ [7] &quot;Ã³timo&quot;   &quot;Ã³timo&quot;   &quot;bom&quot;      &quot;Ã³timo&quot;   &quot;bom&quot;      &quot;Ã³timo&quot;  
+[13] &quot;bom&quot;      &quot;bom&quot;      &quot;Ã³timo&quot;   &quot;bom&quot;      &quot;pÃ©ssimo&quot; &quot;bom&quot;     
+[19] &quot;pÃ©ssimo&quot; &quot;bom&quot;      &quot;pÃ©ssimo&quot; &quot;bom&quot;      &quot;bom&quot;      &quot;bom&quot;     
+[25] &quot;bom&quot;      &quot;Ã³timo&quot;   &quot;bom&quot;      &quot;pÃ©ssimo&quot; &quot;Ã³timo&quot;   &quot;Ã³timo&quot;  
+[31] &quot;bom&quot;      &quot;pÃ©ssimo&quot;</code></pre>
 <ol style="list-style-type: lower-alpha">
-<li>Como você classificaria estas respostas?</li>
-<li>Crie uma tabela e um gráfico para representar e resumir esta informação.</li>
+<li>Como vocÃª classificaria estas respostas?</li>
+<li>Crie uma tabela e um grÃ¡fico para representar e resumir esta informaÃ§Ã£o.</li>
 </ol>
 <ol start="2" style="list-style-type: decimal">
 <li>Considere os dados abaixo</li>
@@ -1406,10 +1407,10 @@ ex</code></pre></div>
 [24] 13 13 14 14 14 15 15 16 16 16 16 17 17 18 18 18 19 19 19 20 21 21 22
 [47] 28 34</code></pre>
 <ol style="list-style-type: lower-alpha">
-<li>Monte uma tabela construindo as classes conforme os critérios apresentados.</li>
-<li>Calcule as frequências: absoluta, relativa, percentual, acumulada, acumulada relativa, acumulada percentual.</li>
-<li>Faça um histograma com a <em>densidade</em> das classes.</li>
-<li>Faça um diagrama de ramo-e-folhas.</li>
+<li>Monte uma tabela construindo as classes conforme os critÃ©rios apresentados.</li>
+<li>Calcule as frequÃªncias: absoluta, relativa, percentual, acumulada, acumulada relativa, acumulada percentual.</li>
+<li>FaÃ§a um histograma com a <em>densidade</em> das classes.</li>
+<li>FaÃ§a um diagrama de ramo-e-folhas.</li>
 </ol>
 </div>
 
