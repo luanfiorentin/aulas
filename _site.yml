@@ -23,8 +23,10 @@ navbar:
       href: aulas.html
     - text: "Referências"
       href: referencias.html
-    - text: Recursos"
+    - text: "Recursos"
       href: recursos.html
+    - text: "Análise Exploratória"
+      href: 02_Analise_Exploratoria_de_Dados.html
   right:
     - text: GitHub
       icon: fa-github fa-lg
