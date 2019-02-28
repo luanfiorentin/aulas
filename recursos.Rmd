@@ -5,7 +5,7 @@ output:
     toc: false
 ---
 
-O curso não prevê conteúdo computacional. Entretanto todo o conteúdo
+O curso não prevê conteúdo computacional. Entretanto, todo o conteúdo
 abordado pode ser tratado computacionalmente por planilhas eletrônicas
 (como por exemplo o LibreOffice), linguagens ou programas estatísticos.
 
