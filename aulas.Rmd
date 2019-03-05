@@ -39,7 +39,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **14/03 (Qui)**: Exercícios.
 - **19/03 (Ter)**: (3) Probabilidade.
 - **21/03 (Qui)**: Exercícios.
-- **26/03 (Ter)**: **Prova 1**(3).
+- **26/03 (Ter)**: **Prova 1**.
 
 - **28/03 (Qui)**: (3) Variáveis aleatórias.
 - **02/04 (Ter)**: Exercícios.
