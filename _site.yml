@@ -14,6 +14,7 @@ output:
       smooth_scroll: false
     includes:
       after_body: footer.html
+      in_header: analytics.html
 navbar:
   title: "Estatística Básica"
   left:
@@ -27,6 +28,8 @@ navbar:
       href: recursos.html
     - text: "Análise Exploratória"
       href: 02_Analise_Exploratoria_de_Dados.html
+    - text: "Materiais"
+      menu:
   right:
     - text: GitHub
       icon: fa-github fa-lg
