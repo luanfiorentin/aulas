@@ -15,7 +15,7 @@ source("knitr_setup.R")
 
 # Disciplinas
 
-Essa página abrange o conteúdo das seguintes disciplinas e cursos no primeiro semetre de 2019:
+Essa página abrange o conteúdo das seguintes disciplinas e cursos no primeiro semetre do ano 2019:
 
 - **CE003 - Estatística II**:
   - Ciências Sociais (CS) - Matutino
