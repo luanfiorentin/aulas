@@ -5,4 +5,4 @@ output:
     toc: false
 ---
 
-## Não há notas disponíveis ainda.
+Não há notas disponíveis ainda.
