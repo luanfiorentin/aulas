@@ -25,6 +25,8 @@ navbar:
       href: referencias.html
     - text: "Recursos"
       href: recursos.html
+    - text: Notas"
+      href: notas.html
     - text: "Análise Exploratória"
       href: 02_Analise_Exploratoria_de_Dados.html
   right:
