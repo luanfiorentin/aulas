@@ -33,7 +33,6 @@ navbar:
 	href: Listas/tabelasEST.pdf
       - text: "Listas 1"
 	href: Listas/Lista_1/Lista_1.pdf
-
   right:
     - text: GitHub
       icon: fa-github fa-lg
