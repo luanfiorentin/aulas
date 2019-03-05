@@ -14,7 +14,6 @@ output:
       smooth_scroll: false
     includes:
       after_body: footer.html
-      in_header: analytics.html
 navbar:
   title: "Estatística Básica"
   left:
