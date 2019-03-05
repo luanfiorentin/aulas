@@ -28,7 +28,7 @@ navbar:
     - text: "Análise Exploratória"
       href: 02_Analise_Exploratoria_de_Dados.html
     - text: "Lista 1"
-      href: Lista_1.pdf
+      href: Listas/Lista_1/Lista_1.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
