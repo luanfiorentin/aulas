@@ -30,7 +30,6 @@ navbar:
     - text: "Materiais"	
       menu:
       - text: "Listas 1"
-	href: Listas/recursos.Rmd
   right:
     - text: GitHub
       icon: fa-github fa-lg
