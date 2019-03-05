@@ -1,16 +1,13 @@
-# CE003FMI - 2016-01
-
-[![Build Status](https://travis-ci.org/fernandomayer/ce003fmi-2016-01.svg)](https://travis-ci.org/fernandomayer/ce003fmi-2016-01)
+# Estatística Básica - 2019-01
 
 ## CE003 - Estatística II
 
-Repositório da disciplina CE003 - Estatística II, ministrada na UFPR, no
-primeiro semestre de 2016, para os cursos de Engenharia de Bioprocessos
-e Biotecnologia (F), e Matemática Industrial (MI).
+Repositório da disciplina de estatística básica, ministrada na UFPR, no
+primeiro semestre de 2019, para os cursos de GEstão da Informação e Ciências Sociais.
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
-http://fernandomayer.github.io/ce003fmi-2016-01.
+https://github.com/luanfiorentin/aulas-ufpr.
 
 O site é todo construído usando apenas o [R Markdown][], por isso, o
 código fonte está nos arquivos `Rmd`. Para gerar o site você precisará
