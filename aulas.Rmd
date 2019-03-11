@@ -34,25 +34,25 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **26/02 (Ter)**: (2) Medidas resumo.
 - **28/02 (Qui)**: *Sem aula*.
 - **05/03 (Ter)**: *Feriado*.
-- **07/03 (Qui)**: (2) Medidas resumo.
-- **12/03 (Ter)**: Exercícios.
-- **14/03 (Qui)**: Exercícios.
-- **19/03 (Ter)**: (3) Probabilidade.
-- **21/03 (Qui)**: Exercícios.
-- **26/03 (Ter)**: **Prova 1**.
+- **07/03 (Qui)**: *Não houve aula*.
+- **12/03 (Ter)**: (2) Medidas resumo.
+- **14/03 (Qui)**: (2) Medidas resumo.
+- **19/03 (Ter)**: Exercícios.
+- **21/03 (Qui)**: (3) Probabilidade.
+- **26/03 (Ter)**: Exercícios.
+- **28/03 (Qui)**: Exercícios.
+- **02/04 (Ter)**: **Prova 1**.
 
-- **28/03 (Qui)**: (4) Variáveis aleatórias.
-- **02/04 (Ter)**: Exercícios.
-- **04/04 (Qui)**: (5) Distribuições de probabilidade.
+- **04/04 (Qui)**: (4) Variáveis aleatórias.
 - **09/04 (Ter)**: Exercícios.
-- **11/04 (Qui)**: Exercícios.
+- **11/04 (Qui)**: (5) Distribuições de probabilidade.
 - **16/04 (Ter)**: Exercícios.
-- **18/04 (Qui)**: (6) Inferência estatística - estimação pontual.
-- **23/04 (Ter)**: Exercícios.
-- **25/04 (Qui)**: **Prova 2**
+- **18/04 (Qui)**: Exercícios.
+- **23/04 (Ter)**: (6) Inferência estatística - estimação pontual.
+- **25/04 (Qui)**: Exercícios.
+- **30/04 (Ter)**: **Prova 2**.
 
-- **30/04 (Ter)**: (7) Inferência estatística - estimação intervalar.
-- **02/05 (Qui)**: Exercícios.
+- **02/05 (Qui)**: (7) Inferência estatística - estimação intervalar.
 - **07/05 (Ter)**: Exercícios.
 - **09/05 (Qui)**: (8) Inferência estatística - testes de hipótese.
 - **14/05 (Ter)**: Exercícios.
@@ -61,7 +61,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **23/05 (Qui)**: (9) Correlação e Regressão.
 - **28/05 (Ter)**: Exercícios.
 - **30/05 (Qui)**: Exercícios.
-- **04/06 (Ter)**: **Prova 3**
+- **04/06 (Ter)**: **Prova 3**.
 
 - **06/06 (Qui)**: (10) Tópicos especiais.
 - **11/06 (Ter)**: (10) Tópicos especiais.
@@ -94,21 +94,21 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **11/03 (Seg)**: (2) Medidas resumo.
 - **13/03 (Qua)**: (2) Medidas resumo.
 - **18/03 (Seg)**: Exercícios.
-- **20/03 (Qua)**: (3) Probabilidades.
+- **20/03 (Qua)**: (3) Probabilidade.
 - **25/03 (Seg)**: Exercícios.
-- **27/03 (Qua)**: **Prova 1**.
+- **27/03 (Qua)**: Exercícios.
+- **01/04 (Seg)**: **Prova 1**.
 
-- **01/04 (Seg)**: (4) Variáveis aleatórias.
-- **03/04 (Qua)**: Exercícios.
-- **08/04 (Seg)**: (5) Distribuições de probabilidade.
-- **10/04 (Qua)**: Exercícios.
+- **03/04 (Qua)**: (4) Variáveis aleatórias.
+- **08/04 (Seg)**: Exercícios.
+- **10/04 (Qua)**: (5) Distribuições de probabilidade.
 - **15/04 (Seg)**: Exercícios.
-- **17/04 (Qua)**: (6) Inferência estatística - estimação pontual.
-- **22/04 (Seg)**: Exercícios.
-- **24/04 (Qua)**: **Prova 2**.
+- **17/04 (Qua)**: Exercícios.
+- **22/04 (Seg)**: (6) Inferência estatística - estimação pontual.
+- **24/04 (Qua)**: Exercícios.
+- **29/04 (Seg)**: **Prova 2**.
 
-- **29/04 (Seg)**: (7) Inferência estatística - estimação intervalar.
-- **01/05 (Qua)**: Exercícios.
+- **01/05 (Qua)**: (7) Inferência estatística - estimação intervalar.
 - **06/05 (Seg)**: Exercícios.
 - **08/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
 - **13/05 (Seg)**: Exercícios.
@@ -117,7 +117,7 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **22/05 (Qua)**: (9) Correlação e Regressão.
 - **27/05 (Seg)**: Exercícios.
 - **29/05 (Qua)**: Exercícios.
-- **03/06 (Seg)**: **Prova 3**
+- **03/06 (Seg)**: **Prova 3**.
 
 - **05/06 (Qua)**: (10) Tópicos especiais.
 - **10/06 (Seg)**: (10) Tópicos especiais.

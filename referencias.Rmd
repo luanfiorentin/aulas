@@ -14,7 +14,7 @@ Livro básico da disciplina:
   São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2017 (9ª
   Edição).
 
-Livros complementares da disciplina:
+Livros complementares da disciplina
 
 - [Magalhães, MN](http://www.ime.usp.br/~marcos);
       [Lima, ACP](http://www.ime.usp.br/~acarlos).
