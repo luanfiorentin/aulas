@@ -36,6 +36,8 @@ navbar:
         href: slides/01_Introducao_a_Estatistica_e_amostragem.pdf
       - text: "Medidas Resumo"
         href: slides/02_Medidas_resumo.pdf
+      - text: "Probabilidades"
+        href: slides/03_Probabilidades.pdf
       - text: "----------"
       - text: "Listas"
       - text: "----------"
@@ -45,6 +47,8 @@ navbar:
         href: Listas/Lista_1/Lista_1.pdf
       - text: "Lista 2"
         href: Listas/Lista_2/Lista_2.pdf
+      - text: "Lista 3"
+        href: Listas/Lista_2/Lista_3.pdf
       - text: "----------"
       - text: "Resolução das Listas"
       - text: "----------"
@@ -52,6 +56,8 @@ navbar:
         href: Listas/Lista_1/Lista_1_Gabarito.pdf
       - text: "Lista 2 - Gabarito"
         href: Listas/Lista_2/Lista_2_Gabarito.pdf
+      - text: "Lista 3 - Gabarito"
+        href: Listas/Lista_2/Lista_3_Gabarito.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
