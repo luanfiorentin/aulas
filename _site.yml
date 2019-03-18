@@ -48,7 +48,7 @@ navbar:
       - text: "Lista 2"
         href: Listas/Lista_2/Lista_2.pdf
       - text: "Lista 3"
-        href: Listas/Lista_2/Lista_3.pdf
+        href: Listas/Lista_3/Lista_3.pdf
       - text: "----------"
       - text: "Resolução das Listas"
       - text: "----------"
@@ -57,7 +57,7 @@ navbar:
       - text: "Lista 2 - Gabarito"
         href: Listas/Lista_2/Lista_2_Gabarito.pdf
       - text: "Lista 3 - Gabarito"
-        href: Listas/Lista_2/Lista_3_Gabarito.pdf
+        href: Listas/Lista_3/Lista_3_Gabarito.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
