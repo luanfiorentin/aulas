@@ -32,6 +32,8 @@ navbar:
       - text: "----------"
       - text: "Slides"
       - text: "----------"
+      - text: "Apostila_DEST"
+        href: slides/Apostila_DEST.pdf
       - text: "Introdução à Estatistica e a Amostragem"
         href: slides/01_Introducao_a_Estatistica_e_amostragem.pdf
       - text: "Medidas Resumo"
