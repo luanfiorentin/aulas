@@ -5,4 +5,86 @@ output:
     toc: false
 ---
 
-Não há notas disponíveis.
+```{R,eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+# Packages
+{
+  library(readxl)
+  library(dplyr)
+  library(ggplot2)
+  library(htmlTable)
+}
+
+
+### Gestão da informação
+notas <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Gestao_da_Informacao_2019-01/RelatoriodeDiariodeClasseExcel.xls", 
+                    col_names = TRUE, 
+                    sheet = "Notas")
+notas <- notas %>% mutate(Media_Parcial = rowMeans(notas[,5:7], na.rm = T)) %>% select(-c(Seq., Nome))
+
+resumo <- notas %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
+                              Mediana = median(Media_Parcial, na.rm = T),
+                              Media = mean(Media_Parcial, na.rm = T), 
+                              Maximo = max(Media_Parcial, na.rm = T), 
+                              Var = var(Media_Parcial, na.rm = T), 
+                              DesvioPad = sd(Media_Parcial, na.rm = T), 
+                              CV = (sd(Media_Parcial, na.rm = T) / mean(Media_Parcial, na.rm = T)*100))
+resumo <- round(resumo, digits = 2)
+
+
+### Ciências Sociais
+notasSC <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Ciencias_Sociais_2019-01/RelatoriodeDiariodeClasseExcel_CS.xls", 
+                    col_names = TRUE, 
+                    sheet = "Notas")
+notasSC <- notasSC %>% mutate(Media_Parcial = rowMeans(notasSC[,5:7], na.rm = T)) %>% select(-c(Seq., Nome))
+
+resumoSC <- notasSC %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
+                              Mediana = median(Media_Parcial, na.rm = T),
+                              Media = mean(Media_Parcial, na.rm = T), 
+                              Maximo = max(Media_Parcial, na.rm = T), 
+                              Var = var(Media_Parcial, na.rm = T), 
+                              DesvioPad = sd(Media_Parcial, na.rm = T), 
+                              CV = (sd(Media_Parcial, na.rm = T) / mean(Media_Parcial, na.rm = T)*100))
+resumoSC <- round(resumoSC, digits = 2)
+
+```
+
+## Escolha a aba de sua turma {.tabset}
+
+### Ciências Sociais (CS)
+
+Resumo das notas:
+```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
+# Resumo das notas
+htmlTable(as.data.frame(resumoSC), 
+                align = "c|c|c|c|c|c|c",
+                align.header = "c|c|c|c|c|c|c")
+```
+
+Notas da prova:
+```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
+# Notas
+htmlTable(as.data.frame(notasSC), 
+                align = "c|c|c|c|c|c",
+                align.header = "c|c|c|c|c|c", 
+                col.rgroup =  c("none", "gray"))
+```
+
+### Gestão da Informação (GI)
+
+Resumo das notas:
+```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
+# Resumo das notas
+htmlTable(as.data.frame(resumo), 
+                align = "c|c|c|c|c|c|c",
+                align.header = "c|c|c|c|c|c|c")
+```
+
+Notas da prova:
+```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
+# Notas
+htmlTable(as.data.frame(notas), 
+                align = "c|c|c|c|c|c",
+                align.header = "c|c|c|c|c|c", 
+                col.rgroup =  c("none", "gray"))
+```
+
