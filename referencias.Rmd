@@ -9,23 +9,22 @@ output:
 
 Livro básico da disciplina:
 
-- Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
-  [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
-  São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2017 (9ª
-  Edição).
-
-Livros complementares da disciplina
-
 - [Magalhães, MN](http://www.ime.usp.br/~marcos);
       [Lima, ACP](http://www.ime.usp.br/~acarlos).
       [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
       São Paulo: EDUSP, 2015 (7ª edição).
+
+Livros complementares da disciplina
+
 - Montgomery, DC; Runger, GC.
   [Estatística aplicada e probabilidade para engenheiros](http://www.grupogen.com.br/estatistica-aplicada-e-probabilidade-para-engenheiros).
   Rio de Janeiro: LTC Editora, 2012 (5ª Edição).
 
 ## Referências complementares
-
+- Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
+  [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
+  São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2017 (9ª
+  Edição).
 - Andrade, DF; Ogliari, PJ.
   [Estatística para as ciências agrárias e biológicas, com noções de experimentação](http://www.editora.ufsc.br/publicacao/detalhe/id/537). Florianópolis: Editora da UFSC, 2013.
 - Dantas, CAB.
