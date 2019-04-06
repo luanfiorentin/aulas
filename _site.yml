@@ -40,7 +40,7 @@ navbar:
         href: slides/02_Medidas_resumo.pdf
       - text: "Probabilidades"
         href: slides/03_Probabilidades.pdf
-      - text: Variáveis Aleatórias"
+      - text: "Variáveis Aleatórias"
         href: slides/04_Variaveis_aleatorias.pdf
       - text: "----------"
       - text: "Listas"
@@ -65,7 +65,7 @@ navbar:
       - text: "Lista 3 - Gabarito"
         href: Listas/Lista_3/Lista_3_Gabarito.pdf
       - text: "Lista 4 - Gabarito"
-        href: Listas/Lista_3/Lista_4_Gabarito.pdf
+        href: Listas/Lista_4/Lista_4_Gabarito.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
