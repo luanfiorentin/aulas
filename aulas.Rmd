@@ -25,6 +25,7 @@ datas1 <- format.Date(datas1, format = "%d/%m")
 datas2 <- seq.Date(as.Date("2019-02-21"), as.Date("2019-06-20"),
                       by = "week")
 datas2 <- format.Date(datas2, format = "%d/%m")
+
 cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
            datas2, " (Qui)", "**:\n"))
 ```
@@ -124,3 +125,113 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **12/06 (Qua)**: (10) Tópicos especiais.
 - **17/06 (Seg)**: Aula para dúvidas.
 - **19/06 (Qua)**: Aula para dúvidas.
+
+### Ciências Econômicas - Turma D1
+
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas1 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
+                      by = "week")
+datas1 <- format.Date(datas1, format = "%d/%m")
+datas2 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
+                      by = "week")
+datas2 <- format.Date(datas2, format = "%d/%m")
+cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
+           datas1, " (Sex)", "**:\n"))
+```
+
+- **19/02 (Ter)**: Professor Mário.
+- **22/02 (Sex)**: Professor Mário.
+ - **26/02 (Ter)**: Professor Mário.
+- **01/03 (Sex)**: Professor Mário.
+ - **05/03 (Ter)**: Professor Mário.
+- **08/03 (Sex)**: Professor Mário.
+ - **12/03 (Ter)**: Professor Mário.
+- **15/03 (Sex)**: Professor Mário.
+ - **19/03 (Ter)**: Professor Mário.
+- **22/03 (Sex)**: Professor Mário.
+ - **26/03 (Ter)**: Professor Mário.
+- **29/03 (Sex)**: Professor Mário.
+ - **02/04 (Ter)**: Professor Mário.
+- **05/04 (Sex)**: (2) Probabilidades.
+ - **09/04 (Ter)**: (2) Probabilidades.
+- **12/04 (Sex)**: Exercícios.
+ - **16/04 (Ter)**: Exercícios.
+- **19/04 (Sex)**: **Prova 1**
+
+ - **23/04 (Ter)**: (3) Variáveis aleatórias.
+- **26/04 (Sex)**: Exercícios.
+ - **30/04 (Ter)**: (4) Distribuições de probabilidade.
+- **03/05 (Sex)**: (4) Distribuições de probabilidade.
+ - **07/05 (Ter)**: Exercícios.
+- **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
+ - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
+- **17/05 (Sex)**: Exercícios.
+ - **21/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
+- **24/05 (Sex)**: Exercícios.
+ - **28/05 (Ter)**: (8) Correlação e Regressão.
+- **31/05 (Sex)**: Exercícios.
+ - **04/06 (Ter)**: Exercícios.
+- **07/06 (Sex)**: **Prova 2**
+
+ - **11/06 (Ter)**: (9) Tópicos especiais.
+- **14/06 (Sex)**: (9) Tópicos especiais.
+ - **18/06 (Ter)**: (9) Tópicos especiais.
+- **21/06 (Sex)**: (9) Tópicos especiais.
+
+### Ciências Econômicas - Turma E1
+
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas1 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
+                      by = "week")
+datas1 <- format.Date(datas1, format = "%d/%m")
+datas2 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
+                      by = "week")
+datas2 <- format.Date(datas2, format = "%d/%m")
+cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
+           datas1, " (Sex)", "**:\n"))
+```
+
+- **19/02 (Ter)**: Professor Mário.
+- **22/02 (Sex)**: Professor Mário.
+ - **26/02 (Ter)**: Professor Mário.
+- **01/03 (Sex)**: Professor Mário.
+ - **05/03 (Ter)**: Professor Mário.
+- **08/03 (Sex)**: Professor Mário.
+ - **12/03 (Ter)**: Professor Mário.
+- **15/03 (Sex)**: Professor Mário.
+ - **19/03 (Ter)**: Professor Mário.
+- **22/03 (Sex)**: Professor Mário.
+ - **26/03 (Ter)**: Professor Mário.
+- **29/03 (Sex)**: Professor Mário.
+ - **02/04 (Ter)**: Professor Mário.
+- **05/04 (Sex)**: (2) Probabilidades.
+ - **09/04 (Ter)**: (2) Probabilidades.
+- **12/04 (Sex)**: Exercícios.
+ - **16/04 (Ter)**: Exercícios.
+- **19/04 (Sex)**: **Prova 1**
+
+ - **23/04 (Ter)**: (3) Variáveis aleatórias.
+- **26/04 (Sex)**: Exercícios.
+ - **30/04 (Ter)**: (4) Distribuições de probabilidade.
+- **03/05 (Sex)**: (4) Distribuições de probabilidade.
+ - **07/05 (Ter)**: Exercícios.
+- **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
+ - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
+- **17/05 (Sex)**: Exercícios.
+ - **21/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
+- **24/05 (Sex)**: Exercícios.
+ - **28/05 (Ter)**: (8) Correlação e Regressão.
+- **31/05 (Sex)**: Exercícios.
+ - **04/06 (Ter)**: Exercícios.
+- **07/06 (Sex)**: **Prova 2**
+
+ - **11/06 (Ter)**: (9) Tópicos especiais.
+- **14/06 (Sex)**: (9) Tópicos especiais.
+ - **18/06 (Ter)**: (9) Tópicos especiais.
+- **21/06 (Sex)**: (9) Tópicos especiais.
+
+
