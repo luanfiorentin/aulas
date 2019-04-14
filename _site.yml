@@ -42,6 +42,8 @@ navbar:
         href: slides/03_Probabilidades.pdf
       - text: "Variáveis Aleatórias"
         href: slides/04_Variaveis_aleatorias.pdf
+      - text: "Distribuições de Probabilidade"
+        href: slides/05_Distribuicao_probabilidade.pdf
       - text: "----------"
       - text: "Listas"
       - text: "----------"
@@ -55,6 +57,8 @@ navbar:
         href: Listas/Lista_3/Lista_3.pdf
       - text: "Lista 4"
         href: Listas/Lista_4/Lista_4.pdf
+      - text: "Lista 5"
+        href: Listas/Lista_5/Lista_5.pdf
       - text: "----------"
       - text: "Resolução das Listas"
       - text: "----------"
@@ -66,6 +70,8 @@ navbar:
         href: Listas/Lista_3/Lista_3_Gabarito.pdf
       - text: "Lista 4 - Gabarito"
         href: Listas/Lista_4/Lista_4_Gabarito.pdf
+      - text: "Lista 5 - Gabarito"
+        href: Listas/Lista_5/Lista_5_Gabarito.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg

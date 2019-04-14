@@ -158,10 +158,10 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
  - **09/04 (Ter)**: (2) Probabilidades.
 - **12/04 (Sex)**: Exercícios.
  - **16/04 (Ter)**: Exercícios.
-- **19/04 (Sex)**: **Prova 1**
-
+- **19/04 (Sex)**: *Feriado*
  - **23/04 (Ter)**: (3) Variáveis aleatórias.
-- **26/04 (Sex)**: Exercícios.
+- **26/04 (Sex)**: **Prova 1**
+
  - **30/04 (Ter)**: (4) Distribuições de probabilidade.
 - **03/05 (Sex)**: (4) Distribuições de probabilidade.
  - **07/05 (Ter)**: Exercícios.
@@ -211,11 +211,10 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
 - **05/04 (Sex)**: (2) Probabilidades.
  - **09/04 (Ter)**: (2) Probabilidades.
 - **12/04 (Sex)**: Exercícios.
- - **16/04 (Ter)**: Exercícios.
-- **19/04 (Sex)**: **Prova 1**
-
+- **19/04 (Sex)**: *Feriado*
  - **23/04 (Ter)**: (3) Variáveis aleatórias.
-- **26/04 (Sex)**: Exercícios.
+- **26/04 (Sex)**: **Prova 1**
+
  - **30/04 (Ter)**: (4) Distribuições de probabilidade.
 - **03/05 (Sex)**: (4) Distribuições de probabilidade.
  - **07/05 (Ter)**: Exercícios.
