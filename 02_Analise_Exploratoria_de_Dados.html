@@ -15,96 +15,32 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css" data-origin="pandoc">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #ffffff; color: #1f1c1b; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #ffffff; color: #a0a0a0; border-right: 1px solid #a0a0a0; }
-td.sourceCode { padding-left: 5px; }
-pre, code { color: #1f1c1b; background-color: #ffffff; }
-code > span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
-code > span.dt { color: #0057ae; } /* DataType */
-code > span.dv { color: #b08000; } /* DecVal */
-code > span.bn { color: #b08000; } /* BaseN */
-code > span.fl { color: #b08000; } /* Float */
-code > span.cn { color: #aa5500; } /* Constant */
-code > span.ch { color: #924c9d; } /* Char */
-code > span.sc { color: #3daee9; } /* SpecialChar */
-code > span.st { color: #bf0303; } /* String */
-code > span.vs { color: #bf0303; } /* VerbatimString */
-code > span.ss { color: #ff5500; } /* SpecialString */
-code > span.im { color: #ff5500; } /* Import */
-code > span.co { color: #898887; } /* Comment */
-code > span.do { color: #607880; } /* Documentation */
-code > span.an { color: #ca60ca; } /* Annotation */
-code > span.cv { color: #0095ff; } /* CommentVar */
-code > span.ot { color: #006e28; } /* Other */
-code > span.fu { color: #644a9b; } /* Function */
-code > span.va { color: #0057ae; } /* Variable */
-code > span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #1f1c1b; } /* Operator */
-code > span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
-code > span.ex { color: #0095ff; font-weight: bold; } /* Extension */
-code > span.pp { color: #006e28; } /* Preprocessor */
-code > span.at { color: #0057ae; } /* Attribute */
-code > span.re { color: #0057ae; } /* RegionMarker */
-code > span.in { color: #b08000; } /* Information */
-code > span.wa { color: #bf0303; } /* Warning */
-code > span.al { color: #bf0303; font-weight: bold; } /* Alert */
-code > span.er { color: #bf0303; text-decoration: underline; } /* Error */
-code > span. { color: #1f1c1b; } /* Normal */
-
-.sourceCode .row {
-  width: 100%;
-}
-.sourceCode {
-  overflow-x: auto;
-}
-.code-folding-btn {
-  margin-right: -30px;
-}
-</style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
-    }
-  }
-})();
-</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
   }
 </style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
 
 
 <style type="text/css">
@@ -169,33 +105,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 51px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .dropdown-submenu {
   position: relative;
@@ -323,107 +259,7 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
-<script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
-});
-</script>
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = false;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
 
 
 
@@ -433,16 +269,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -559,14 +385,6 @@ div.tocify {
 
 <div class="fluid-row" id="header">
 
-<div class="btn-group pull-right">
-<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
-
 
 
 <h1 class="title toc-ignore">Análise exploratória de dados</h1>
@@ -634,8 +452,8 @@ div.tocify {
 <div id="o-conjunto-de-dados-milsa" class="section level2">
 <h2>O conjunto de dados <code>milsa</code></h2>
 <p>O livro “Estatística Básica” de W. O. Bussab e P. A. Morettin traz no segundo capítulo um conjunto de dados hipotético de atributos de 36 funcionários da companhia “Milsa”. Os dados estão reproduzidos na tabela abaixo.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Importando os dados para o R
-milsa &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;dados/milsa.csv&quot;</span>)</code></pre></div>
+<pre class="r"><code>## Importando os dados para o R
+milsa &lt;- read.csv(&quot;dados/milsa.csv&quot;)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -1109,24 +927,24 @@ Não preencha casos perdidos com 0 (zero), pois o zero não significa falta de i
 <li>A “moda”, <em>i.e.</em> o valor que ocorre com maior frequência</li>
 </ol>
 <p>Por ser uma variável qualitativa, para obter a distribuição de frequência desta variável, basta contarmos quantas vezes ocorre cada categoria (ou nível), e organizar em uma tabela.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">civil.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Est.civil)
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span>civil.tb)</code></pre></div>
+<pre class="r"><code>civil.tb &lt;- table(milsa$Est.civil)
+cbind(&quot;f&quot; = civil.tb)</code></pre>
 <pre><code>          f
 casado   20
 solteiro 16</code></pre>
 <p>Esta simples contagem é chamada de <strong>frequência absoluta</strong>. Podemos também incluir nessa tabela a soma total de observações de todas as categorias.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(civil.tb))</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(civil.tb))</code></pre>
 <pre><code>          f
 casado   20
 solteiro 16
 Sum      36</code></pre>
 <p>Com essa informação adicional, podemos agora calcular a <strong>frequência relativa</strong>, ou seja, a frequência absoluta de cada categoria, dividida pelo total.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">prop.table</span>(civil.tb))</code></pre></div>
+<pre class="r"><code>cbind(&quot;fr&quot; = prop.table(civil.tb))</code></pre>
 <pre><code>                fr
 casado   0.5555556
 solteiro 0.4444444</code></pre>
 <p>Note que, nesse caso, a soma das categorias deve somar 1 (ou 100%)</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(civil.tb)))</code></pre></div>
+<pre class="r"><code>cbind(&quot;fr&quot; = addmargins(prop.table(civil.tb)))</code></pre>
 <pre><code>                fr
 casado   0.5555556
 solteiro 0.4444444
@@ -1149,51 +967,51 @@ Tipos de frequência
 </ul>
 </div>
 <p>Os gráficos de barras e de setores são adequados para representar esta variável. O <strong>gráfico de barras</strong> é formado pelas categorias no eixo X, e pela frequência no eixo Y. A frequência utilizada pode ser tanto a absoluta quanto a relativa, conforme for o caso.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))
-<span class="kw">barplot</span>(civil.tb, <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>)
-<span class="kw">barplot</span>(<span class="kw">prop.table</span>(civil.tb), <span class="dt">ylab =</span> <span class="st">&quot;Frequência relativa&quot;</span>,
-        <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, .<span class="dv">6</span>))
-<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
+<pre class="r"><code>par(mfrow = c(1, 2))
+barplot(civil.tb, ylab = &quot;Frequência absoluta&quot;)
+barplot(prop.table(civil.tb), ylab = &quot;Frequência relativa&quot;,
+        ylim = c(0, .6))
+par(mfrow = c(1,1))</code></pre>
 <p><img src="figures/bar-quali-nom-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>O <strong>gráfico de setores</strong> (ou de pizza, ou torta, ou diagrama circular) também pode ser utilizado, mas apresenta uma maior limitação. Independente da frequência utilizada, cada setor terá a mesma área. Além disso, quando existem muitas categorias, e/ou as categorias possuem frequências semelhantes, a diferenciação dos setores é dificultada.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pie</span>(civil.tb)</code></pre></div>
+<pre class="r"><code>pie(civil.tb)</code></pre>
 <p><img src="figures/pie-quali-nom-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>A <strong>moda</strong> de qualquer variável é definida como o valor mais frequente encontrado na amostra. No caso de variáveis qualitativas, a moda é a categoria que apresenta maior frequência. Nesse exemplo, a moda seria então</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(civil.tb)[<span class="kw">which.max</span>(civil.tb)]</code></pre></div>
+<pre class="r"><code>names(civil.tb)[which.max(civil.tb)]</code></pre>
 <pre><code>[1] &quot;casado&quot;</code></pre>
 </div>
 <div id="variavel-qualitativa-ordinal" class="section level2">
 <h2>Variável Qualitativa Ordinal</h2>
 <p>Para exemplificar como obter análises para uma variável qualitativa ordinal vamos selecionar a variável <code>Inst</code>, que verificou o grau de instrução dos funcionários.</p>
 <p>As tabelas de frequências são obtidas de forma semelhante à mostrada anteriormente. A frequência absoluta é a contagem do número de vezes que cada categoria foi observada. Note que aqui, a ordem tem importância, portanto, a tabela também deve seguir a ordem natural das categorias. Abaixo, mostramos a tabela de frequência absoluta já com o somatório de todas as classes.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">inst.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Inst)
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(inst.tb))</code></pre></div>
+<pre class="r"><code>inst.tb &lt;- table(milsa$Inst)
+cbind(&quot;f&quot; = addmargins(inst.tb))</code></pre>
 <pre><code>          f
 1o Grau  12
 2o Grau  18
 Superior  6
 Sum      36</code></pre>
 <p>As frequências relativas também são obtidas através da divisão da frequência absoluta de cada classe pelo total, ou seja,</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(inst.tb),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(inst.tb)))</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(inst.tb),
+      &quot;fr&quot; = addmargins(prop.table(inst.tb)))</code></pre>
 <pre><code>          f        fr
 1o Grau  12 0.3333333
 2o Grau  18 0.5000000
 Superior  6 0.1666667
 Sum      36 1.0000000</code></pre>
 <p>O gráfico de setores não é adequado para este tipo de variável por não expressar a ordem dos possíveis valores. Usamos então apenas um gráfico de barras conforme mostrado abaixo</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(inst.tb)</code></pre></div>
+<pre class="r"><code>barplot(inst.tb)</code></pre>
 <p><img src="figures/bar-quali-ord1-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>Em alguns casos podemos querer mostrar o gráfico de barras com as barras classificadas da menor para a maior, ou vice-versa, independente da ordem dos níveis. O importante é sempre deixar claro as categorias de cada barra.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
+<pre class="r"><code>par(mfrow = c(1,2))
 ## Menor para maior
-<span class="kw">barplot</span>(<span class="kw">sort</span>(inst.tb))
+barplot(sort(inst.tb))
 ## Maior para menor
-<span class="kw">barplot</span>(<span class="kw">sort</span>(inst.tb, <span class="dt">decreasing =</span> <span class="ot">TRUE</span>))
-<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
+barplot(sort(inst.tb, decreasing = TRUE))
+par(mfrow = c(1,1))</code></pre>
 <p><img src="figures/bar-quali-ord2-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>Para uma variável ordinal, a moda também é especificada como a categoria de maior frequência, ou seja,</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(inst.tb)[<span class="kw">which.max</span>(inst.tb)]</code></pre></div>
+<pre class="r"><code>names(inst.tb)[which.max(inst.tb)]</code></pre>
 <pre><code>[1] &quot;2o Grau&quot;</code></pre>
 </div>
 <div id="variavel-quantitativa-discreta" class="section level2">
@@ -1201,8 +1019,8 @@ Sum      36 1.0000000</code></pre>
 <p>Vamos agora usar a variável <code>Filhos</code> (número de filhos) para ilustrar algumas análises que podem ser feitas com uma quantitativa discreta.</p>
 <p>Frequências absolutas e relativas são obtidas como anteriormente. Nesse caso, assumimos que cada valor numérico é uma categoria, e construímos as tabelas de frequência como se a variável fosse qualitativa ordinal. Note, no entanto, que quando existem poucos valores numéricos, essa abordagem é viável. Mas contagens podem assumir muitos valores diferentes, e nesses casos, fazer uma tabela de frequência pode não ajudar a resumir aquela variável. Quando esse for o caso, adotaremos a mesma técnica que usamos para resumir variáveis quantitativas contínuas, como veremos na próxima sessão.</p>
 <p>Abaixo, temos a frequência absoluta, com o total de observações</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tb &lt;-<span class="st"> </span><span class="kw">table</span>(milsa<span class="op">$</span>Filhos)
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb))</code></pre></div>
+<pre class="r"><code>filhos.tb &lt;- table(milsa$Filhos)
+cbind(&quot;f&quot; = addmargins(filhos.tb))</code></pre>
 <pre><code>     f
 0    4
 1    5
@@ -1211,7 +1029,7 @@ Sum      36 1.0000000</code></pre>
 5    1
 Sum 20</code></pre>
 <p>Note que a soma foi 20, ao invés das 36 observações totais da planilha original. Como você deve imaginar ao ter inspecionado a tabela, isso ocorre pelo fato de que existem algumas observações <em>perdidas</em> para essa variável. Mais especificamente, existem 16 observações faltantes, aquelas marcadas com <code>NA</code>. Se for desejável, pode-se incluir a contagem de observações faltantes na tabela de frequência.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">table</span>(milsa<span class="op">$</span>Filhos, <span class="dt">useNA =</span> <span class="st">&quot;always&quot;</span>)))</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(table(milsa$Filhos, useNA = &quot;always&quot;)))</code></pre>
 <pre><code>      f
 0     4
 1     5
@@ -1221,8 +1039,8 @@ Sum 20</code></pre>
 &lt;NA&gt; 16
 Sum  36</code></pre>
 <p>Por ora, vamos usar a tabela de frequência sem a contagem destes valores perdidos. Nestes casos, é importante ter cuidado com as frequências relativas, que devem ser calculadas com o total da tabela, e não com o total de observações. Portanto, para esse exemplo, as frequências relativas seriam</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)))</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(filhos.tb),
+      &quot;fr&quot; = addmargins(prop.table(filhos.tb)))</code></pre>
 <pre><code>     f   fr
 0    4 0.20
 1    5 0.25
@@ -1231,10 +1049,10 @@ Sum  36</code></pre>
 5    1 0.05
 Sum 20 1.00</code></pre>
 <p>Para variáveis cujos valores possuem ordenação natural (qualitativas ordinais e quantitativas em geral), faz sentido calcularmos também as <strong>frequências acumuladas</strong>. A frequência acumulada até um certo valor é obtida pela soma das frequências de todos os valores da variável, <em>menores ou iguais ao valor considerado</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tba &lt;-<span class="st"> </span><span class="kw">as.table</span>(<span class="kw">cumsum</span>(filhos.tb))
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)),
-      <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(filhos.tba, <span class="ot">NA</span>))</code></pre></div>
+<pre class="r"><code>filhos.tba &lt;- as.table(cumsum(filhos.tb))
+cbind(&quot;f&quot; = addmargins(filhos.tb),
+      &quot;fr&quot; = addmargins(prop.table(filhos.tb)),
+      &quot;F&quot; = c(filhos.tba, NA))</code></pre>
 <pre><code>     f   fr  F
 0    4 0.20  4
 1    5 0.25  9
@@ -1243,11 +1061,11 @@ Sum 20 1.00</code></pre>
 5    1 0.05 20
 Sum 20 1.00 NA</code></pre>
 <p>Também podemos definir a <strong>frequência acumulada relativa</strong>, que é o resultado da divisão das frequências acumuladas pelo total de observações, ou seja</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">filhos.tba &lt;-<span class="st"> </span><span class="kw">as.table</span>(<span class="kw">cumsum</span>(filhos.tb))
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(filhos.tb),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(filhos.tb)),
-      <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(filhos.tba, <span class="ot">NA</span>),
-      <span class="st">&quot;Fr&quot;</span> =<span class="st"> </span><span class="kw">c</span>(filhos.tba<span class="op">/</span><span class="dv">20</span>, <span class="ot">NA</span>))</code></pre></div>
+<pre class="r"><code>filhos.tba &lt;- as.table(cumsum(filhos.tb))
+cbind(&quot;f&quot; = addmargins(filhos.tb),
+      &quot;fr&quot; = addmargins(prop.table(filhos.tb)),
+      &quot;F&quot; = c(filhos.tba, NA),
+      &quot;Fr&quot; = c(filhos.tba/20, NA))</code></pre>
 <pre><code>     f   fr  F   Fr
 0    4 0.20  4 0.20
 1    5 0.25  9 0.45
@@ -1273,19 +1091,19 @@ Tipos de frequência acumulada
 </ul>
 </div>
 <p>O gráfico adequado para frequências absolutas, relativas, ou acumuladas de uma variável discreta é parecido com um gráfico de barras, mas nesse caso, as frequências são indicadas por linhas.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(filhos.tb, <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>)</code></pre></div>
+<pre class="r"><code>plot(filhos.tb, xlab = &quot;Número de filhos&quot;,
+     ylab = &quot;Frequência absoluta&quot;)</code></pre>
 <p><img src="figures/bar-quant-discr1-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>Outra possibilidade seria fazer gráficos de frequências relativa e de frequências relativas acumuladas conforme mostrado nas figuras abaixo.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
+<pre class="r"><code>par(mfrow = c(1,2))
 ## Frequência relativa
-<span class="kw">plot</span>(<span class="kw">prop.table</span>(filhos.tb), <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência relativa&quot;</span>)
+plot(prop.table(filhos.tb), xlab = &quot;Número de filhos&quot;,
+     ylab = &quot;Frequência relativa&quot;)
 ## Frequência relativa acumulada
-<span class="kw">plot</span>(filhos.tba<span class="op">/</span><span class="dv">20</span>, <span class="dt">type =</span> <span class="st">&quot;S&quot;</span>, <span class="co"># tipo step (escada)</span>
-     <span class="dt">xlab =</span> <span class="st">&quot;Número de filhos&quot;</span>,
-     <span class="dt">ylab =</span> <span class="st">&quot;Frequência acumulada relativa&quot;</span>)
-<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
+plot(filhos.tba/20, type = &quot;S&quot;, # tipo step (escada)
+     xlab = &quot;Número de filhos&quot;,
+     ylab = &quot;Frequência acumulada relativa&quot;)
+par(mfrow = c(1,1))</code></pre>
 <p><img src="figures/bar-quant-discr2-1.png" width="800" style="display: block; margin: auto;" /></p>
 </div>
 <div id="variavel-quantitativa-continua" class="section level2">
@@ -1297,7 +1115,7 @@ h = \frac{AT}{k}
 \]</span></p>
 <p>onde <span class="math inline">\(AT = \max{\mathbf{x}} - \min{\mathbf{x}}\)</span> é a <strong>amplitude total</strong> dos dados, e <span class="math inline">\(k = \sqrt{n}\)</span> é um número <em>estimado</em> de intervalos de classes para um conjunto de dados com <span class="math inline">\(n\)</span> observações (<span class="math inline">\(k\)</span> pode ser calculado por outras definições, como a regra de Sturges, por exemplo).</p>
 <p>Note que, para facilitar o cálculo da amplitude de classe e posteriormente para montar a tabela de distribuição de frequência, podemos <strong>ordenar</strong> o vetor de dados brutos. Por exemplo, os valores ordenados (em ordem crescente) de <code>Salario</code> são</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sort</span>(milsa<span class="op">$</span>Salario)</code></pre></div>
+<pre class="r"><code>sort(milsa$Salario)</code></pre>
 <pre><code> [1]  4.00  4.56  5.25  5.73  6.26  6.66  6.86  7.39  7.44  7.59  8.12
 [12]  8.46  8.74  8.95  9.13  9.35  9.77  9.80 10.53 10.76 11.06 11.59
 [23] 12.00 12.79 13.23 13.60 13.85 14.69 14.71 15.99 16.22 16.61 17.26
@@ -1315,7 +1133,7 @@ h = \frac{AT}{k} = \frac{19.3}
 \]</span></p>
 <p>O valor de amplitude de classe pode ser arredondado para um número inteiro, geralmente para facilitar a interpretação da tabela. Nesse caso, poderíamos arredondar a amplitude para 3 ou para 4 (inteiros mais próximos). Como o valor mínimo é 4 e o máximo está próximo de 24, é natural arredondarmos a amplitude para 4. Após esse arredondamento, vamos denominar a amplitude de classe definitiva por <span class="math inline">\(\Delta\)</span>, apenas para diferenciar do valor calculado em <span class="math inline">\(h\)</span>.</p>
 <p>Dessa forma, as classes seriam formadas pela sequência, ou “quebra de classes” definida por</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(quebra &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">4</span>))</code></pre></div>
+<pre class="r"><code>(quebra &lt;- seq(4, 24, 4))</code></pre>
 <pre><code>[1]  4  8 12 16 20 24</code></pre>
 <p>Portanto, ficamos com um total de 5 classes. A última etapa é definir os extremos de classe que serão abertos (permitem incluir aquele valor exato) ou fechados (não incluem aquele valor). Para isso, usaremos a notação a seguir</p>
 <table>
@@ -1344,9 +1162,9 @@ h = \frac{AT}{k} = \frac{19.3}
 </table>
 <p>Nesse exemplo, vamos usar intervalos do tipo fechados à esquerda (abertos à direita), pois o primeiro valor de quebra de classe é o igual ao valor mínimo do conjunto de dados, e dessa forma garantimos que todos os valores pertençam a alguma das classes.</p>
 <p>Portanto, as classes completas com suas respectivas frequências absolutas estão na tabela abaixo.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">classes &lt;-<span class="st"> </span><span class="kw">cut</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>)
-classes.tab &lt;-<span class="st"> </span><span class="kw">table</span>(classes)
-<span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab))</code></pre></div>
+<pre class="r"><code>classes &lt;- cut(milsa$Salario, breaks = quebra, right = FALSE)
+classes.tab &lt;- table(classes)
+cbind(&quot;f&quot; = addmargins(classes.tab))</code></pre>
 <pre><code>         f
 [4,8)   10
 [8,12)  12
@@ -1355,10 +1173,10 @@ classes.tab &lt;-<span class="st"> </span><span class="kw">table</span>(classes)
 [20,24)  1
 Sum     36</code></pre>
 <p>Para completar esta tabela, podemos obter os demais tipos de frequência, conforme visto anteriormente: <span class="math inline">\(f_r\)</span> (frequência relativa), <span class="math inline">\(F\)</span> (frequência acumulada), e <span class="math inline">\(F_r\)</span> (frequência acumulada relativa).</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(classes.tab)),
-      <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>),
-      <span class="st">&quot;Fr&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>)<span class="op">/</span><span class="dv">36</span>)</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(classes.tab),
+      &quot;fr&quot; = addmargins(prop.table(classes.tab)),
+      &quot;F&quot; = c(cumsum(classes.tab), NA),
+      &quot;Fr&quot; = c(cumsum(classes.tab), NA)/36)</code></pre>
 <pre><code>         f         fr  F        Fr
 [4,8)   10 0.27777778 10 0.2777778
 [8,12)  12 0.33333333 22 0.6111111
@@ -1368,30 +1186,30 @@ Sum     36</code></pre>
 Sum     36 1.00000000 NA        NA</code></pre>
 <p>Na sequência vamos mostrar três possíveis gráficos para variáveis contínuas: o de dispersão, o histograma, e o de ramo-e-folhas.</p>
 <p>O gráfico de dispersão unidimensional consiste da variável de interesse no eixo Y, plotada com seus respectivos índices (entrada) da tabela de dados. Nesse exemplo, o gráfico seria</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(milsa<span class="op">$</span>Salario, <span class="dt">xlab =</span> <span class="st">&quot;Índice&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Salário&quot;</span>)</code></pre></div>
+<pre class="r"><code>plot(milsa$Salario, xlab = &quot;Índice&quot;, ylab = &quot;Salário&quot;)</code></pre>
 <p><img src="figures/unnamed-chunk-20-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>Note que, como os dados nesta tabela estão ordenados (em ordem crescente) pelos salários, então vemos esse padrão de cresimento. Mas a ordenação não é um pré-requisito para fazer esse gráfico. A interpretação desse gráfico é limitada pelo fato de que só faz sentido dizer alguma coisa sobre os salários se os índices (nesse caso, os funcionários) tivessem algum tipo de identificação. Por esse motivo, o histograma é uma forma mais eficiente de resumir variáveis contínuas.</p>
 <p>O <strong>histograma</strong> é um gráfico de barras <em>contíguas</em>, com as bases proporcionais aos intervalos de classe, e a área de cada retângulo proporcional à respectiva frequência.</p>
 <p>Pode-se usar tanto a frequêcia absoluta (<span class="math inline">\(f_i\)</span>) quanto a relativa (<span class="math inline">\(fr_i\)</span>). Indicamos a amplitude do <span class="math inline">\(i\)</span>-ésimo intervalo por <span class="math inline">\(\Delta_i\)</span>. Para que a área do retângulo respectivo seja proporcional a <span class="math inline">\(fr_i\)</span>, a sua altura deve ser proporcional a <span class="math inline">\(fr_i/\Delta_i\)</span>, que é chamada <strong>densidade de frequência</strong>, ou simplesmente <strong>densidade</strong> da <span class="math inline">\(i\)</span>-ésima classe. Quando todos os intervalos de classe forem iguais a <span class="math inline">\(\Delta\)</span> (como é o caso nesse exemplo), então a densidade de frequência simplifica para <span class="math inline">\(fr_i/\Delta\)</span>. Com essa convenção, garantimos que a área total do histograma será igual a um, uma propriedade que será importante quando estudarmos probabilidade.</p>
 <p>Abaixo, vemos os histogramas com as frequências absolutas, e com a densidade de frequência.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
-<span class="kw">hist</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>,
-     <span class="dt">xlab =</span> <span class="st">&quot;Classes&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Frequência absoluta&quot;</span>,
-     <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">24</span>), <span class="dt">labels =</span> <span class="ot">TRUE</span>, <span class="dt">axes =</span> <span class="ot">FALSE</span>)
-<span class="kw">axis</span>(<span class="dv">1</span>, <span class="dt">at =</span> quebra, <span class="dt">labels =</span> quebra); <span class="kw">axis</span>(<span class="dv">2</span>)
-h &lt;-<span class="st"> </span><span class="kw">hist</span>(milsa<span class="op">$</span>Salario, <span class="dt">breaks =</span> quebra, <span class="dt">right =</span> <span class="ot">FALSE</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>,
-          <span class="dt">xlab =</span> <span class="st">&quot;Classes&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Densidade&quot;</span>,
-          <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">24</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, .<span class="dv">09</span>), <span class="dt">freq =</span> <span class="ot">FALSE</span>, <span class="dt">axes =</span> <span class="ot">FALSE</span>)
-<span class="kw">axis</span>(<span class="dv">1</span>, <span class="dt">at =</span> quebra, <span class="dt">labels =</span> quebra); <span class="kw">axis</span>(<span class="dv">2</span>)
-<span class="kw">text</span>(h<span class="op">$</span>mids, h<span class="op">$</span>density, <span class="dt">labels =</span> <span class="kw">round</span>(h<span class="op">$</span>density <span class="op">*</span><span class="st"> </span><span class="dv">4</span>, <span class="dv">2</span>), <span class="dt">pos =</span> <span class="dv">3</span>)
-<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</code></pre></div>
+<pre class="r"><code>par(mfrow = c(1,2))
+hist(milsa$Salario, breaks = quebra, right = FALSE, main = &quot;&quot;,
+     xlab = &quot;Classes&quot;, ylab = &quot;Frequência absoluta&quot;,
+     xlim = c(4, 24), labels = TRUE, axes = FALSE)
+axis(1, at = quebra, labels = quebra); axis(2)
+h &lt;- hist(milsa$Salario, breaks = quebra, right = FALSE, main = &quot;&quot;,
+          xlab = &quot;Classes&quot;, ylab = &quot;Densidade&quot;,
+          xlim = c(4, 24), ylim = c(0, .09), freq = FALSE, axes = FALSE)
+axis(1, at = quebra, labels = quebra); axis(2)
+text(h$mids, h$density, labels = round(h$density * 4, 2), pos = 3)
+par(mfrow = c(1,1))</code></pre>
 <p><img src="figures/hist-1.png" width="800" style="display: block; margin: auto;" /></p>
 <p>Note que, para construir o gráfico com as densidades, precisamos então de mais uma coluna na tabela, que seria a densidade <span class="math inline">\(fr_i/\Delta = fr_i/4\)</span>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(<span class="st">&quot;f&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(classes.tab),
-      <span class="st">&quot;fr&quot;</span> =<span class="st"> </span><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(classes.tab)),
-      <span class="st">&quot;F&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>),
-      <span class="st">&quot;Fr&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">cumsum</span>(classes.tab), <span class="ot">NA</span>)<span class="op">/</span><span class="dv">36</span>,
-      <span class="st">&quot;Dens&quot;</span> =<span class="st"> </span><span class="kw">c</span>(<span class="kw">prop.table</span>(classes.tab)<span class="op">/</span><span class="dv">4</span>, <span class="ot">NA</span>))</code></pre></div>
+<pre class="r"><code>cbind(&quot;f&quot; = addmargins(classes.tab),
+      &quot;fr&quot; = addmargins(prop.table(classes.tab)),
+      &quot;F&quot; = c(cumsum(classes.tab), NA),
+      &quot;Fr&quot; = c(cumsum(classes.tab), NA)/36,
+      &quot;Dens&quot; = c(prop.table(classes.tab)/4, NA))</code></pre>
 <pre><code>         f         fr  F        Fr        Dens
 [4,8)   10 0.27777778 10 0.2777778 0.069444444
 [8,12)  12 0.33333333 22 0.6111111 0.083333333
@@ -1414,7 +1232,7 @@ Sum     36 1.00000000 NA        NA          NA</code></pre>
 <p>Tanto o histograma quanto os gráficos de barra, dão uma ideia da <strong>forma da distribuição</strong> de uma variável. Existem várias medidas para resumir uma variável, como veremos mais adiante, mas a forma da distribuição é tão importante quanto estas medidas. Por exemplo, saber que a média de salários da empresa “Milsa” é 11.12 é importante, mas saber como os salários se distribuem entre os funcionários da empresa (como vimos pelo histograma) pode ser mais importante.</p>
 <p>Outro método para se resumir uma variável com o objetivo de obter uma ideia da forma de sua distribuição, é através do “gráfico” de <strong>ramo-e-folhas</strong>. Este é um método bem simples, e foi criado na época em que fazer gráficos no computador era uma tarefa difícil. Mas ainda hoje é uma forma de visualização muito efetiva. Uma vantagem sobre o histograma é que não perdemos (ou perdemos muito pouca) informação sobre os dados em si.</p>
 <p>Não existe uma regra fixa para construir o ramo-e-folhas, mas a ideia básica é dividir cada observação em duas partes: a primeira (o <em>ramo</em>) é colocada no lado esquerdo de uma linha vertical, e a segunda (a <em>folha</em>) é colocada à direita. Geralmente, a divisão natural é separar um número contínuo em sua parte inteira à esquerda, e a parte decimal à direita. Dessa forma o ramo-e-folha para a variável <code>Salario</code> está abaixo.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">stem</span>(milsa<span class="op">$</span>Salario, <span class="dt">scale =</span> <span class="dv">2</span>)</code></pre></div>
+<pre class="r"><code>stem(milsa$Salario, scale = 2)</code></pre>
 <pre><code>
   The decimal point is at the |
 
@@ -1422,12 +1240,12 @@ Sum     36 1.00000000 NA        NA          NA</code></pre>
    5 | 37
    6 | 379
    7 | 446
-   8 | 1579
-   9 | 1388
+   8 | 157
+   9 | 01488
   10 | 58
   11 | 16
   12 | 08
-  13 | 268
+  13 | 269
   14 | 77
   15 | 
   16 | 026
@@ -1454,12 +1272,12 @@ Sum     36 1.00000000 NA        NA          NA</code></pre>
 <ol style="list-style-type: decimal">
 <li>Em um questionário aplicado aos estudantes que frequentavam a livraria do campus, foi perguntado como classificariam o serviço prestado. As respostas foram:</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ex &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>,
-   <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>,
-   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>,
-   <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>, <span class="st">&quot;péssimo&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;ótimo&quot;</span>, <span class="st">&quot;bom&quot;</span>,
-   <span class="st">&quot;péssimo&quot;</span>)
-ex</code></pre></div>
+<pre class="r"><code>ex &lt;- c(&quot;ótimo&quot;, &quot;bom&quot;, &quot;bom&quot;, &quot;péssimo&quot;, &quot;bom&quot;, &quot;bom&quot;, &quot;ótimo&quot;,
+   &quot;ótimo&quot;, &quot;bom&quot;, &quot;ótimo&quot;, &quot;bom&quot;, &quot;ótimo&quot;, &quot;bom&quot;, &quot;bom&quot;, &quot;ótimo&quot;,
+   &quot;bom&quot;, &quot;péssimo&quot;, &quot;bom&quot;, &quot;péssimo&quot;, &quot;bom&quot;, &quot;péssimo&quot;, &quot;bom&quot;, &quot;bom&quot;,
+   &quot;bom&quot;, &quot;bom&quot;, &quot;ótimo&quot;, &quot;bom&quot;, &quot;péssimo&quot;, &quot;ótimo&quot;, &quot;ótimo&quot;, &quot;bom&quot;,
+   &quot;péssimo&quot;)
+ex</code></pre>
 <pre><code> [1] &quot;ótimo&quot;   &quot;bom&quot;     &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;bom&quot;     &quot;ótimo&quot;  
  [8] &quot;ótimo&quot;   &quot;bom&quot;     &quot;ótimo&quot;   &quot;bom&quot;     &quot;ótimo&quot;   &quot;bom&quot;     &quot;bom&quot;    
 [15] &quot;ótimo&quot;   &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;péssimo&quot; &quot;bom&quot;     &quot;péssimo&quot;
@@ -1472,11 +1290,11 @@ ex</code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>Considere os dados abaixo</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ex1 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">11</span>,<span class="dv">13</span>,<span class="dv">10</span>,<span class="dv">9</span>,<span class="dv">0</span>,<span class="dv">16</span>,<span class="dv">28</span>,<span class="dv">15</span>,<span class="dv">14</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">17</span>,
-         <span class="dv">18</span>,<span class="dv">12</span>,<span class="dv">18</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">22</span>,<span class="dv">16</span>,<span class="dv">20</span>,<span class="dv">34</span>,<span class="dv">15</span>,<span class="dv">21</span>,<span class="dv">13</span>,
-         <span class="dv">12</span>,<span class="dv">14</span>,<span class="dv">13</span>,<span class="dv">19</span>,<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">17</span>,<span class="dv">11</span>,<span class="dv">18</span>,<span class="dv">16</span>,<span class="dv">13</span>,<span class="dv">6</span>,
-         <span class="dv">19</span>,<span class="dv">8</span>,<span class="dv">8</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">21</span>,<span class="dv">11</span>,<span class="dv">19</span>,<span class="dv">1</span>,<span class="dv">14</span>,<span class="dv">4</span>,<span class="dv">16</span>)
-<span class="kw">sort</span>(ex1)</code></pre></div>
+<pre class="r"><code>ex1 &lt;- c(11,13,10,9,0,16,28,15,14,1,2,17,
+         18,12,18,8,9,22,16,20,34,15,21,13,
+         12,14,13,19,0,2,17,11,18,16,13,6,
+         19,8,8,12,13,21,11,19,1,14,4,16)
+sort(ex1)</code></pre>
 <pre><code> [1]  0  0  1  1  2  2  4  6  8  8  8  9  9 10 11 11 11 12 12 12 13 13 13
 [24] 13 13 14 14 14 15 15 16 16 16 16 17 17 18 18 18 19 19 19 20 21 21 22
 [47] 28 34</code></pre>
@@ -1488,19 +1306,8 @@ ex</code></pre></div>
 </ol>
 </div>
 
-<center>
-  <hr width="100%" size="3px">
-  <p> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">
-      <img src="img/CC_by-nc-sa_80x15.png" alt="Licença Creative Commons 4.0"> </a>
-  </p>
-  <p> <font size="2"> Este conteúdo
-      está disponível por meio da Licença Creative Commons 4.0 </font>
-  </p>
-</center>
 
 
-</div>
-</div>
 
 </div>
 
