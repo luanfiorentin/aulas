@@ -16,6 +16,9 @@ sofrer alterações durante o semetre).
 
 ### Ciências Sociais (CS)
 
+A professora Silvia Shimakura é a responsável pela disciplina.É possível acessar a página dela 
+pelo seguinte link: [CE003!](http://www.leg.ufpr.br/doku.php/disciplinas:ce003u).
+
 ```{r, eval=FALSE, include=FALSE}
 ## Gera a lista com as datas de todas as aulas. O resultado do último
 ## comando pode ser copiado direto para o documento

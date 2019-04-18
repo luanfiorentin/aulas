@@ -18,7 +18,7 @@ source("knitr_setup.R")
 Essa página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
 
 - **CE003 - Estatística II**:
-  - Ciências Sociais (CS) - Matutino
+  - Ciências Sociais (CS) - Matutino: [CE003!](http://www.leg.ufpr.br/doku.php/disciplinas:ce003u)
 - **CE009 - Introdução à Estatística**:
   - Gestão da Informação (GI) - Matutino
 
