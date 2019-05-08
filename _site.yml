@@ -46,8 +46,6 @@ navbar:
         href: slides/05_Distribuicao_probabilidade.pdf
       - text: "Estimação Pontual"
         href: slides/06_Pontual.pdf
-      - text: "Estimação Intervalar"
-        href: slides/07_Intervalar.pdf
       - text: "----------"
       - text: "Listas"
       - text: "----------"
