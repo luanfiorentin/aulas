@@ -44,6 +44,10 @@ navbar:
         href: slides/04_Variaveis_aleatorias.pdf
       - text: "Distribuições de Probabilidade"
         href: slides/05_Distribuicao_probabilidade.pdf
+      - text: "Estimação Pontual"
+        href: slides/06_Pontual.pdf
+      - text: "Estimação Intervalar"
+        href: slides/07_Intervalar.pdf
       - text: "----------"
       - text: "Listas"
       - text: "----------"
@@ -59,6 +63,8 @@ navbar:
         href: Listas/Lista_4/Lista_4.pdf
       - text: "Lista 5"
         href: Listas/Lista_5/Lista_5.pdf
+      - text: "Lista Final"
+        href: Listas/Lista_final/Lista_final.pdf
       - text: "----------"
       - text: "Resolução das Listas"
       - text: "----------"

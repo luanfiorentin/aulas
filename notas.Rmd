@@ -19,7 +19,7 @@ output:
 notas <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Gestao_da_Informacao_2019-01/RelatoriodeDiariodeClasseExcel.xls", 
                     col_names = TRUE, 
                     sheet = "Notas")
-notas <- notas %>% mutate(Media_Parcial = rowMeans(notas[,5], na.rm = T)) %>% select(-c(Seq., Nome, Prova_2, Prova_3))
+notas <- notas %>% mutate(Media_Parcial = rowMeans(notas[,5:7], na.rm = T)) %>% select(-c(Seq., Nome))
 
 resumo <- notas %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
                               Mediana = median(Media_Parcial, na.rm = T),
