@@ -108,26 +108,26 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **10/04 (Qua)**: (5) Distribuições de probabilidade.
 - **15/04 (Seg)**: Exercícios.
 - **17/04 (Qua)**: Exercícios.
-- **22/04 (Seg)**: (6) Inferência estatística - estimação pontual.
+- **22/04 (Seg)**: Exercícios.
 - **24/04 (Qua)**: Exercícios.
 - **29/04 (Seg)**: **Prova 2**.
 
-- **01/05 (Qua)**: (7) Inferência estatística - estimação intervalar.
-- **06/05 (Seg)**: Exercícios.
-- **08/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
-- **13/05 (Seg)**: Exercícios.
-- **15/05 (Qua)**: Exercícios.
-- **20/05 (Seg)**: Exercícios.
-- **22/05 (Qua)**: (9) Correlação e Regressão.
-- **27/05 (Seg)**: Exercícios.
-- **29/05 (Qua)**: Exercícios.
-- **03/06 (Seg)**: **Prova 3**.
-
-- **05/06 (Qua)**: (10) Tópicos especiais.
-- **10/06 (Seg)**: (10) Tópicos especiais.
-- **12/06 (Qua)**: (10) Tópicos especiais.
-- **17/06 (Seg)**: Aula para dúvidas.
+- **01/05 (Qua)**: (6) Inferência estatística - estimação pontual.
+- **06/05 (Seg)**: (6) Inferência estatística - estimação pontual.
+- **08/05 (Qua)**: (7) Inferência estatística - estimação intervalar.
+- **13/05 (Seg)**: (7) Inferência estatística - estimação intervalar.
+- **15/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
+- **20/05 (Seg)**: *Semana Acadêmica*
+- **22/05 (Qua)**: *Semana Acadêmica*
+- **27/05 (Seg)**: (8) Inferência estatística - testes de hipótese.
+- **29/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
+- **03/06 (Seg)**: (9) Correlação e Regressão.
+- **05/06 (Qua)**: (9) Correlação e Regressão.
+- **10/06 (Seg)**: Aula para dúvidas.
+- **12/06 (Qua)**: **Prova 3**.
+- **17/06 (Seg)**: **Segunda Chamada**.
 - **19/06 (Qua)**: Aula para dúvidas.
+- **03/07 (Qua)**: **EXAME FINAL**.
 
 ### Ciências Econômicas - Turma D1
 
@@ -170,18 +170,18 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
  - **07/05 (Ter)**: Exercícios.
 - **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
  - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **17/05 (Sex)**: Exercícios.
- - **21/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
-- **24/05 (Sex)**: Exercícios.
- - **28/05 (Ter)**: (8) Correlação e Regressão.
-- **31/05 (Sex)**: Exercícios.
- - **04/06 (Ter)**: Exercícios.
-- **07/06 (Sex)**: **Prova 2**
-
- - **11/06 (Ter)**: (9) Tópicos especiais.
-- **14/06 (Sex)**: (9) Tópicos especiais.
- - **18/06 (Ter)**: (9) Tópicos especiais.
-- **21/06 (Sex)**: (9) Tópicos especiais.
+- **17/05 (Sex)**: (6) Inferência estatística - estimação intervalar.
+ - **21/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
+- **24/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
+ - **28/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
+- **31/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
+ - **04/06 (Ter)**: (9) Correlação e Regressão.
+- **07/06 (Sex)**: (9) Correlação e Regressão.
+ - **11/06 (Ter)**: (9) Correlação e Regressão.
+- **14/06 (Sex)**: **Prova 2**.
+ - **18/06 (Ter)**: **Segunda Chamada**
+- **21/06 (Sex)**: Aula para dúvidas.
+- **05/07 (Qua)**: **EXAME FINAL**.
 
 ### Ciências Econômicas - Turma E1
 
@@ -223,17 +223,17 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
  - **07/05 (Ter)**: Exercícios.
 - **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
  - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **17/05 (Sex)**: Exercícios.
- - **21/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
-- **24/05 (Sex)**: Exercícios.
- - **28/05 (Ter)**: (8) Correlação e Regressão.
-- **31/05 (Sex)**: Exercícios.
- - **04/06 (Ter)**: Exercícios.
-- **07/06 (Sex)**: **Prova 2**
-
- - **11/06 (Ter)**: (9) Tópicos especiais.
-- **14/06 (Sex)**: (9) Tópicos especiais.
- - **18/06 (Ter)**: (9) Tópicos especiais.
-- **21/06 (Sex)**: (9) Tópicos especiais.
+- **17/05 (Sex)**: (6) Inferência estatística - estimação intervalar.
+ - **21/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
+- **24/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
+ - **28/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
+- **31/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
+ - **04/06 (Ter)**: (9) Correlação e Regressão.
+- **07/06 (Sex)**: (9) Correlação e Regressão.
+ - **11/06 (Ter)**: (9) Correlação e Regressão.
+- **14/06 (Sex)**: **Prova 2**.
+ - **18/06 (Ter)**: **Segunda Chamada**
+- **21/06 (Sex)**: Aula para dúvidas.
+- **05/07 (Qua)**: **EXAME FINAL**.
 
 
