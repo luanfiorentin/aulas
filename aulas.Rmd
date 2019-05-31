@@ -234,6 +234,6 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
 - **14/06 (Sex)**: **Prova 2**.
  - **18/06 (Ter)**: **Segunda Chamada**
 - **21/06 (Sex)**: Aula para dúvidas.
-- **05/07 (Sex)**: **EXAME FINAL**.
+- **05/07 (Sex  )**: **EXAME FINAL**.
 
 
