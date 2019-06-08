@@ -50,6 +50,8 @@ navbar:
         href: slides/07_Intervalar.pdf
       - text: "Testes de Hipóteses"
         href: slides/08_hipoteses.pdf
+      - text: "Regressão"
+        href: slides/09_regressao.pdf
       - text: "----------"
       - text: "Listas"
       - text: "----------"
