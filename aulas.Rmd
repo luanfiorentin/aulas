@@ -178,9 +178,9 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
  - **04/06 (Ter)**: (9) Correlação e Regressão.
 - **07/06 (Sex)**: (9) Correlação e Regressão.
  - **11/06 (Ter)**: (9) Correlação e Regressão.
-- **14/06 (Sex)**: **Prova 2**.
- - **18/06 (Ter)**: **Segunda Chamada**
-- **21/06 (Sex)**: Aula para dúvidas.
+- **14/06 (Sex)**: Prova 2 TRANSFERIDA PARA DIA 18/06.
+ - **18/06 (Ter)**: **PROVA 2** 
+- **21/06 (Sex)**: 
 - **05/07 (Sex)**: **EXAME FINAL**.
 
 ### Ciências Econômicas - Turma E1
@@ -231,9 +231,9 @@ cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
  - **04/06 (Ter)**: (9) Correlação e Regressão.
 - **07/06 (Sex)**: (9) Correlação e Regressão.
  - **11/06 (Ter)**: (9) Correlação e Regressão.
-- **14/06 (Sex)**: **Prova 2**.
- - **18/06 (Ter)**: **Segunda Chamada**
-- **21/06 (Sex)**: Aula para dúvidas.
-- **05/07 (Sex  )**: **EXAME FINAL**.
+- **14/06 (Sex)**: Prova 2 TRANSFERIDA PARA DIA 18/06.
+ - **18/06 (Ter)**: **PROVA 2** 
+- **21/06 (Sex)**: 
+- **05/07 (Sex)**: **EXAME FINAL**.
 
 
