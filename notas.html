@@ -2719,69 +2719,7 @@ GRR20186830
 </div>
 <div id="gestao-da-informacao-gi" class="section level3">
 <h3>Gestão da Informação (GI)</h3>
-<p>Resumo das notas:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Resumo das notas</span>
-<span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(resumo), 
-                <span class="dt">align =</span> <span class="st">&quot;c|c|c|c|c|c|c&quot;</span>,
-                <span class="dt">align.header =</span> <span class="st">&quot;c|c|c|c|c|c|c&quot;</span>)</code></pre></div>
-<table class="gmisc_table" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
-<thead>
-<tr>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey;">
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Minimo
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Mediana
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Media
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Maximo
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Var
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-DesvioPad
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-CV
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border-bottom: 2px solid grey; text-align: left;">
-1
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-1
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-4.47
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-4.59
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-10
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-4.84
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-2.2
-</td>
-<td style="border-bottom: 2px solid grey; text-align: center;">
-47.89
-</td>
-</tr>
-</tbody>
-</table>
-<p>Notas da prova:</p>
+<p>Notas:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Notas</span>
 <span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(notas), 
                 <span class="dt">align =</span> <span class="st">&quot;c|c|c|c|c|c&quot;</span>,
@@ -2793,12 +2731,6 @@ CV
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey;">
 </th>
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Curso
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
-Matrícula
-</th>
-<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
 Prova_1
 </th>
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
@@ -2807,21 +2739,18 @@ Prova_2
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
 Prova_3
 </th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
+Media_final
+</th>
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-Media_Parcial
+Freq
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 1
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20162129
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 2
@@ -2830,39 +2759,38 @@ GRR20162129
 3.3
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.6
 </td>
 <td style="text-align: center;">
-2.65
+80
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 2
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20195443
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+42.9
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 3
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192554
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -2871,20 +2799,18 @@ GRR20192554
 7
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+2.8
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+5
 </td>
 <td style="text-align: center;">
-6.5
+97.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 4
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20157554
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 10
@@ -2893,20 +2819,18 @@ GRR20157554
 2
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+4.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-6
+88.6
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 5
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20183634
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -2915,106 +2839,98 @@ GRR20183634
 2.7
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+2.5
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+3.6
 </td>
 <td style="text-align: center;">
-4.35
+88.6
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20177527
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-6
+82.9
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 7
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192668
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="text-align: center;">
-3
+77.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192635
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-3
+75
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 9
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20195444
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
 10
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+3
 </td>
 <td style="text-align: center;">
-10
+57.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 10
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192685
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 10
@@ -3023,20 +2939,18 @@ GRR20192685
 8.1
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+6.5
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-9.05
+97.1
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 11
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192670
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -3045,20 +2959,18 @@ GRR20192670
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="text-align: center;">
-3
+88.6
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 12
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192546
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 4
@@ -3067,20 +2979,18 @@ GRR20192546
 1.4
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.2
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.9
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-2.7
+100
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 13
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20162146
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 8
@@ -3089,20 +2999,18 @@ GRR20162146
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+12
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+7.2
 </td>
 <td style="text-align: center;">
-4
+97.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 14
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192550
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
@@ -3111,77 +3019,78 @@ GRR20192550
 0.6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-3.3
+91.4
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 15
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-GRR20183635
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="text-align: center;">
+42.9
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 16
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192684
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+57.1
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 17
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-GRR20186138
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="text-align: center;">
+42.9
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 18
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192581
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3190,20 +3099,18 @@ GRR20192581
 8.6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.2
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+6.3
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-8.3
+100
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 19
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20162126
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 8
@@ -3212,41 +3119,38 @@ GRR20162126
 1
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+12
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+7.5
 </td>
 <td style="text-align: center;">
-4.5
+88.6
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 20
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20196765
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.2
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.1
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-6
+97.1
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 21
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192672
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 2
@@ -3255,20 +3159,18 @@ GRR20192672
 0.8
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+0.8
 </td>
 <td style="text-align: center;">
-1.4
+75
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 22
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20196262
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
@@ -3277,20 +3179,18 @@ GRR20196262
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-3
+77.1
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 23
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20112749
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -3299,20 +3199,18 @@ GRR20112749
 4.4
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+6.5
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+5.7
 </td>
 <td style="text-align: center;">
-5.2
+82.4
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 24
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20190240
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 10
@@ -3321,41 +3219,38 @@ GRR20190240
 3.7
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.8
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+5.2
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-6.85
+94.3
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 25
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192587
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 1.4
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+0.4
 </td>
 <td style="text-align: center;">
-1.4
+80
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 26
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192566
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3364,20 +3259,18 @@ GRR20192566
 1.6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.2
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+4.2
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-4.8
+97.1
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 27
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192570
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 8
@@ -3386,62 +3279,58 @@ GRR20192570
 3.4
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+2.5
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+4.4
 </td>
 <td style="text-align: center;">
-5.7
+100
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 28
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20143088
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-6
+88.6
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 29
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20153990
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
 6
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="text-align: center;">
-6
+77.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 30
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192598
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3450,20 +3339,18 @@ GRR20192598
 1
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+7.6
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+5.7
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-4.5
+100
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 31
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192584
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -3472,20 +3359,18 @@ GRR20192584
 2.9
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+2.7
 </td>
 <td style="text-align: center;">
-4.45
+100
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 32
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192643
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
@@ -3494,20 +3379,18 @@ GRR20192643
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-3
+82.9
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 33
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20162164
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -3516,20 +3399,18 @@ GRR20162164
 4.8
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+1
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+3.6
 </td>
 <td style="text-align: center;">
-5.4
+82.9
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 34
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192599
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 2
@@ -3538,39 +3419,38 @@ GRR20192599
 1.5
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-1.75
+94.3
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 35
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-GRR20183652
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="text-align: center;">
+75
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 36
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20186557
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 6
@@ -3579,20 +3459,18 @@ GRR20186557
 2.1
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-4.05
+91.4
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 37
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192654
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 4
@@ -3601,39 +3479,38 @@ GRR20192654
 0.5
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+3.2
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+2.6
 </td>
 <td style="text-align: center;">
-2.25
+94.3
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 38
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20190244
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+94.3
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 39
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192502
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 6
@@ -3642,20 +3519,18 @@ GRR20192502
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.8
 </td>
 <td style="text-align: center;">
-3
+77.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 40
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192662
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3664,20 +3539,18 @@ GRR20192662
 8.3
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+7.6
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+7.9
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-8.15
+100
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 41
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20196783
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 4
@@ -3686,20 +3559,18 @@ GRR20196783
 0.2
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.3
 </td>
 <td style="text-align: center;">
-2.1
+85.7
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 42
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20196266
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 2
@@ -3708,20 +3579,18 @@ GRR20196266
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0.6
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-1
+80
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 43
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20192558
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 4
@@ -3730,20 +3599,18 @@ GRR20192558
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+1.2
 </td>
 <td style="text-align: center;">
-2
+94.3
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 44
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20176832
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 10
@@ -3752,20 +3619,18 @@ GRR20176832
 1
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+3.3
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-5.5
+79.4
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 45
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20196762
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 8
@@ -3774,20 +3639,18 @@ GRR20196762
 4.4
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+6.2
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+6.2
 </td>
 <td style="text-align: center;">
-6.2
+97.1
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 46
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20190258
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3796,20 +3659,18 @@ GRR20190258
 1.2
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-4.6
+94.3
 </td>
 </tr>
 <tr>
-<td style="text-align: left;">
+<td style="border-right: 1px solid black; text-align: center;">
 47
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="border-right: 1px solid black; text-align: center;">
-GRR20196763
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 10
@@ -3818,20 +3679,18 @@ GRR20196763
 6.5
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+6.2
+</td>
+<td style="border-right: 1px solid black; text-align: center;">
+7.4
 </td>
 <td style="text-align: center;">
-8.25
+91.4
 </td>
 </tr>
 <tr style="background-color: #bebebe;">
-<td style="background-color: #bebebe; text-align: left;">
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 48
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-67A
-</td>
-<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
-GRR20192680
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
 8
@@ -3840,28 +3699,33 @@ GRR20192680
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
-4
+91.4
 </td>
 </tr>
 <tr>
-<td style="border-bottom: 2px solid grey; text-align: left;">
+<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
 49
 </td>
 <td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-67A
+0
 </td>
 <td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-GRR20192658
+0
 </td>
 <td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
-</td>
-<td style="border-bottom: 2px solid grey; border-right: 1px solid black; text-align: center;">
+0
 </td>
 <td style="border-bottom: 2px solid grey; text-align: center;">
+54.3
 </td>
 </tr>
 </tbody>

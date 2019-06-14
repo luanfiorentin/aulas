@@ -19,16 +19,8 @@ output:
 notas <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Gestao_da_Informacao_2019-01/RelatoriodeDiariodeClasseExcel.xls", 
                     col_names = TRUE, 
                     sheet = "Notas")
-notas <- notas %>% mutate(Media_Parcial = rowMeans(notas[,5:7], na.rm = T)) %>% select(-c(Seq., Nome))
-
-resumo <- notas %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
-                              Mediana = median(Media_Parcial, na.rm = T),
-                              Media = mean(Media_Parcial, na.rm = T), 
-                              Maximo = max(Media_Parcial, na.rm = T), 
-                              Var = var(Media_Parcial, na.rm = T), 
-                              DesvioPad = sd(Media_Parcial, na.rm = T), 
-                              CV = (sd(Media_Parcial, na.rm = T) / mean(Media_Parcial, na.rm = T)*100))
-resumo <- round(resumo, digits = 2)
+notas <- notas %>% select(Prova_1, Prova_2, Prova_3, Media_final, Freq)
+notas <- round(as.data.frame(notas), 1)
 
 
 ### Ciências Sociais
@@ -103,15 +95,7 @@ htmlTable(as.data.frame(notasSC),
 
 ### Gestão da Informação (GI)
 
-Resumo das notas:
-```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
-# Resumo das notas
-htmlTable(as.data.frame(resumo), 
-                align = "c|c|c|c|c|c|c",
-                align.header = "c|c|c|c|c|c|c")
-```
-
-Notas da prova:
+Notas:
 ```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
 # Notas
 htmlTable(as.data.frame(notas), 
