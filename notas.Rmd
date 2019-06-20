@@ -43,32 +43,15 @@ resumoSC <- round(resumoSC, digits = 2)
 notasCE <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Economia_2019-01/RelatoriodeDiariodeClasseExcel_D1.xls", 
                     col_names = TRUE, 
                     sheet = "Notas")
-notasCE_D1 <- notasCE %>% mutate(Media_Parcial = rowMeans(notasCE[,5:6], na.rm = T)) %>% select(-c(Seq., Nome))
-
-resumoCE <- notasCE_D1 %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
-                              Mediana = median(Media_Parcial, na.rm = T),
-                              Media = mean(Media_Parcial, na.rm = T), 
-                              Maximo = max(Media_Parcial, na.rm = T), 
-                              Var = var(Media_Parcial, na.rm = T), 
-                              DesvioPad = sd(Media_Parcial, na.rm = T), 
-                              CV = (sd(Media_Parcial, na.rm = T) / mean(Media_Parcial, na.rm = T)*100))
-resumoCE_D1 <- round(resumoCE, digits = 2)
-
+notasCE_D1 <- notasCE %>% select(Prova_1, Prova_2, T_1, Media_final, Freq)
+notasCE_D1 <- round(as.data.frame(notasCE_D1), 1)
 
 ### Ciências Economicas - E1
 notasCE_E1 <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Economia_2019-01/RelatoriodeDiariodeClasseExcel_E1.xls", 
                     col_names = TRUE, 
                     sheet = "Notas")
-notasCE_E1 <- notasCE_E1 %>% mutate(Media_Parcial = rowMeans(notasCE_E1[,5:6], na.rm = T)) %>% select(-c(Seq., Nome))
-
-resumoCE_E1 <- notasCE_E1 %>% summarise(Minimo = min(Media_Parcial, na.rm = T), 
-                              Mediana = median(Media_Parcial, na.rm = T),
-                              Media = mean(Media_Parcial, na.rm = T), 
-                              Maximo = max(Media_Parcial, na.rm = T), 
-                              Var = var(Media_Parcial, na.rm = T), 
-                              DesvioPad = sd(Media_Parcial, na.rm = T), 
-                              CV = (sd(Media_Parcial, na.rm = T) / mean(Media_Parcial, na.rm = T)*100))
-resumoCE_E1 <- round(resumoCE_E1, digits = 2)
+notasCE_E1 <- notasCE_E1 %>% select(Prova_1, Prova_2, T_1, Media_final, Freq)
+notasCE_E1 <- round(as.data.frame(notasCE_E1), 1)
 
 ```
 
@@ -107,14 +90,6 @@ htmlTable(as.data.frame(notas),
 
 ### Ciências Econômicas D1 (CE)
 
-Resumo das notas:
-```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
-# Resumo das notas
-htmlTable(as.data.frame(resumoCE_D1), 
-                align = "c|c|c|c|c|c|c",
-                align.header = "c|c|c|c|c|c|c")
-```
-
 Notas da prova:
 ```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
 # Notas
@@ -127,14 +102,6 @@ htmlTable(as.data.frame(notasCE_D1),
 
 
 ### Ciências Econômicas E1 (CE)
-
-Resumo das notas:
-```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
-# Resumo das notas
-htmlTable(as.data.frame(resumoCE_E1), 
-                align = "c|c|c|c|c|c|c",
-                align.header = "c|c|c|c|c|c|c")
-```
 
 Notas da prova:
 ```{r, eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE}
