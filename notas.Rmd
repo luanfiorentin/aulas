@@ -19,7 +19,7 @@ output:
 notas <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Gestao_da_Informacao_2019-01/RelatoriodeDiariodeClasseExcel.xls", 
                     col_names = TRUE, 
                     sheet = "Notas")
-notas <- notas %>% select(GRR, Prova_1, Prova_2, Prova_3, Media_final, Freq)
+notas <- notas %>% select(GRR, Prova_1, Prova_2, Prova_3, Media, Media_final, Media_Geral, Freq)
 grr <- notas[,1]
 notas <- round(as.data.frame(notas[,-1]), 1)
 notas <- cbind(grr, notas)

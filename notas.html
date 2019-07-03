@@ -376,7 +376,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Estatística Básica</a>
+      <a class="navbar-brand" href="index.html">EstatÃ­stica BÃ¡sica</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -387,10 +387,10 @@ $(document).ready(function () {
   <a href="aulas.html">Aulas</a>
 </li>
 <li>
-  <a href="referencias.html">Referências</a>
+  <a href="referencias.html">ReferÃªncias</a>
 </li>
 <li>
-  <a href="02_Analise_Exploratoria_de_Dados.html">Análise Exploratória</a>
+  <a href="02_Analise_Exploratoria_de_Dados.html">AnÃ¡lise ExploratÃ³ria</a>
 </li>
 <li>
   <a href="notas.html">Notas</a>
@@ -409,7 +409,7 @@ $(document).ready(function () {
       <a href="slides/Apostila_DEST.pdf">Apostila_DEST</a>
     </li>
     <li>
-      <a href="slides/01_Introducao_a_Estatistica_e_amostragem.pdf">Introdução à Estatistica e a Amostragem</a>
+      <a href="slides/01_Introducao_a_Estatistica_e_amostragem.pdf">IntroduÃ§Ã£o Ã  Estatistica e a Amostragem</a>
     </li>
     <li>
       <a href="slides/02_Medidas_resumo.pdf">Medidas Resumo</a>
@@ -418,22 +418,22 @@ $(document).ready(function () {
       <a href="slides/03_Probabilidades.pdf">Probabilidades</a>
     </li>
     <li>
-      <a href="slides/04_Variaveis_aleatorias.pdf">Variáveis Aleatórias</a>
+      <a href="slides/04_Variaveis_aleatorias.pdf">VariÃ¡veis AleatÃ³rias</a>
     </li>
     <li>
-      <a href="slides/05_Distribuicao_probabilidade.pdf">Distribuições de Probabilidade</a>
+      <a href="slides/05_Distribuicao_probabilidade.pdf">DistribuiÃ§Ãµes de Probabilidade</a>
     </li>
     <li>
-      <a href="slides/06_Pontual.pdf">Estimação Pontual</a>
+      <a href="slides/06_Pontual.pdf">EstimaÃ§Ã£o Pontual</a>
     </li>
     <li>
-      <a href="slides/07_Intervalar.pdf">Estimação Intervalar</a>
+      <a href="slides/07_Intervalar.pdf">EstimaÃ§Ã£o Intervalar</a>
     </li>
     <li>
-      <a href="slides/08_hipoteses.pdf">Testes de Hipóteses</a>
+      <a href="slides/08_hipoteses.pdf">Testes de HipÃ³teses</a>
     </li>
     <li>
-      <a href="slides/09_regressao.pdf">Regressão</a>
+      <a href="slides/09_regressao.pdf">RegressÃ£o</a>
     </li>
     <li class="divider"></li>
     <li class="dropdown-header">Listas</li>
@@ -463,7 +463,7 @@ $(document).ready(function () {
       <a href="Listas/Lista_Extra/Trabalho_CE.pdf">Lista Extra</a>
     </li>
     <li class="divider"></li>
-    <li class="dropdown-header">Resolução das Listas</li>
+    <li class="dropdown-header">ResoluÃ§Ã£o das Listas</li>
     <li class="divider"></li>
     <li>
       <a href="Listas/Lista_1/Lista_1_Gabarito.pdf">Lista 1 - Gabarito</a>
@@ -515,8 +515,8 @@ $(document).ready(function () {
 
 <div id="escolha-a-aba-de-sua-turma" class="section level2 tabset">
 <h2>Escolha a aba de sua turma</h2>
-<div id="ciencias-sociais-cs" class="section level3">
-<h3>Ciências Sociais (CS)</h3>
+<div id="ciancias-sociais-cs" class="section level3">
+<h3>CiÃªncias Sociais (CS)</h3>
 <p>Resumo das notas:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Resumo das notas</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(resumoSC), </a>
@@ -2743,8 +2743,8 @@ GRR20186830
 </tbody>
 </table>
 </div>
-<div id="gestao-da-informacao-gi" class="section level3">
-<h3>Gestão da Informação (GI)</h3>
+<div id="gestao-da-informaaao-gi" class="section level3">
+<h3>GestÃ£o da InformaÃ§Ã£o (GI)</h3>
 <p>Notas:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Notas</span></a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(notas), </a>
@@ -2769,7 +2769,13 @@ Prova_2
 Prova_3
 </th>
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; border-right: 1px solid black; text-align: center;">
+Media
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
 Media_final
+</th>
+<th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+Media_Geral
 </th>
 <th style="border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
 Freq
@@ -2797,6 +2803,11 @@ GRR20162129
 2.6
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+2.6
+</td>
+<td style="text-align: center;">
 80
 </td>
 </tr>
@@ -2817,6 +2828,11 @@ GRR20195443
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -2843,6 +2859,12 @@ GRR20192554
 5
 </td>
 <td style="text-align: center;">
+6
+</td>
+<td style="text-align: center;">
+5.5
+</td>
+<td style="text-align: center;">
 97.1
 </td>
 </tr>
@@ -2863,6 +2885,11 @@ GRR20157554
 2
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+4.4
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 4.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -2889,6 +2916,11 @@ GRR20183634
 3.6
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+3.6
+</td>
+<td style="text-align: center;">
 88.6
 </td>
 </tr>
@@ -2909,6 +2941,11 @@ GRR20177527
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -2935,6 +2972,11 @@ GRR20192668
 1.8
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+1.8
+</td>
+<td style="text-align: center;">
 77.1
 </td>
 </tr>
@@ -2955,6 +2997,11 @@ GRR20192635
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -2981,6 +3028,11 @@ GRR20195444
 3
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+3
+</td>
+<td style="text-align: center;">
 57.1
 </td>
 </tr>
@@ -3001,6 +3053,11 @@ GRR20192685
 6.5
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -3027,6 +3084,11 @@ GRR20192670
 1.8
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+1.8
+</td>
+<td style="text-align: center;">
 88.6
 </td>
 </tr>
@@ -3047,6 +3109,11 @@ GRR20192546
 3.2
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.9
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 2.9
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -3073,6 +3140,11 @@ GRR20162146
 7.2
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+7.2
+</td>
+<td style="text-align: center;">
 97.1
 </td>
 </tr>
@@ -3096,6 +3168,12 @@ GRR20192550
 4.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+5.3
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+5
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 91.4
 </td>
 </tr>
@@ -3116,6 +3194,11 @@ GRR20183635
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 0
 </td>
 <td style="text-align: center;">
@@ -3142,6 +3225,11 @@ GRR20192684
 0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 57.1
 </td>
 </tr>
@@ -3162,6 +3250,11 @@ GRR20186138
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 0
 </td>
 <td style="text-align: center;">
@@ -3188,6 +3281,12 @@ GRR20192581
 6.3
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+5.5
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+5.9
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 100
 </td>
 </tr>
@@ -3208,6 +3307,11 @@ GRR20162126
 12
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+7.5
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 7.5
 </td>
 <td style="text-align: center;">
@@ -3234,6 +3338,11 @@ GRR20196765
 3.1
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+3.1
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 97.1
 </td>
 </tr>
@@ -3254,6 +3363,11 @@ GRR20192672
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0.8
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 0.8
 </td>
 <td style="text-align: center;">
@@ -3280,6 +3394,11 @@ GRR20196262
 1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+1.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 77.1
 </td>
 </tr>
@@ -3301,6 +3420,12 @@ GRR20112749
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
 5.7
+</td>
+<td style="text-align: center;">
+5.2
+</td>
+<td style="text-align: center;">
+5.5
 </td>
 <td style="text-align: center;">
 82.4
@@ -3326,6 +3451,12 @@ GRR20190240
 5.2
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+6.7
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+6
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 94.3
 </td>
 </tr>
@@ -3346,6 +3477,11 @@ GRR20192587
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0.4
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 0.4
 </td>
 <td style="text-align: center;">
@@ -3372,6 +3508,12 @@ GRR20192566
 4.2
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+0.5
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+2.3
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 97.1
 </td>
 </tr>
@@ -3395,6 +3537,12 @@ GRR20192570
 4.4
 </td>
 <td style="text-align: center;">
+3.5
+</td>
+<td style="text-align: center;">
+4
+</td>
+<td style="text-align: center;">
 100
 </td>
 </tr>
@@ -3415,6 +3563,11 @@ GRR20143088
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+1.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -3441,6 +3594,11 @@ GRR20153990
 1.8
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+1.8
+</td>
+<td style="text-align: center;">
 77.1
 </td>
 </tr>
@@ -3464,6 +3622,12 @@ GRR20192598
 5.7
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+4.5
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+5.1
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 100
 </td>
 </tr>
@@ -3484,6 +3648,11 @@ GRR20192584
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+2.7
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 2.7
 </td>
 <td style="text-align: center;">
@@ -3510,6 +3679,11 @@ GRR20192643
 1.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+1.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 82.9
 </td>
 </tr>
@@ -3530,6 +3704,11 @@ GRR20162164
 1
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+3.6
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 3.6
 </td>
 <td style="text-align: center;">
@@ -3556,6 +3735,11 @@ GRR20192599
 1
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+1
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 94.3
 </td>
 </tr>
@@ -3576,6 +3760,11 @@ GRR20183652
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+0
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 0
 </td>
 <td style="text-align: center;">
@@ -3602,6 +3791,11 @@ GRR20186557
 2.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+2.4
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 91.4
 </td>
 </tr>
@@ -3622,6 +3816,11 @@ GRR20192654
 3.2
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+2.6
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 2.6
 </td>
 <td style="text-align: center;">
@@ -3648,6 +3847,11 @@ GRR20190244
 0
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+0
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 94.3
 </td>
 </tr>
@@ -3668,6 +3872,11 @@ GRR20192502
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+1.8
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 1.8
 </td>
 <td style="text-align: center;">
@@ -3694,6 +3903,11 @@ GRR20192662
 7.9
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+7.9
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 100
 </td>
 </tr>
@@ -3714,6 +3928,11 @@ GRR20196783
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+1.3
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 1.3
 </td>
 <td style="text-align: center;">
@@ -3740,6 +3959,11 @@ GRR20196266
 0.6
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+0.6
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 80
 </td>
 </tr>
@@ -3760,6 +3984,11 @@ GRR20192558
 0
 </td>
 <td style="border-right: 1px solid black; text-align: center;">
+1.2
+</td>
+<td style="text-align: center;">
+</td>
+<td style="text-align: center;">
 1.2
 </td>
 <td style="text-align: center;">
@@ -3786,6 +4015,11 @@ GRR20176832
 3.3
 </td>
 <td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+3.3
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 79.4
 </td>
 </tr>
@@ -3809,6 +4043,12 @@ GRR20196762
 6.2
 </td>
 <td style="text-align: center;">
+3.8
+</td>
+<td style="text-align: center;">
+5
+</td>
+<td style="text-align: center;">
 97.1
 </td>
 </tr>
@@ -3829,6 +4069,11 @@ GRR20190258
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.8
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 2.8
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -3855,6 +4100,11 @@ GRR20196763
 7.4
 </td>
 <td style="text-align: center;">
+</td>
+<td style="text-align: center;">
+7.4
+</td>
+<td style="text-align: center;">
 91.4
 </td>
 </tr>
@@ -3875,6 +4125,11 @@ GRR20192680
 0
 </td>
 <td style="background-color: #bebebe; border-right: 1px solid black; text-align: center;">
+2.4
+</td>
+<td style="background-color: #bebebe; text-align: center;">
+</td>
+<td style="background-color: #bebebe; text-align: center;">
 2.4
 </td>
 <td style="background-color: #bebebe; text-align: center;">
@@ -3901,14 +4156,19 @@ GRR20192658
 0
 </td>
 <td style="border-bottom: 2px solid grey; text-align: center;">
+</td>
+<td style="border-bottom: 2px solid grey; text-align: center;">
+0
+</td>
+<td style="border-bottom: 2px solid grey; text-align: center;">
 54.3
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="ciencias-economicas-d1-ce" class="section level3">
-<h3>Ciências Econômicas D1 (CE)</h3>
+<div id="ciancias-econamicas-d1-ce" class="section level3">
+<h3>CiÃªncias EconÃ´micas D1 (CE)</h3>
 <p>Notas da prova:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Notas</span></a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(notasCE_D1), </a>
@@ -4956,8 +5216,8 @@ GRR20183570
 </tbody>
 </table>
 </div>
-<div id="ciencias-economicas-e1-ce" class="section level3">
-<h3>Ciências Econômicas E1 (CE)</h3>
+<div id="ciancias-econamicas-e1-ce" class="section level3">
+<h3>CiÃªncias EconÃ´micas E1 (CE)</h3>
 <p>Notas da prova:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># Notas</span></a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="kw">htmlTable</span>(<span class="kw">as.data.frame</span>(notasCE_E1), </a>
