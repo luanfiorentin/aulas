@@ -47,8 +47,8 @@ notasCE <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Economia_2019-01/
 notasCE_D1 <- notasCE %>% select(GRR, Prova_1, Prova_2, T_1, Media, Final, Media_Final, Freq)
 grr <- notasCE_D1[,1]
 notasCE_D1 <- round(as.data.frame(notasCE_D1[,-1]), 1)
-aa <- ifelse(notasCE_D1$Media_Final < 5, "Reprovado", "Aprovado")
-notasCE_D1 <- cbind(grr, notasCE_D1, aa)
+status <- ifelse(notasCE_D1$Media_Final < 5, "Reprovado", "Aprovado")
+notasCE_D1 <- cbind(grr, notasCE_D1, status)
 
 
 
@@ -59,8 +59,8 @@ notasCE_E1 <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/Economia_2019-
 notasCE_E1 <- notasCE_E1 %>% select(GRR, Prova_1, Prova_2, T_1, Media, Final, Media_Final, Freq)
 grr <- notasCE_E1[,1]
 notasCE_E1 <- round(as.data.frame(notasCE_E1[,-1]), 1)
-bb <- ifelse(notasCE_E1$Media_Final < 5, "Reprovado", "Aprovado")
-notasCE_E1 <- cbind(grr, notasCE_E1, bb)
+status <- ifelse(notasCE_E1$Media_Final < 5, "Reprovado", "Aprovado")
+notasCE_E1 <- cbind(grr, notasCE_E1, status)
 
 
 
