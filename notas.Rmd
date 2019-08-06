@@ -10,7 +10,7 @@ output:
 ### Geologia (GE)
 
 Notas da prova: Nada ainda!
-```{r, eval=FALSE, echo=TRUE, warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 # Notas
 htmlTable(as.data.frame(notasSC), 
                 align = "c|c|c|c|c|c",
@@ -21,7 +21,7 @@ htmlTable(as.data.frame(notasSC),
 ### Licenciatura em Química (LQ)
 
 Notas da prova: Nada ainda!
-```{r, eval=FALSE, echo=TRUE, warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 # Notas
 htmlTable(as.data.frame(notas), 
                 align = "c|c|c|c|c|c",
