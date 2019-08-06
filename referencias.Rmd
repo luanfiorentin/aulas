@@ -1,11 +1,11 @@
 ---
 title: "Referências Bibliográficas"
-output:
+output: 
   html_document:
     toc: false
 ---
 
-## Referências básicas
+## Referências Básicas
 
 Livro básico da disciplina:
 
@@ -14,13 +14,10 @@ Livro básico da disciplina:
       [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
       São Paulo: EDUSP, 2015 (7ª edição).
 
-Livros complementares da disciplina
-
-- Montgomery, DC; Runger, GC.
-  [Estatística aplicada e probabilidade para engenheiros](http://www.grupogen.com.br/estatistica-aplicada-e-probabilidade-para-engenheiros).
-  Rio de Janeiro: LTC Editora, 2012 (5ª Edição).
-
 ## Referências complementares
+
+Livros recomendados:
+
 - Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
   [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
   São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2017 (9ª

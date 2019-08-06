@@ -1,239 +1,128 @@
 ---
 title: "Cronograma das aulas do curso"
-output:
+output: 
   html_document:
     toc: false
 ---
 
-```{r setup, include=FALSE, cache=FALSE}
+```{r setup, include = FALSE, cache = FALSE}
 source("knitr_setup.R")
 ```
 
-Abaixo está o cronograma inicial planejado para as disciplinas (mas pode
-sofrer alterações durante o semetre).
+
+O cronograma inicial planejado para as disciplinas 
+está apresentado na sequência, mas pode sofrer alterações durante o semestre.
 
 ## Escolha a aba de sua turma {.tabset}
 
-### Ciências Sociais (CS)
-
-A professora Silvia Shimakura é a responsável pela disciplina.É possível acessar a página dela 
-pelo seguinte link: [CE003!](http://www.leg.ufpr.br/doku.php/disciplinas:ce003u).
+### Geologia
 
 ```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
+## Gera a lista com as datas de todas as aulas. 
+##  O resultado do último comando pode ser copiado direto para o documento
+datas1 <- seq.Date(as.Date("2019-08-05"), as.Date("2019-12-02"),
                       by = "week")
 datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-21"), as.Date("2019-06-20"),
+datas2 <- seq.Date(as.Date("2019-08-07"), as.Date("2019-12-04"),
                       by = "week")
 datas2 <- format.Date(datas2, format = "%d/%m")
 
-cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
-           datas2, " (Qui)", "**:\n"))
-```
-
-- **19/02 (Ter)**: Apresentação da disciplina.
-- **21/02 (Qui)**: (1) Introdução à análise exploratória de dados.
-- **26/02 (Ter)**: (2) Medidas resumo.
-- **28/02 (Qui)**: *Sem aula*.
-- **05/03 (Ter)**: *Feriado*.
-- **07/03 (Qui)**: *Não houve aula*.
-- **12/03 (Ter)**: (2) Medidas resumo.
-- **14/03 (Qui)**: (2) Medidas resumo.
-- **19/03 (Ter)**: Exercícios.
-- **21/03 (Qui)**: (3) Probabilidade.
-- **26/03 (Ter)**: Exercícios.
-- **28/03 (Qui)**: Exercícios.
-- **02/04 (Ter)**: **Prova 1**.
-
-- **04/04 (Qui)**: (4) Variáveis aleatórias.
-- **09/04 (Ter)**: Exercícios.
-- **11/04 (Qui)**: (5) Distribuições de probabilidade.
-- **16/04 (Ter)**: Exercícios.
-- **18/04 (Qui)**: Exercícios.
-- **23/04 (Ter)**: (6) Inferência estatística - estimação pontual.
-- **25/04 (Qui)**: Exercícios.
-- **30/04 (Ter)**: **Prova 2**.
-
-- **02/05 (Qui)**: (7) Inferência estatística - estimação intervalar.
-- **07/05 (Ter)**: Exercícios.
-- **09/05 (Qui)**: (8) Inferência estatística - testes de hipótese.
-- **14/05 (Ter)**: Exercícios.
-- **16/05 (Qui)**: Exercícios.
-- **21/05 (Ter)**: Exercícios.
-- **23/05 (Qui)**: (9) Correlação e Regressão.
-- **28/05 (Ter)**: Exercícios.
-- **30/05 (Qui)**: Exercícios.
-- **04/06 (Ter)**: **Prova 3**.
-
-- **06/06 (Qui)**: (10) Tópicos especiais.
-- **11/06 (Ter)**: (10) Tópicos especiais.
-- **13/06 (Qui)**: (10) Tópicos especiais.
-- **18/06 (Ter)**: Aula para dúvidas.
-- **20/06 (Qui)**: **Feriado**.
-
-
-### Gestão da Informação (GI)
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-18"), as.Date("2019-06-17"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-20"), as.Date("2019-06-19"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
 cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
            datas2, " (Qua)", "**:\n"))
 ```
 
-- **18/02 (Seg)**: Apresentação da disciplina.
-- **20/02 (Qua)**: (1) Introdução à análise exploratória de dados.
-- **25/02 (Seg)**: (2) Medidas resumo.
-- **27/02 (Qua)**: (2) Medidas resumo.
-- **04/03 (Seg)**: *Feriado*.
-- **06/03 (Qua)**: *Feriado*.
-- **11/03 (Seg)**: (2) Medidas resumo.
-- **13/03 (Qua)**: (2) Medidas resumo.
-- **18/03 (Seg)**: Exercícios.
-- **20/03 (Qua)**: (3) Probabilidade.
-- **25/03 (Seg)**: Exercícios.
-- **27/03 (Qua)**: Exercícios.
-- **01/04 (Seg)**: **Prova 1**.
+- **05/08 (Seg)**: Apresentação da disciplina
+- **07/08 (Qua)**: (1) Análise Exploratória de Dados
+ - **12/08 (Seg)**: (1) Análise Exploratória de Dados
+- **14/08 (Qua)**: Exercícios
+ - **19/08 (Seg)**: (2) Medidas de Resumo
+- **21/08 (Qua)**: (2) Medidas de Resumo
+ - **26/08 (Seg)**: Exercícios
+- **28/08 (Qua)**: (3) Probabilidades
+ - **02/09 (Seg)**: (3) Probabilidades
+- **04/09 (Qua)**: Exercícios
+ - **09/09 (Seg)**: **Prova 1**
+ 
+- **11/09 (Qua)**: (4) Variáveis Aleatórias
+ - **16/09 (Seg)**: Exercícios
+- **18/09 (Qua)**: (5) Distribuições de Probabilidade
+ - **23/09 (Seg)**: (5) Distribuições de Probabilidade
+- **25/09 (Qua)**: Exercícios
+ - **30/09 (Seg)**: (6) Inferência Estatística - Estimação Pontual
+- **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+ - **07/10 (Seg)**: Exercícios
+- **09/10 (Qua)**: **Prova 2**
 
-- **03/04 (Qua)**: (4) Variáveis aleatórias.
-- **08/04 (Seg)**: Exercícios.
-- **10/04 (Qua)**: (5) Distribuições de probabilidade.
-- **15/04 (Seg)**: Exercícios.
-- **17/04 (Qua)**: Exercícios.
-- **22/04 (Seg)**: Exercícios.
-- **24/04 (Qua)**: Exercícios.
-- **29/04 (Seg)**: **Prova 2**.
+ - **14/10 (Seg)**: (7) Inferência Estatística - Estimação Intervalar
+- **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+ - **21/10 (Seg)**: Exercícios
+- **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
+ - **28/10 (Seg)**: (6) Inferência Estatística - Testes de Hipóteses
+- **30/10 (Qua)**: Exercícios
+ - **04/11 (Seg)**: (7) Regressão e Correlação
+- **06/11 (Qua)**: (7) Regressão e Correlação
+ - **11/11 (Seg)**: Exercícios
+- **13/11 (Qua)**: **Prova 3**
 
-- **01/05 (Qua)**: (6) Inferência estatística - estimação pontual.
-- **06/05 (Seg)**: (6) Inferência estatística - estimação pontual.
-- **08/05 (Qua)**: (7) Inferência estatística - estimação intervalar.
-- **13/05 (Seg)**: (7) Inferência estatística - estimação intervalar.
-- **15/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
-- **20/05 (Seg)**: *Semana Acadêmica*
-- **22/05 (Qua)**: *Semana Acadêmica*
-- **27/05 (Seg)**: (8) Inferência estatística - testes de hipótese.
-- **29/05 (Qua)**: (8) Inferência estatística - testes de hipótese.
-- **03/06 (Seg)**: (9) Correlação e Regressão.
-- **05/06 (Qua)**: (9) Correlação e Regressão.
-- **10/06 (Seg)**: Aula para dúvidas.
-- **12/06 (Qua)**: **Prova 3**.
-- **17/06 (Seg)**: **Segunda Chamada**.
-- **19/06 (Qua)**: Aula para dúvidas.
-- **03/07 (Qua)**: **EXAME FINAL**.
+ - **18/11 (Seg)**: (10) Tópicos Especiais
+- **20/11 (Qua)**: (10) Tópicos Especiais
+ - **25/11 (Seg)**: *Dia não letivo devido ao Processo Seletivo 2019/2020*
+- **27/11 (Qua)**: (10) Tópicos Especiais
+ - **02/12 (Seg)**: (10) Tópicos Especiais
+- **04/12 (Qua)**: (10) Tópicos Especiais
 
-### Ciências Econômicas - Turma D1
-
-```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
-                      by = "week")
-datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
-                      by = "week")
-datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
-           datas1, " (Sex)", "**:\n"))
-```
-
-- **19/02 (Ter)**: Professor Mário.
-- **22/02 (Sex)**: Professor Mário.
- - **26/02 (Ter)**: Professor Mário.
-- **01/03 (Sex)**: Professor Mário.
- - **05/03 (Ter)**: Professor Mário.
-- **08/03 (Sex)**: Professor Mário.
- - **12/03 (Ter)**: Professor Mário.
-- **15/03 (Sex)**: Professor Mário.
- - **19/03 (Ter)**: Professor Mário.
-- **22/03 (Sex)**: Professor Mário.
- - **26/03 (Ter)**: Professor Mário.
-- **29/03 (Sex)**: Professor Mário.
- - **02/04 (Ter)**: Professor Mário.
-- **05/04 (Sex)**: (2) Probabilidades.
- - **09/04 (Ter)**: (2) Probabilidades.
-- **12/04 (Sex)**: Exercícios.
- - **16/04 (Ter)**: Exercícios.
-- **19/04 (Sex)**: *Feriado*
- - **23/04 (Ter)**: (3) Variáveis aleatórias.
-- **26/04 (Sex)**: **Prova 1**
-
- - **30/04 (Ter)**: (4) Distribuições de probabilidade.
-- **03/05 (Sex)**: (4) Distribuições de probabilidade.
- - **07/05 (Ter)**: Exercícios.
-- **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
- - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **17/05 (Sex)**: (6) Inferência estatística - estimação intervalar.
- - **21/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **24/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
- - **28/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
-- **31/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
- - **04/06 (Ter)**: (9) Correlação e Regressão.
-- **07/06 (Sex)**: (9) Correlação e Regressão.
- - **11/06 (Ter)**: (9) Correlação e Regressão.
-- **14/06 (Sex)**: Prova 2 TRANSFERIDA PARA DIA 18/06.
- - **18/06 (Ter)**: **PROVA 2** 
-- **21/06 (Sex)**: 
-- **05/07 (Sex)**: **EXAME FINAL**.
-
-### Ciências Econômicas - Turma E1
+### Licenciatura em Química
 
 ```{r, eval=FALSE, include=FALSE}
-## Gera a lista com as datas de todas as aulas. O resultado do último
-## comando pode ser copiado direto para o documento
-datas1 <- seq.Date(as.Date("2019-02-22"), as.Date("2019-06-21"),
+## Gera a lista com as datas de todas as aulas. 
+##  O resultado do último comando pode ser copiado direto para o documento
+datas1 <- seq.Date(as.Date("2019-08-07"), as.Date("2019-11-27"),
                       by = "week")
 datas1 <- format.Date(datas1, format = "%d/%m")
-datas2 <- seq.Date(as.Date("2019-02-19"), as.Date("2019-06-18"),
+datas2 <- seq.Date(as.Date("2019-08-09"), as.Date("2019-11-29"),
                       by = "week")
 datas2 <- format.Date(datas2, format = "%d/%m")
-cat(paste0("- **", datas2, " (Ter)", "**:\n", "- **",
-           datas1, " (Sex)", "**:\n"))
+
+cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
+           datas2, " (Sex)", "**:\n"))
 ```
 
-- **19/02 (Ter)**: Professor Mário.
-- **22/02 (Sex)**: Professor Mário.
- - **26/02 (Ter)**: Professor Mário.
-- **01/03 (Sex)**: Professor Mário.
- - **05/03 (Ter)**: Professor Mário.
-- **08/03 (Sex)**: Professor Mário.
- - **12/03 (Ter)**: Professor Mário.
-- **15/03 (Sex)**: Professor Mário.
- - **19/03 (Ter)**: Professor Mário.
-- **22/03 (Sex)**: Professor Mário.
- - **26/03 (Ter)**: Professor Mário.
-- **29/03 (Sex)**: Professor Mário.
- - **02/04 (Ter)**: Professor Mário.
-- **05/04 (Sex)**: (2) Probabilidades.
- - **09/04 (Ter)**: (2) Probabilidades.
-- **12/04 (Sex)**: Exercícios.
-- **19/04 (Sex)**: *Feriado*
- - **23/04 (Ter)**: (3) Variáveis aleatórias.
-- **26/04 (Sex)**: **Prova 1**
+- **07/08 (Qua)**: Apresentação da disciplina
+- **09/08 (Sex)**: (1) Análise Exploratória de Dados
+ - **14/08 (Qua)**: (1) Análise Exploratória de Dados
+- **16/08 (Sex)**: (2) Medidas de Resumo
+ - **21/08 (Qua)**: (2) Medidas de Resumo
+- **23/08 (Sex)**: Exercícios
+ - **28/08 (Qua)**: (3) Probabilidades
+- **30/08 (Sex)**: (3) Probabilidades
+ - **04/09 (Qua)**: Exercícios
+- **06/09 (Sex)**: **Prova 1**
 
- - **30/04 (Ter)**: (4) Distribuições de probabilidade.
-- **03/05 (Sex)**: (4) Distribuições de probabilidade.
- - **07/05 (Ter)**: Exercícios.
-- **10/05 (Sex)**: (5) Inferência estatística - estimação pontual.
- - **14/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **17/05 (Sex)**: (6) Inferência estatística - estimação intervalar.
- - **21/05 (Ter)**: (6) Inferência estatística - estimação intervalar.
-- **24/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
- - **28/05 (Ter)**: (7) Inferência estatística - testes de hipótese.
-- **31/05 (Sex)**: (7) Inferência estatística - testes de hipótese.
- - **04/06 (Ter)**: (9) Correlação e Regressão.
-- **07/06 (Sex)**: (9) Correlação e Regressão.
- - **11/06 (Ter)**: (9) Correlação e Regressão.
-- **14/06 (Sex)**: Prova 2 TRANSFERIDA PARA DIA 18/06.
- - **18/06 (Ter)**: **PROVA 2** 
-- **21/06 (Sex)**: 
-- **05/07 (Sex)**: **EXAME FINAL**.
+ - **11/09 (Qua)**: (4) Variáveis Aleatórias
+- **13/09 (Sex)**: Exercícios
+ - **18/09 (Qua)**: (5) Distribuições de Probabilidade
+- **20/09 (Sex)**: (5) Distribuições de Probabilidade
+ - **25/09 (Qua)**: Exercícios
+- **27/09 (Sex)**: (6) Inferência Estatística - Estimação Pontual
+ - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+- **04/10 (Sex)**: Exercícios
+ - **09/10 (Qua)**: **Prova 2**
+ 
+- **11/10 (Sex)**: (7) Inferência Estatística - Estimação Intervalar
+ - **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+- **18/10 (Sex)**: Exercícios
+ - **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
+- **25/10 (Sex)**: (6) Inferência Estatística - Testes de Hipóteses
+ - **30/10 (Qua)**: Exercícios
+- **01/11 (Sex)**: (7) Regressão e Correlação
+ - **06/11 (Qua)**: (7) Regressão e Correlação
+- **08/11 (Sex)**: Exercícios
+ - **13/11 (Qua)**: **Prova 3**
+ 
+- **15/11 (Sex)**: *Feriado: Proclamação da república*
+ - **20/11 (Qua)**: (10) Tópicos Especiais
+- **22/11 (Sex)**: (10) Tópicos Especiais
+ - **27/11 (Qua)**: (10) Tópicos Especiais
+- **29/11 (Sex)**: (10) Tópicos Especiais
 
 

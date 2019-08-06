@@ -1,11 +1,11 @@
 ---
 title: "Estatística Básica"
-output:
+output: 
   html_document:
     toc: false
 ---
 
-```{r setup, include=FALSE, cache=FALSE}
+```{r setup, include = FALSE, cache = FALSE}
 source("knitr_setup.R")
 ```
 
@@ -18,48 +18,48 @@ source("knitr_setup.R")
 Essa página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
 
 - **CE003 - Estatística II**:
-  - Ciências Sociais (CS) - Matutino: [CE003!](http://www.leg.ufpr.br/doku.php/disciplinas:ce003u)
+  - Geologia (GE) - Matutino
 - **CE009 - Introdução à Estatística**:
-  - Gestão da Informação (GI) - Matutino
+  - Licenciatura em Química (LQ) - Vespertino
 
 # Detalhes da oferta da disciplina
 
-- **Período:** primeiro semestre de 2019
+- **Período:** Segundo semestre de 2019
 - **Professor Responsável:**
     - Luan Demarco Fiorentin - DEST/UFPR
     - Contato: luanfiorentin@hotmail.com
 - **Horários e Locais:**
-  - Ciências Sociais (CS):
-    - Terça, 10:30 - 12:30h
-    - Quinta, 09:30 - 11:30h
-  - Gestão da Informação (GI)
-    - Segunda, 07:30 - 09:30h
-    - Quarta, 07:30 - 09:30h
+  - Geologia (GE):
+    - Segunda, 07:30 - 09:30h (Sala CT-01)
+    - Quarta, 09:30 - 11:30h (Sala CT-01)
+  - Licenciatura em Química (LQ):
+    - Quarta, 15:30 - 17:30h (Sala PR-07)
+    - Sexta, 15:30 - 17:30h (Sala PM-01)
 - **Horários de atendimento do professor:**
-    - Sexta-feira, 10:00-12:00 e 13:30-15:30 (preferenciais). Outros horários
-      podem ser agendados previamente por email.
-- **Frequência**: de acordo com as normas da Universidade, mínimo de 75%.
+    - Sexta-feira, 10:00-12:00 e 13:30-15:30 (preferenciais). 
+    - Outros horários podem ser agendados previamente por email
+- **Frequência**: De acordo com as normas da UFPR, mínimo de 75% de presença
 - **Avaliações**:
-  - As três provas serão realizadas no Moodle.
-  - **Média final (MF)**: a média final será composta pela média geral simples.
+  - As três provas serão realizadas em sala de aula
+  - **Média Final (MF)**: a média final será composta pela média geral simples
   - $MF = (P1 + P2 + P3) / 3$
 - **Segunda chamada**:
   - Somente as provas discursivas poderão ter segunda chamada
     - Só será realizada segunda chamada para alunos que protocolarem o
       pedido, devidamente justificado, junto ao Departamento de
-      Estatística.
-    - As provas de segunda chamada só serão realizadas ao final do
-      semestre.
+      Estatística
+    - As provas de segunda chamada serão realizadas em comum acordo entre 
+      o aluno e o professor
 - **Datas importantes:** De acordo com a [Resolução 64/18 - CEPE][]:
-    - **18/02**: Início do semestre letivo
-    - **22/06**: Final do semestre letivo
-    - **27/06-03/07**: Período de exames
+    - **05/07**: Início do segundo semestre letivo
+    - **04/12**: Final do segundo semestre letivo
+    - **09/12-14/12**: Período de exames finais
 
 # Programa/objetivos da disciplina
 
 O objetivo desta disciplina é capacitar os alunos em conceitos básicos
 de estatística que permitam a interpretação de resultados de análises e
-procedimentos estatísticos, bem como a execução de procedimentos e
+procedimentos estatísticos, bem como a execução de procedimentos e 
 análises estatística básicas. O curso compreende três grandes tópicos:
 
 - Análise descritiva e exploratória de dados.

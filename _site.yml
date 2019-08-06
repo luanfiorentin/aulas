@@ -34,56 +34,12 @@ navbar:
       - text: "----------"
       - text: "Apostila_DEST"
         href: slides/Apostila_DEST.pdf
-      - text: "Introdução à Estatistica e a Amostragem"
-        href: slides/01_Introducao_a_Estatistica_e_amostragem.pdf
-      - text: "Medidas Resumo"
-        href: slides/02_Medidas_resumo.pdf
-      - text: "Probabilidades"
-        href: slides/03_Probabilidades.pdf
-      - text: "Variáveis Aleatórias"
-        href: slides/04_Variaveis_aleatorias.pdf
-      - text: "Distribuições de Probabilidade"
-        href: slides/05_Distribuicao_probabilidade.pdf
-      - text: "Estimação Pontual"
-        href: slides/06_Pontual.pdf
-      - text: "Estimação Intervalar"
-        href: slides/07_Intervalar.pdf
-      - text: "Testes de Hipóteses"
-        href: slides/08_hipoteses.pdf
-      - text: "Regressão"
-        href: slides/09_regressao.pdf
-      - text: "----------"
-      - text: "Listas"
-      - text: "----------"
+      - text: "Informações do curso"
+        href: slides/00_aula_inicial.pdf
+      - text: "Análise exploratória de dados e Amostragem"
+        href: slides/01_analise_exploratoria_de_dados.pdf
       - text: "Tabelas"
         href: Listas/tabelasEST.pdf
-      - text: "Lista 1"
-        href: Listas/Lista_1/Lista_1.pdf
-      - text: "Lista 2"
-        href: Listas/Lista_2/Lista_2.pdf
-      - text: "Lista 3"
-        href: Listas/Lista_3/Lista_3.pdf
-      - text: "Lista 4"
-        href: Listas/Lista_4/Lista_4.pdf
-      - text: "Lista 5"
-        href: Listas/Lista_5/Lista_5.pdf
-      - text: "Lista Final"
-        href: Listas/Lista_final/Lista_final.pdf
-      - text: "Lista Extra"
-        href: Listas/Lista_Extra/Trabalho_CE.pdf
-      - text: "----------"
-      - text: "Resolução das Listas"
-      - text: "----------"
-      - text: "Lista 1 - Gabarito"
-        href: Listas/Lista_1/Lista_1_Gabarito.pdf
-      - text: "Lista 2 - Gabarito"
-        href: Listas/Lista_2/Lista_2_Gabarito.pdf
-      - text: "Lista 3 - Gabarito"
-        href: Listas/Lista_3/Lista_3_Gabarito.pdf
-      - text: "Lista 4 - Gabarito"
-        href: Listas/Lista_4/Lista_4_Gabarito.pdf
-      - text: "Lista 5 - Gabarito"
-        href: Listas/Lista_5/Lista_5_Gabarito.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
