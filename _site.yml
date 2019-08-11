@@ -36,6 +36,8 @@ navbar:
         href: slides/00_aula_inicial.pdf
       - text: "Análise exploratória de dados e Amostragem"
         href: slides/01_analise_exploratoria_de_dados.pdf
+      - text: "Dados - 01"
+        href: slides/01_dados.pdf
       - text: "Tabelas"
         href: Listas/tabelasEST.pdf
   right:
