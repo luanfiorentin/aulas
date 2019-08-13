@@ -34,8 +34,8 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **05/08 (Seg)**: Apresentação da disciplina
 - **07/08 (Qua)**: (1) Análise Exploratória de Dados
  - **12/08 (Seg)**: (1) Análise Exploratória de Dados
-- **14/08 (Qua)**: Exercícios
- - **19/08 (Seg)**: (2) Medidas de Resumo
+- **14/08 (Qua)**: (2) Medidas de Resumo
+ - **19/08 (Seg)**: Exercícios
 - **21/08 (Qua)**: (2) Medidas de Resumo
  - **26/08 (Seg)**: Exercícios
 - **28/08 (Qua)**: (3) Probabilidades
