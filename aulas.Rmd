@@ -126,3 +126,57 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **29/11 (Sex)**: (10) Tópicos Especiais
 
 
+### Zootecnia
+
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. 
+##  O resultado do último comando pode ser copiado direto para o documento
+datas1 <- seq.Date(as.Date("2019-08-07"), as.Date("2019-11-27"),
+                      by = "week")
+datas1 <- format.Date(datas1, format = "%d/%m")
+datas2 <- seq.Date(as.Date("2019-08-09"), as.Date("2019-11-29"),
+                      by = "week")
+datas2 <- format.Date(datas2, format = "%d/%m")
+
+cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
+           datas2, " (Sex)", "**:\n"))
+```
+
+- **07/08 (Qua)**: Prof. Stela
+- **09/08 (Sex)**: Prof. Stela
+ - **14/08 (Qua)**: Prof. Stela
+- **16/08 (Sex)**: Prof. Stela
+ - **21/08 (Qua)**: (1) Análise Exploratória de Dados
+- **23/08 (Sex)**: (1) Análise Exploratória de Dados
+ - **28/08 (Qua)**: (2) Medidas de Resumo
+- **30/08 (Sex)**: Exercícios
+ - **04/09 (Qua)**: (3) Probabilidades
+- **06/09 (Sex)**: (3) Probabilidades
+ - **11/09 (Qua)**: Exercícios
+- **13/09 (Sex)**: **Prova 1**
+
+ - **18/09 (Qua)**: (4) Variáveis Aleatórias
+- **20/09 (Sex)**: (5) Distribuições de Probabilidade
+ - **25/09 (Qua)**: (5) Distribuições de Probabilidade
+- **27/09 (Sex)**: Exercícios
+ - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+- **04/10 (Sex)**: (6) Inferência Estatística - Estimação Pontual
+ - **09/10 (Qua)**: Exercícios
+- **11/10 (Sex)**: **Prova 2**
+
+ - **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+- **18/10 (Sex)**: Exercícios
+ - **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
+- **25/10 (Sex)**: (6) Inferência Estatística - Testes de Hipóteses
+ - **30/10 (Qua)**: Exercícios
+- **01/11 (Sex)**: (7) Regressão e Correlação
+ - **06/11 (Qua)**: (7) Regressão e Correlação
+- **08/11 (Sex)**: Exercícios
+ - **13/11 (Qua)**: **Prova 3**
+ 
+- **15/11 (Sex)**: *Feriado: Proclamação da república*
+ - **20/11 (Qua)**: (10) Tópicos Especiais
+- **22/11 (Sex)**: (10) Tópicos Especiais
+ - **27/11 (Qua)**: (10) Tópicos Especiais
+- **29/11 (Sex)**: (10) Tópicos Especiais
+
