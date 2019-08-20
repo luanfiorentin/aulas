@@ -28,3 +28,14 @@ htmlTable(as.data.frame(notas),
                 align.header = "c|c|c|c|c|c", 
                 col.rgroup =  c("none", "gray"))
 ```
+
+### Zootecnia (ZO)
+
+Notas da prova: Nada ainda!
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+# Notas
+htmlTable(as.data.frame(notas), 
+                align = "c|c|c|c|c|c",
+                align.header = "c|c|c|c|c|c", 
+                col.rgroup =  c("none", "gray"))
+```
