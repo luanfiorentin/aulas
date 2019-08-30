@@ -38,6 +38,8 @@ navbar:
         href: slides/01_analise_exploratoria_de_dados.pdf
       - text: "Medidas Resumo"
         href: slides/02_medidas_resumo.pdf
+      - text: "Probabilidades"
+        href: slides/03_probabilidades.pdf
       - text: "Dados - 01"
         href: slides/01_dados.pdf
       - text: "Tabelas"

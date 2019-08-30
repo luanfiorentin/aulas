@@ -37,14 +37,14 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **14/08 (Qua)**: (2) Medidas de Resumo
  - **19/08 (Seg)**: Exercícios
 - **21/08 (Qua)**: (2) Medidas de Resumo
- - **26/08 (Seg)**: Exercícios
-- **28/08 (Qua)**: (3) Probabilidades
+ - **26/08 (Seg)**: (2) Medidas de Resumo
+- **28/08 (Qua)**: Exercícios
  - **02/09 (Seg)**: (3) Probabilidades
-- **04/09 (Qua)**: Exercícios
- - **09/09 (Seg)**: **Prova 1**
- 
-- **11/09 (Qua)**: (4) Variáveis Aleatórias
- - **16/09 (Seg)**: Exercícios
+- **04/09 (Qua)**: (3) Probabilidades
+ - **09/09 (Seg)**: Exercícios
+- **11/09 (Qua)**: **Prova 1**
+
+ - **16/09 (Seg)**: (4) Variáveis Aleatórias
 - **18/09 (Qua)**: (5) Distribuições de Probabilidade
  - **23/09 (Seg)**: (5) Distribuições de Probabilidade
 - **25/09 (Qua)**: Exercícios
@@ -149,16 +149,16 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
  - **21/08 (Qua)**: (1) Análise Exploratória de Dados
 - **23/08 (Sex)**: (1) Análise Exploratória de Dados
  - **28/08 (Qua)**: (2) Medidas de Resumo
-- **30/08 (Sex)**: Exercícios
- - **04/09 (Qua)**: (3) Probabilidades
+- **30/08 (Sex)**: (2) Medidas de Resumo
+ - **04/09 (Qua)**: Exercícios
 - **06/09 (Sex)**: (3) Probabilidades
- - **11/09 (Qua)**: Exercícios
-- **13/09 (Sex)**: **Prova 1**
-
- - **18/09 (Qua)**: (4) Variáveis Aleatórias
-- **20/09 (Sex)**: (5) Distribuições de Probabilidade
+ - **11/09 (Qua)**: (3) Probabilidades
+- **13/09 (Sex)**: Exercícios
+ - **18/09 (Qua)**: **Prova 1**
+ 
+- **20/09 (Sex)**: (4) Variáveis Aleatórias
  - **25/09 (Qua)**: (5) Distribuições de Probabilidade
-- **27/09 (Sex)**: Exercícios
+- **27/09 (Sex)**: (5) Distribuições de Probabilidade
  - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
 - **04/10 (Sex)**: (6) Inferência Estatística - Estimação Pontual
  - **09/10 (Qua)**: Exercícios
