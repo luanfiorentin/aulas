@@ -40,6 +40,8 @@ navbar:
         href: slides/02_medidas_resumo.pdf
       - text: "Probabilidades"
         href: slides/03_probabilidades.pdf
+      - text: "Variáveis Aleatórias"
+        href: slides/04_variavel_aleatoria.pdf
       - text: "Dados - 01"
         href: slides/01_dados.pdf
       - text: "Tabelas"

@@ -47,7 +47,7 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
  - **16/09 (Seg)**: (4) Variáveis Aleatórias
 - **18/09 (Qua)**: (5) Distribuições de Probabilidade
  - **23/09 (Seg)**: (5) Distribuições de Probabilidade
-- **25/09 (Qua)**: Exercícios
+- **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
  - **30/09 (Seg)**: (6) Inferência Estatística - Estimação Pontual
 - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
  - **07/10 (Seg)**: Exercícios
@@ -99,10 +99,10 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **06/09 (Sex)**: **Prova 1**
 
  - **11/09 (Qua)**: (4) Variáveis Aleatórias
-- **13/09 (Sex)**: Exercícios
+- **13/09 (Sex)**: (4) Variáveis Aleatórias
  - **18/09 (Qua)**: (5) Distribuições de Probabilidade
 - **20/09 (Sex)**: (5) Distribuições de Probabilidade
- - **25/09 (Qua)**: Exercícios
+ - **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
 - **27/09 (Sex)**: (6) Inferência Estatística - Estimação Pontual
  - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
 - **04/10 (Sex)**: Exercícios
@@ -157,9 +157,9 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
  - **18/09 (Qua)**: **Prova 1**
  
 - **20/09 (Sex)**: (4) Variáveis Aleatórias
- - **25/09 (Qua)**: (5) Distribuições de Probabilidade
+ - **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
 - **27/09 (Sex)**: (5) Distribuições de Probabilidade
- - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+ - **02/10 (Qua)**: (5) Distribuições de Probabilidade
 - **04/10 (Sex)**: (6) Inferência Estatística - Estimação Pontual
  - **09/10 (Qua)**: Exercícios
 - **11/10 (Sex)**: **Prova 2**
