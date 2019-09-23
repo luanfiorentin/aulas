@@ -70,10 +70,24 @@ htmlTable(notas.qui[, -c(1, 2, 4)],
 ### Zootecnia (ZO)
 
 Notas da prova: Nada ainda!
-```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+# Pacotes
+library(readxl)
+library(htmlTable)
+
+# Carregando dados
+notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecnia_2019_02/Zootecnia_RelatoriodeDiariodeClasseExcel.xls", 
+                        col_names = TRUE, 
+                        sheet = "notas")
+notas.zoo$P1 <- round(notas.zoo$P1, digits = 2)
+notas.zoo$FREQ <- round(notas.zoo$FREQ, digits = 0)
+
 # Notas
-htmlTable(as.data.frame(notas), 
-                align = "c|c|c|c|c|c",
-                align.header = "c|c|c|c|c|c", 
-                col.rgroup =  c("none", "gray"))
+htmlTable(notas.zoo[, -c(1, 2, 4)], 
+          rnames = FALSE,  
+          align = "|c|c|c|c|c|c|",
+          align.header = "|c|c|c|c|c|c|", 
+          col.rgroup =  c("none", "#BBBBBB"), 
+          header =  paste(c("GRR", "Frequência", "Prova 1", "Prova 2", "Prova 3")))
+
 ```
