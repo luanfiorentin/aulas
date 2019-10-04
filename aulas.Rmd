@@ -45,22 +45,22 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
 - **11/09 (Qua)**: **Prova 1**
 
  - **16/09 (Seg)**: (4) Variáveis Aleatórias
-- **18/09 (Qua)**: (5) Distribuições de Probabilidade
+- **18/09 (Qua)**: (4) Variáveis Aleatórias
  - **23/09 (Seg)**: (5) Distribuições de Probabilidade
 - **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
- - **30/09 (Seg)**: (6) Inferência Estatística - Estimação Pontual
-- **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
- - **07/10 (Seg)**: Exercícios
-- **09/10 (Qua)**: **Prova 2**
-
- - **14/10 (Seg)**: (7) Inferência Estatística - Estimação Intervalar
+ - **30/09 (Seg)**: (5) Distribuições de Probabilidade
+- **02/10 (Qua)**: (5) Distribuições de Probabilidade
+ - **07/10 (Seg)**: (6) Inferência Estatística - Estimação Pontual
+- **09/10 (Qua)**: Exercícios
+ - **14/10 (Seg)**:**Prova 2**
+ 
 - **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
  - **21/10 (Seg)**: Exercícios
-- **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
- - **28/10 (Seg)**: (6) Inferência Estatística - Testes de Hipóteses
+- **23/10 (Qua)**: (8) Inferência Estatística - Testes de Hipóteses
+ - **28/10 (Seg)**: (8) Inferência Estatística - Testes de Hipóteses
 - **30/10 (Qua)**: Exercícios
- - **04/11 (Seg)**: (7) Regressão e Correlação
-- **06/11 (Qua)**: (7) Regressão e Correlação
+ - **04/11 (Seg)**: (9) Regressão e Correlação
+- **06/11 (Qua)**: (9) Regressão e Correlação
  - **11/11 (Seg)**: Exercícios
 - **13/11 (Qua)**: **Prova 3**
 
@@ -103,19 +103,19 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
  - **18/09 (Qua)**: (5) Distribuições de Probabilidade
 - **20/09 (Sex)**: (5) Distribuições de Probabilidade
  - **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
-- **27/09 (Sex)**: (6) Inferência Estatística - Estimação Pontual
- - **02/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+- **27/09 (Sex)**: (5) Distribuições de Probabilidade
+ - **02/10 (Qua)**: (5) Distribuições de Probabilidade
 - **04/10 (Sex)**: Exercícios
- - **09/10 (Qua)**: **Prova 2**
- 
-- **11/10 (Sex)**: (7) Inferência Estatística - Estimação Intervalar
- - **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
-- **18/10 (Sex)**: Exercícios
- - **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
-- **25/10 (Sex)**: (6) Inferência Estatística - Testes de Hipóteses
+ - **09/10 (Qua)**: *Não haverá aula: Semana Acadêmica*
+- **11/10 (Sex)**: *Não haverá aula: Semana Acadêmica*
+ - **16/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+- **18/10 (Sex)**: **Prova 2**
+
+ - **23/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+- **25/10 (Sex)**: (8) Inferência Estatística - Testes de Hipóteses
  - **30/10 (Qua)**: Exercícios
-- **01/11 (Sex)**: (7) Regressão e Correlação
- - **06/11 (Qua)**: (7) Regressão e Correlação
+- **01/11 (Sex)**: (9) Regressão e Correlação
+ - **06/11 (Qua)**: (9) Regressão e Correlação
 - **08/11 (Sex)**: Exercícios
  - **13/11 (Qua)**: **Prova 3**
  
@@ -158,19 +158,19 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
  
 - **20/09 (Sex)**: (4) Variáveis Aleatórias
  - **25/09 (Qua)**: **Não haverá aula devido ao SIEPE**
-- **27/09 (Sex)**: (5) Distribuições de Probabilidade
+- **27/09 (Sex)**: (4) Variáveis Aleatórias
  - **02/10 (Qua)**: (5) Distribuições de Probabilidade
-- **04/10 (Sex)**: (6) Inferência Estatística - Estimação Pontual
- - **09/10 (Qua)**: Exercícios
-- **11/10 (Sex)**: **Prova 2**
+- **04/10 (Sex)**: (5) Distribuições de Probabilidade
+ - **09/10 (Qua)**: (5) Distribuições de Probabilidade
+- **11/10 (Sex)**: Exercícios
+ - **16/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
 
- - **16/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
-- **18/10 (Sex)**: Exercícios
- - **23/10 (Qua)**: (6) Inferência Estatística - Testes de Hipóteses
-- **25/10 (Sex)**: (6) Inferência Estatística - Testes de Hipóteses
+- **18/10 (Sex)**: **Prova 2**
+ - **23/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+- **25/10 (Sex)**: (8) Inferência Estatística - Testes de Hipóteses
  - **30/10 (Qua)**: Exercícios
-- **01/11 (Sex)**: (7) Regressão e Correlação
- - **06/11 (Qua)**: (7) Regressão e Correlação
+- **01/11 (Sex)**: (9) Regressão e Correlação
+ - **06/11 (Qua)**: (9) Regressão e Correlação
 - **08/11 (Sex)**: Exercícios
  - **13/11 (Qua)**: **Prova 3**
  
