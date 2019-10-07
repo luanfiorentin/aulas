@@ -44,6 +44,8 @@ navbar:
         href: slides/04_variavel_aleatoria.pdf
       - text: "Distribuições de Probabilidade"
         href: slides/05_distribuicoes.pdf 
+      - text: "Estimativa Pontual"
+        href: slides/06_pontual.pdf 
       - text: "Dados - 01"
         href: slides/01_dados.pdf
       - text: "Tabelas"
