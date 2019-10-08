@@ -161,22 +161,23 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **27/09 (Sex)**: (4) Variáveis Aleatórias
  - **02/10 (Qua)**: (5) Distribuições de Probabilidade
 - **04/10 (Sex)**: (5) Distribuições de Probabilidade
- - **09/10 (Qua)**: (5) Distribuições de Probabilidade
-- **11/10 (Sex)**: Exercícios
+ - **09/10 (Qua)**: Não haverá aula
+- **11/10 (Sex)**: (5) Distribuições de Probabilidade
  - **16/10 (Qua)**: (6) Inferência Estatística - Estimação Pontual
+- **18/10 (Sex)**: Exercícios
+ - **23/10 (Qua)**: Exercícios
+- **25/10 (Sex)**: **Prova 2**
 
-- **18/10 (Sex)**: **Prova 2**
- - **23/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
-- **25/10 (Sex)**: (8) Inferência Estatística - Testes de Hipóteses
- - **30/10 (Qua)**: Exercícios
-- **01/11 (Sex)**: (9) Regressão e Correlação
- - **06/11 (Qua)**: (9) Regressão e Correlação
-- **08/11 (Sex)**: Exercícios
- - **13/11 (Qua)**: **Prova 3**
+ - **30/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+- **01/11 (Sex)**: (7) Inferência Estatística - Estimação Intervalar
+ - **06/11 (Qua)**: (8) Inferência Estatística - Testes de Hipóteses
+- **08/11 (Sex)**: (8) Inferência Estatística - Testes de Hipóteses
+ - **13/11 (Qua)**: (9) Regressão e Correlação
  
 - **15/11 (Sex)**: *Feriado: Proclamação da república*
- - **20/11 (Qua)**: (10) Tópicos Especiais
-- **22/11 (Sex)**: (10) Tópicos Especiais
+ - **20/11 (Qua)**: Exercícios
+- **22/11 (Sex)**: **Prova 3**
+
  - **27/11 (Qua)**: (10) Tópicos Especiais
 - **29/11 (Sex)**: (10) Tópicos Especiais
 
