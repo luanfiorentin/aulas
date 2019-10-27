@@ -56,12 +56,13 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
  - **16/10 (Qua)**: **Prova 2**
  
  - **21/10 (Seg)**: (7) Inferência Estatística - Estimação Intervalar
-- **23/10 (Qua)**: (8) Inferência Estatística - Testes de Hipóteses
- - **28/10 (Seg)**: (8) Inferência Estatística - Testes de Hipóteses
-- **30/10 (Qua)**: Exercícios
- - **04/11 (Seg)**: (9) Regressão e Correlação
+- **23/10 (Qua)**: (7) Inferência Estatística - Estimação Intervalar
+ - **28/10 (Seg)**: **Não haverá aula**: Atividade de casa é finalizar o tópico de 
+ estimação intervalar. Na próxima aula vamos iniciar Testes de Hipóteses.
+- **30/10 (Qua)**: (8) Inferência Estatística - Testes de Hipóteses
+ - **04/11 (Seg)**: (8) Inferência Estatística - Testes de Hipóteses
 - **06/11 (Qua)**: (9) Regressão e Correlação
- - **11/11 (Seg)**: Exercícios
+ - **11/11 (Seg)**: (9) Regressão e Correlação
 - **13/11 (Qua)**: **Prova 3**
 
  - **18/11 (Seg)**: (10) Tópicos Especiais
