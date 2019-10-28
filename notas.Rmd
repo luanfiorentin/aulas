@@ -82,6 +82,7 @@ notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecn
                         col_names = TRUE, 
                         sheet = "notas")
 notas.zoo$P1 <- round(notas.zoo$P1, digits = 2)
+notas.zoo$P2 <- round(notas.zoo$P2, digits = 2)
 notas.zoo$FREQ <- round(notas.zoo$FREQ, digits = 0)
 
 # Notas
