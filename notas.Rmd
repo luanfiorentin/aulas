@@ -52,6 +52,7 @@ notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Licenci
                         col_names = TRUE, 
                         sheet = "notas")
 notas.qui$P1 <- round(notas.qui$P1, digits = 2)
+notas.qui$P2 <- round(notas.qui$P2, digits = 2)
 notas.qui$FREQ <- round(notas.qui$FREQ, digits = 0)
 
 # Notas
