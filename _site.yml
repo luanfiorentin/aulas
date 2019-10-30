@@ -48,6 +48,8 @@ navbar:
         href: slides/06_pontual.pdf 
       - text: "Estimativa Intervalar"
         href: slides/07_intervalar.pdf 
+      - text: "Teste de Hipótese"
+        href: slides/08_teste_hipotese.pdf 
       - text: "Dados - 01"
         href: slides/01_dados.pdf
       - text: "Tabelas"
