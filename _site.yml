@@ -50,6 +50,8 @@ navbar:
         href: slides/07_intervalar.pdf 
       - text: "Teste de Hipótese"
         href: slides/08_teste_hipotese.pdf 
+      - text: "Regressão e Correlação"
+        href: slides/09_correlacao_regressao.pdf 
       - text: "Dados - 01"
         href: slides/01_dados.pdf
       - text: "Tabelas"
