@@ -65,12 +65,15 @@ cat(paste0("- **", datas1, " (Seg)", "**:\n", "- **",
  - **11/11 (Seg)**: (9) Regressão e Correlação
 - **13/11 (Qua)**: **Prova 3**
 
- - **18/11 (Seg)**: (10) Tópicos Especiais
-- **20/11 (Qua)**: (10) Tópicos Especiais
+ - **18/11 (Seg)**: (8) Inferência Estatística - Testes de Hipóteses
+- **20/11 (Qua)**: Aula para dúvidas
  - **25/11 (Seg)**: *Dia não letivo devido ao Processo Seletivo 2019/2020*
-- **27/11 (Qua)**: (10) Tópicos Especiais
- - **02/12 (Seg)**: (10) Tópicos Especiais
-- **04/12 (Qua)**: (10) Tópicos Especiais
+- **27/11 (Qua)**: Carga horária concluída
+ - **02/12 (Seg)**: Carga horária concluída
+- **04/12 (Qua)**: Carga horária concluída
+
+- **11/12 (Qua)**: **PROVA FINAL**: conteúdo previsto: Medidas Resumo; Variáveis Aleatórias; Distribuições de Probabilidade;Intervalo de Confiança; Teste de Hipótese; Regressão e Correlação.
+
 
 ### Licenciatura em Química
 
@@ -123,8 +126,10 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
  - **20/11 (Qua)**: Exercícios
 - **22/11 (Sex)**: **Prova 3**
 
- - **27/11 (Qua)**: (10) Tópicos Especiais
-- **29/11 (Sex)**: (10) Tópicos Especiais
+ - **27/11 (Qua)**: Carga horária concluída
+- **29/11 (Sex)**: Carga horária concluída
+
+- **13/12 (Sext)**: **PROVA FINAL**: conteúdo previsto: Medidas Resumo; Variáveis Aleatórias; Distribuições de Probabilidade;Intervalo de Confiança; Teste de Hipótese; Regressão e Correlação.
 
 
 ### Zootecnia
@@ -179,4 +184,6 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **22/11 (Sex)**: (9) Regressão e Correlação
  - **27/11 (Qua)**: Exercícios
 - **29/11 (Sex)**: **Prova 3**
+
+- **13/12 (Sext)**: **PROVA FINAL**: conteúdo previsto: Medidas Resumo; Variáveis Aleatórias; Distribuições de Probabilidade;Intervalo de Confiança; Teste de Hipótese; Regressão e Correlação.
 
