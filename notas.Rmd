@@ -10,6 +10,7 @@ output:
 ### Geologia (GE)
 
 Notas da prova:
+
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Pacotes
@@ -83,11 +84,8 @@ ggplot(resumo, mapping = aes(y = NOTAS, x = PROVA2)) +
 ### Licenciatura em Química (LQ)
 
 Notas da prova:
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 
-# Pacotes
-library(readxl)
-library(htmlTable)
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Carregando dados
 notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Licenciatura_Quimica_2019_02/Quimica_RelatoriodeDiariodeClasseExcel.xls", 
@@ -95,29 +93,66 @@ notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Licenci
                         sheet = "notas")
 notas.qui$P1 <- round(notas.qui$P1, digits = 2)
 notas.qui$P2 <- round(notas.qui$P2, digits = 2)
+notas.qui$P3 <- round(notas.qui$P3, digits = 2)
+notas.qui$MF <- round(notas.qui$MF, digits = 1)
 notas.qui$FREQ <- round(notas.qui$FREQ, digits = 0)
+notas.qui$STATUS <- (notas.qui$STATUS)
+
 
 # Notas
 htmlTable(notas.qui[, -c(1, 2, 4)], 
           rnames = FALSE,  
-          align = "|c|c|c|c|c|c|",
-          align.header = "|c|c|c|c|c|c|", 
+          align = "|c|c|c|c|c|c|c|",
+          align.header = "|c|c|c|c|c|c|c|", 
           col.rgroup =  c("none", "#BBBBBB"), 
-          header =  paste(c("GRR", "Frequência", "Prova 1", "Prova 2", "Prova 3")))
+          header =  paste(c("GRR", 
+                            "Frequência", 
+                            "Prova 1", 
+                            "Prova 2", 
+                            "Prova 3", 
+                            "Média Final", 
+                            "Situação")))
 
 ```
 
 
+Relação entre frequência e média final:
 
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+ggplot(data = notas.qui, mapping = aes(x = FREQ, y = MF)) + 
+  ylim(c(0, 15)) + 
+  xlab("Frequência") +  ylab("Média Final") + 
+  geom_point(size = 2) + 
+  geom_smooth(mapping = aes(x = FREQ, y = MF), method = "loess", se = FALSE) + 
+  theme_bw()
+
+```
+
+Dinâmica das notas:
+
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+resumoqui <- notas.qui %>% gather(PROVA, NOTAS, P1:MF)
+resumoqui$PROVA2 <- rep(1:4, each = dim(notas.qui)[1])
+
+ggplot(resumoqui, mapping = aes(y = NOTAS, x = PROVA2)) + 
+  geom_line() + 
+  ylim(c(0, 12)) + 
+  geom_point(aes(x = PROVA2, y = NOTAS), color = "red") + 
+  geom_hline(yintercept = 7, linetype = "dotted", color = "blue") + 
+  geom_hline(yintercept = 4, linetype = "dotted", color = "red") + 
+  facet_wrap(~ Matrícula) + 
+  xlab("Provas") +  ylab("Notas") + 
+  theme_bw()
+
+```
 
 
 ### Zootecnia (ZO)
 
-Notas da prova: Nada ainda!
+Notas da prova:
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-# Pacotes
-library(readxl)
-library(htmlTable)
 
 # Carregando dados
 notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecnia_2019_02/Zootecnia_RelatoriodeDiariodeClasseExcel.xls", 
