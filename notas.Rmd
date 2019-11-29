@@ -160,14 +160,57 @@ notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecn
                         sheet = "notas")
 notas.zoo$P1 <- round(notas.zoo$P1, digits = 2)
 notas.zoo$P2 <- round(notas.zoo$P2, digits = 2)
+
+notas.zoo$P3 <- round(notas.zoo$P3, digits = 2)
+notas.zoo$MF <- round(notas.zoo$MF, digits = 1)
 notas.zoo$FREQ <- round(notas.zoo$FREQ, digits = 0)
+notas.zoo$STATUS <- (notas.zoo$STATUS)
 
 # Notas
 htmlTable(notas.zoo[, -c(1, 2, 4)], 
           rnames = FALSE,  
-          align = "|c|c|c|c|c|c|",
-          align.header = "|c|c|c|c|c|c|", 
+          align = "|c|c|c|c|c|c|c|",
+          align.header = "|c|c|c|c|c|c|c|", 
           col.rgroup =  c("none", "#BBBBBB"), 
-          header =  paste(c("GRR", "Frequência", "Prova 1", "Prova 2", "Prova 3")))
+          header =  paste(c("GRR", 
+                            "Frequência", 
+                            "Prova 1", 
+                            "Prova 2", 
+                            "Prova 3", 
+                            "Média Final", 
+                            "Situação")))
+
+```
+
+
+Relação entre frequência e média final:
+
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+ggplot(data = notas.zoo, mapping = aes(x = FREQ, y = MF)) + 
+  ylim(c(0, 15)) + 
+  xlab("Frequência") +  ylab("Média Final") + 
+  geom_point(size = 2) + 
+  geom_smooth(mapping = aes(x = FREQ, y = MF), method = "loess", se = FALSE) + 
+  theme_bw()
+
+```
+
+Dinâmica das notas:
+
+```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+
+resumozoo <- notas.zoo %>% gather(PROVA, NOTAS, P1:MF)
+resumozoo$PROVA2 <- rep(1:4, each = dim(notas.zoo)[1])
+
+ggplot(resumozoo, mapping = aes(y = NOTAS, x = PROVA2)) + 
+  geom_line() + 
+  ylim(c(0, 12)) + 
+  geom_point(aes(x = PROVA2, y = NOTAS), color = "red") + 
+  geom_hline(yintercept = 7, linetype = "dotted", color = "blue") + 
+  geom_hline(yintercept = 4, linetype = "dotted", color = "red") + 
+  facet_wrap(~ Matrícula) + 
+  xlab("Provas") +  ylab("Notas") + 
+  theme_bw()
 
 ```
