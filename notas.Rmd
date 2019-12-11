@@ -26,9 +26,12 @@ notas.geo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Geologi
 notas.geo$P1 <- round(notas.geo$P1, digits = 2)
 notas.geo$P2 <- round(notas.geo$P2, digits = 2)
 notas.geo$P3 <- round(notas.geo$P3, digits = 2)
-notas.geo$MF <- round(notas.geo$MF, digits = 1)
+notas.geo$Media <- round(notas.geo$Media, digits = 1)
 notas.geo$FREQ <- round(notas.geo$FREQ, digits = 0)
 notas.geo$STATUS <- (notas.geo$STATUS)
+notas.geo$Final <- round(notas.geo$Final, digits = 1)
+notas.geo$MediaFinal <- round(notas.geo$MediaFinal, digits = 1)
+notas.geo$STATUSFINAL <- (notas.geo$STATUSFINAL)
 
 # Notas
 htmlTable(notas.geo[, -c(1, 2, 4)], 
@@ -41,40 +44,11 @@ htmlTable(notas.geo[, -c(1, 2, 4)],
                             "Prova 1", 
                             "Prova 2", 
                             "Prova 3", 
+                            "Média das Provas", 
+                            "Situação Parcial", 
+                            "Nota da Final", 
                             "Média Final", 
-                            "Situação")))
-```
-
-Relação entre frequência e média final:
-
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-ggplot(data = notas.geo, mapping = aes(x = FREQ, y = MF)) + 
-  ylim(c(0, 15)) + 
-  xlab("Frequência") +  ylab("Média Final") + 
-  geom_point(size = 2) + 
-  geom_smooth(mapping = aes(x = FREQ, y = MF), method = "loess", se = FALSE) + 
-  theme_bw()
-
-```
-
-Dinâmica das notas:
-
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-resumo <- notas.geo %>% gather(PROVA, NOTAS, P1:MF)
-resumo$PROVA2 <- rep(1:4, each = dim(notas.geo)[1])
-
-ggplot(resumo, mapping = aes(y = NOTAS, x = PROVA2)) + 
-  geom_line() + 
-  ylim(c(0, 12)) + 
-  geom_point(aes(x = PROVA2, y = NOTAS), color = "red") + 
-  geom_hline(yintercept = 7, linetype = "dotted", color = "blue") + 
-  geom_hline(yintercept = 4, linetype = "dotted", color = "red") + 
-  facet_wrap(~ Matrícula) + 
-  xlab("Provas") +  ylab("Notas") + 
-  theme_bw()
-
+                            "Situação Final")))
 ```
 
 
