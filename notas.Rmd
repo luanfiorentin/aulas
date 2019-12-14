@@ -9,6 +9,9 @@ output:
 
 ### Geologia (GE)
 
+As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
+terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
+
 Notas da prova:
 
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -49,6 +52,7 @@ htmlTable(notas.geo[, -c(1, 2, 4)],
                             "Nota da Final", 
                             "Média Final", 
                             "Situação Final")))
+
 ```
 
 
@@ -56,6 +60,9 @@ htmlTable(notas.geo[, -c(1, 2, 4)],
 
 
 ### Licenciatura em Química (LQ)
+
+As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
+terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
 
 Notas da prova:
 
@@ -68,10 +75,12 @@ notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Licenci
 notas.qui$P1 <- round(notas.qui$P1, digits = 2)
 notas.qui$P2 <- round(notas.qui$P2, digits = 2)
 notas.qui$P3 <- round(notas.qui$P3, digits = 2)
-notas.qui$MF <- round(notas.qui$MF, digits = 1)
+notas.qui$Media <- round(notas.qui$Media, digits = 1)
 notas.qui$FREQ <- round(notas.qui$FREQ, digits = 0)
 notas.qui$STATUS <- (notas.qui$STATUS)
-
+notas.qui$Final <- round(notas.qui$Final, digits = 1)
+notas.qui$MediaFinal <- round(notas.qui$MediaFinal, digits = 1)
+notas.qui$STATUSFINAL <- (notas.qui$STATUSFINAL)
 
 # Notas
 htmlTable(notas.qui[, -c(1, 2, 4)], 
@@ -84,46 +93,22 @@ htmlTable(notas.qui[, -c(1, 2, 4)],
                             "Prova 1", 
                             "Prova 2", 
                             "Prova 3", 
+                            "Média das Provas", 
+                            "Situação Parcial", 
+                            "Nota da Final", 
                             "Média Final", 
-                            "Situação")))
+                            "Situação Final")))
 
 ```
 
 
-Relação entre frequência e média final:
 
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-ggplot(data = notas.qui, mapping = aes(x = FREQ, y = MF)) + 
-  ylim(c(0, 15)) + 
-  xlab("Frequência") +  ylab("Média Final") + 
-  geom_point(size = 2) + 
-  geom_smooth(mapping = aes(x = FREQ, y = MF), method = "loess", se = FALSE) + 
-  theme_bw()
-
-```
-
-Dinâmica das notas:
-
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-resumoqui <- notas.qui %>% gather(PROVA, NOTAS, P1:MF)
-resumoqui$PROVA2 <- rep(1:4, each = dim(notas.qui)[1])
-
-ggplot(resumoqui, mapping = aes(y = NOTAS, x = PROVA2)) + 
-  geom_line() + 
-  ylim(c(0, 12)) + 
-  geom_point(aes(x = PROVA2, y = NOTAS), color = "red") + 
-  geom_hline(yintercept = 7, linetype = "dotted", color = "blue") + 
-  geom_hline(yintercept = 4, linetype = "dotted", color = "red") + 
-  facet_wrap(~ Matrícula) + 
-  xlab("Provas") +  ylab("Notas") + 
-  theme_bw()
-
-```
 
 
 ### Zootecnia (ZO)
+
+As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
+terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
 
 Notas da prova:
 ```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
@@ -134,11 +119,15 @@ notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecn
                         sheet = "notas")
 notas.zoo$P1 <- round(notas.zoo$P1, digits = 2)
 notas.zoo$P2 <- round(notas.zoo$P2, digits = 2)
-
 notas.zoo$P3 <- round(notas.zoo$P3, digits = 2)
-notas.zoo$MF <- round(notas.zoo$MF, digits = 1)
+notas.zoo$Media <- round(notas.zoo$Media, digits = 1)
 notas.zoo$FREQ <- round(notas.zoo$FREQ, digits = 0)
 notas.zoo$STATUS <- (notas.zoo$STATUS)
+notas.zoo$Final <- round(notas.zoo$Final, digits = 1)
+notas.zoo$MediaFinal <- round(notas.zoo$MediaFinal, digits = 1)
+notas.zoo$STATUSFINAL <- (notas.zoo$STATUSFINAL)
+
+
 
 # Notas
 htmlTable(notas.zoo[, -c(1, 2, 4)], 
@@ -151,40 +140,14 @@ htmlTable(notas.zoo[, -c(1, 2, 4)],
                             "Prova 1", 
                             "Prova 2", 
                             "Prova 3", 
+                            "Média das Provas", 
+                            "Situação Parcial", 
+                            "Nota da Final", 
                             "Média Final", 
-                            "Situação")))
+                            "Situação Final")))
 
 ```
 
 
-Relação entre frequência e média final:
 
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 
-ggplot(data = notas.zoo, mapping = aes(x = FREQ, y = MF)) + 
-  ylim(c(0, 15)) + 
-  xlab("Frequência") +  ylab("Média Final") + 
-  geom_point(size = 2) + 
-  geom_smooth(mapping = aes(x = FREQ, y = MF), method = "loess", se = FALSE) + 
-  theme_bw()
-
-```
-
-Dinâmica das notas:
-
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-resumozoo <- notas.zoo %>% gather(PROVA, NOTAS, P1:MF)
-resumozoo$PROVA2 <- rep(1:4, each = dim(notas.zoo)[1])
-
-ggplot(resumozoo, mapping = aes(y = NOTAS, x = PROVA2)) + 
-  geom_line() + 
-  ylim(c(0, 12)) + 
-  geom_point(aes(x = PROVA2, y = NOTAS), color = "red") + 
-  geom_hline(yintercept = 7, linetype = "dotted", color = "blue") + 
-  geom_hline(yintercept = 4, linetype = "dotted", color = "red") + 
-  facet_wrap(~ Matrícula) + 
-  xlab("Provas") +  ylab("Notas") + 
-  theme_bw()
-
-```
