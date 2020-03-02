@@ -32,6 +32,9 @@ navbar:
       - text: "----------"
       - text: "Informações do curso"
         href: slides/00_aula_inicial.pdf
+      - text: "----------"
+      - text: "Material Complementar"
+      - text: "----------"
   right:
     - text: GitHub
       icon: fa-github fa-lg
