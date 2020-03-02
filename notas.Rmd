@@ -2,19 +2,20 @@
 title: "Notas"
 output:
   html_document:
-    toc: false
+    toc: no
+  pdf_document:
+    toc: no
 ---
 
 ## Escolha a aba de sua turma {.tabset}
 
-### Geologia (GE)
+### Ciências Sociais (CS)
 
-As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
-terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
+Notas da prova: 
 
-Notas da prova:
+Nada ainda...
 
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Pacotes
 library(readxl)
@@ -23,7 +24,7 @@ library(ggplot2)
 library(tidyverse)
 
 # Carregando dados
-notas.geo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Geologia_2019_02/Geologia_RelatoriodeDiariodeClasseExcel.xls", 
+notas.geo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2020-01/Ciencias_Sociais_2020_01/Soc_RelatoriodeDiariodeClasseExcel.xls", 
                         col_names = TRUE, 
                         sheet = "notas")
 notas.geo$P1 <- round(notas.geo$P1, digits = 2)
@@ -59,17 +60,16 @@ htmlTable(notas.geo[, -c(1, 2, 4)],
 
 
 
-### Licenciatura em Química (LQ)
+### Ciências Biológicas (CB)
 
-As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
-terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
+Notas da prova: 
 
-Notas da prova:
+Nada ainda...
 
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
+```{r, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Carregando dados
-notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Licenciatura_Quimica_2019_02/Quimica_RelatoriodeDiariodeClasseExcel.xls", 
+notas.qui <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2020-01/Ciencias_Biologicas_2020_01/Bio_RelatoriodeDiariodeClasseExcel.xls", 
                         col_names = TRUE, 
                         sheet = "notas")
 notas.qui$P1 <- round(notas.qui$P1, digits = 2)
@@ -104,49 +104,6 @@ htmlTable(notas.qui[, -c(1, 2, 4)],
 
 
 
-
-### Zootecnia (ZO)
-
-As provas estarão disponíveis para consulta na segunda-feira (10:00 as 18:00 horas) e na 
-terça-feira (10:00 às 12:00 horas). As notas serão lançadas no portal na terça-feira.
-
-Notas da prova:
-```{r, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
-
-# Carregando dados
-notas.zoo <- read_excel(path = "C:/Users/Luan/Dropbox/UFPR-Aulas/2019-02/Zootecnia_2019_02/Zootecnia_RelatoriodeDiariodeClasseExcel.xls", 
-                        col_names = TRUE, 
-                        sheet = "notas")
-notas.zoo$P1 <- round(notas.zoo$P1, digits = 2)
-notas.zoo$P2 <- round(notas.zoo$P2, digits = 2)
-notas.zoo$P3 <- round(notas.zoo$P3, digits = 2)
-notas.zoo$Media <- round(notas.zoo$Media, digits = 1)
-notas.zoo$FREQ <- round(notas.zoo$FREQ, digits = 0)
-notas.zoo$STATUS <- (notas.zoo$STATUS)
-notas.zoo$Final <- round(notas.zoo$Final, digits = 1)
-notas.zoo$MediaFinal <- round(notas.zoo$MediaFinal, digits = 1)
-notas.zoo$STATUSFINAL <- (notas.zoo$STATUSFINAL)
-
-
-
-# Notas
-htmlTable(notas.zoo[, -c(1, 2, 4)], 
-          rnames = FALSE,  
-          align = "|c|c|c|c|c|c|c|",
-          align.header = "|c|c|c|c|c|c|c|", 
-          col.rgroup =  c("none", "#BBBBBB"), 
-          header =  paste(c("GRR", 
-                            "Frequência", 
-                            "Prova 1", 
-                            "Prova 2", 
-                            "Prova 3", 
-                            "Média das Provas", 
-                            "Situação Parcial", 
-                            "Nota da Final", 
-                            "Média Final", 
-                            "Situação Final")))
-
-```
 
 
 

@@ -18,30 +18,25 @@ source("knitr_setup.R")
 Essa página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
 
 - **CE003 - Estatística II**:
-  - Geologia (GE) - Matutino
-- **CE009 - Introdução à Estatística**:
-  - Licenciatura em Química (LQ) - Vespertino
+  - Ciências Sociais (CS) - Matutino
 - **CE001 - Bioestatística**:
-  - Zootecnia (ZO) - Matutino
+  - Ciências Biológicas (CB) - Matutino
 
 # Detalhes da oferta da disciplina
 
-- **Período:** Segundo semestre de 2019
+- **Período:** Primeiro semestre de 2019
 - **Professor Responsável:**
     - Luan Demarco Fiorentin - DEST/UFPR
     - Contato: luanfiorentin@hotmail.com
 - **Horários e Locais:**
-  - Geologia (GE):
-    - Segunda, 07:30 - 09:30h (Sala CT-01)
-    - Quarta, 09:30 - 11:30h (Sala CT-01)
-  - Licenciatura em Química (LQ):
-    - Quarta, 15:30 - 17:30h (Sala PR-07)
-    - Sexta, 15:30 - 17:30h (Sala PM-01)
-  - Zootecnia (ZO):
-    - Quarta, 7:30 - 9:30h (Sala PA-07)
-    - Sexta, 7:30 - 9:30h (Sala PA-01)
+  - Ciências Sociais (CS):
+    - Terça-feira, 10:30 - 12:30h (Sala)
+    - Quinta-feira, 09:30 - 11:30h (Sala)
+  - Ciências Biológicas (CB):
+    - Quarta-feira, 07:30 - 09:30h (Sala PC-04)
+    - Quinta-feira, 07:30 - 09:30h (Sala PA-06)
 - **Horários de atendimento do professor:**
-    - Sexta-feira, 10:00-12:00h e 13:30-15:00h (preferenciais). 
+    - Sexta-feira, 10:00-11:30h e 13:30-15:00h (preferenciais) 
     - Outros horários podem ser agendados previamente por email
 - **Frequência**: De acordo com as normas da UFPR, mínimo de 75% de presença
 - **Avaliações**:
@@ -56,9 +51,9 @@ Essa página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
     - As provas de segunda chamada serão realizadas em comum acordo entre 
       o aluno e o professor
 - **Datas importantes:** De acordo com a [Resolução 64/18 - CEPE][]:
-    - **05/07**: Início do segundo semestre letivo
-    - **04/12**: Final do segundo semestre letivo
-    - **09/12-14/12**: Período de exames finais
+    - **02/03**: Início do segundo semestre letivo
+    - **27/06**: Final do segundo semestre letivo
+    - **06/07-11/07**: Período de exames finais
 
 # Programa/objetivos da disciplina
 
@@ -73,4 +68,4 @@ análises estatística básicas. O curso compreende três grandes tópicos:
 
 <!-- links -->
 
-[Resolução 64/18 - CEPE]: http://www.est.ufpr.br/calendario/cepe6418.pdf
+[Resolução 24/19 - CEPE]: http://www.est.ufpr.br/arquivos/cepe-24.19.pdf

@@ -28,10 +28,17 @@ navbar:
     - text: "Material"
       menu:
       - text: "----------"
-      - text: "Slides"
+      - text: "Material Complementa"
       - text: "----------"
       - text: "Apostila_DEST"
         href: slides/Apostila_DEST.pdf
+      - text: "Tabelas"
+        href: slides/tabelasEST.pdf
+      - text: "Dados - 01"
+        href: slides/01_dados.pdf
+      - text: "----------"
+      - text: "Slides"
+      - text: "----------"
       - text: "Informações do curso"
         href: slides/00_aula_inicial.pdf
       - text: "Análise exploratória de dados e Amostragem"
@@ -40,22 +47,6 @@ navbar:
         href: slides/02_medidas_resumo.pdf
       - text: "Probabilidades"
         href: slides/03_probabilidades.pdf
-      - text: "Variáveis Aleatórias"
-        href: slides/04_variavel_aleatoria.pdf
-      - text: "Distribuições de Probabilidade"
-        href: slides/05_distribuicoes.pdf 
-      - text: "Estimativa Pontual"
-        href: slides/06_pontual.pdf 
-      - text: "Estimativa Intervalar"
-        href: slides/07_intervalar.pdf 
-      - text: "Teste de Hipótese"
-        href: slides/08_teste_hipotese.pdf 
-      - text: "Regressão e Correlação"
-        href: slides/09_correlacao_regressao.pdf 
-      - text: "Dados - 01"
-        href: slides/01_dados.pdf
-      - text: "Tabelas"
-        href: Listas/tabelasEST.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
