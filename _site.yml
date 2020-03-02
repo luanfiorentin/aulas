@@ -32,6 +32,8 @@ navbar:
       - text: "----------"
       - text: "Informações do curso"
         href: slides/00_aula_inicial.pdf
+      - text: "Informações do curso"
+        href: slides/01_probabilidades.pdf
       - text: "----------"
       - text: "Material Complementar"
       - text: "----------"

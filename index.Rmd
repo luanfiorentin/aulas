@@ -30,8 +30,8 @@ Essa página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
     - Contato: luanfiorentin@hotmail.com
 - **Horários e Locais:**
   - Ciências Sociais (CS):
-    - Terça-feira, 10:30 - 12:30h (Sala)
-    - Quinta-feira, 09:30 - 11:30h (Sala)
+    - Terça-feira, 10:30 - 12:30h (Sala Anfiteatro 1100)
+    - Quinta-feira, 09:30 - 11:30h (Sala Anfiteatro 1100)
   - Ciências Biológicas (CB):
     - Quarta-feira, 07:30 - 09:30h (Sala PC-04)
     - Quinta-feira, 07:30 - 09:30h (Sala PA-06)
