@@ -28,15 +28,6 @@ navbar:
     - text: "Material"
       menu:
       - text: "----------"
-      - text: "Material Complementar"
-      - text: "----------"
-      - text: "Apostila_DEST"
-        href: slides/Apostila_DEST.pdf
-      - text: "Tabelas"
-        href: slides/tabelasEST.pdf
-      - text: "Dados - 01"
-        href: slides/01_dados.pdf
-      - text: "----------"
       - text: "Slides"
       - text: "----------"
       - text: "Informações do curso"
