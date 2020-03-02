@@ -37,6 +37,8 @@ navbar:
       - text: "----------"
       - text: "Material Complementar"
       - text: "----------"
+      - text: "Apostila DEST"
+        href: slides/Apostila_DEST.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
