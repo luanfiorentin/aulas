@@ -28,7 +28,7 @@ navbar:
     - text: "Material"
       menu:
       - text: "----------"
-      - text: "Material Complementa"
+      - text: "Material Complementar"
       - text: "----------"
       - text: "Apostila_DEST"
         href: slides/Apostila_DEST.pdf
@@ -41,12 +41,6 @@ navbar:
       - text: "----------"
       - text: "Informações do curso"
         href: slides/00_aula_inicial.pdf
-      - text: "Análise exploratória de dados e Amostragem"
-        href: slides/01_analise_exploratoria_de_dados.pdf
-      - text: "Medidas Resumo"
-        href: slides/02_medidas_resumo.pdf
-      - text: "Probabilidades"
-        href: slides/03_probabilidades.pdf
   right:
     - text: GitHub
       icon: fa-github fa-lg
