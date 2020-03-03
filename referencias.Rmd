@@ -49,7 +49,7 @@ Livros recomendados:
 - [Udacity Online courses](http://www.udacity.com). Ver em particular:
     - [Introduction to Statistics](https://www.udacity.com/course/st101)
 
-## Leituras complementares
+## Leituras
 
 - Hilborn, R; Mangel, M.
   [The ecological detective: confronting models with data](http://press.princeton.edu/titles/5987.html).

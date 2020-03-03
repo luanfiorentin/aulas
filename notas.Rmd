@@ -11,7 +11,7 @@ output:
 
 ### Ciências Sociais (CS)
 
-Notas da prova: 
+Notas da prova 
 
 Nada ainda...
 
@@ -62,7 +62,7 @@ htmlTable(notas.geo[, -c(1, 2, 4)],
 
 ### Ciências Biológicas (CB)
 
-Notas da prova: 
+Notas da prova 
 
 Nada ainda...
 
