@@ -24,7 +24,7 @@ A página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
 
 # Detalhes da oferta da disciplina
 
-- **Período:** Primeiro semestre de 2019
+- **Período:** Primeiro semestre de 2020
 - **Professor Responsável:**
     - Luan Demarco Fiorentin - DEST/UFPR
     - Contato: luanfiorentin@hotmail.com
@@ -33,7 +33,7 @@ A página abrange o conteúdo das seguintes disciplinas e cursos ofertados:
     - Terça-feira, 10:30 - 12:30h (Sala Anfiteatro 1100)
     - Quinta-feira, 09:30 - 11:30h (Sala Anfiteatro 1100)
   - Ciências Biológicas (CB):
-    - Quarta-feira, 07:30 - 09:30h (Sala PC-04)
+    - Quarta-feira, 07:30 - 09:30h (Sala PA-02)
     - Quinta-feira, 07:30 - 09:30h (Sala PA-06)
 - **Horários de atendimento do professor:**
     - Sexta-feira, 10:00-11:30h e 13:30-15:00h (preferenciais) 

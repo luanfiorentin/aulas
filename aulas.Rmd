@@ -35,7 +35,7 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **03/03 (Ter)**: Apresentação da disciplina
 - **05/03 (Qui)**: **Não haverá aula**
  - **10/03 (Ter)**: (1) Probabilidades
-- **12/03 (Qui)**: (2) Análise Exploratória de Dados
+- **12/03 (Qui)**: (1) Probabilidades
  - **17/03 (Ter)**: (2) Análise Exploratória de Dados
 - **19/03 (Qui)**: (3) Medidas de Resumo
  - **24/03 (Ter)**: (3) Medidas de Resumo
