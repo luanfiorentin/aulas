@@ -1,10 +1,10 @@
-# Estatística Básica - 2019-02
+# Estatística Básica - 2020-01
 
 ## CE003 - Estatística II
 
 Repositório da disciplina de estatística básica, ministrada na 
 Universidade Federal do Paraná - UFPR, no
-segundo semestre de 2019.
+primeiro semestre de 2020.
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
