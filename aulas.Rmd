@@ -36,11 +36,12 @@ cat(paste0("- **", datas1, " (Ter)", "**:\n", "- **",
 - **05/03 (Qui)**: **Não haverá aula**
  - **10/03 (Ter)**: (1) Probabilidades
 - **12/03 (Qui)**: (1) Probabilidades
- - **17/03 (Ter)**: (2) Análise Exploratória de Dados
-- **19/03 (Qui)**: (3) Medidas de Resumo
- - **24/03 (Ter)**: (3) Medidas de Resumo
-- **26/03 (Qui)**: Exercícios
- - **31/03 (Ter)**: **Prova 1**
+ - **17/03 (Ter)**: Aulas canceladas - As atividades serão anunciadas em breve.
+- **19/03 (Qui)**: Aulas canceladas - As atividades serão anunciadas em breve.
+ - **24/03 (Ter)**: Aulas canceladas - As atividades serão anunciadas em breve.
+- **26/03 (Qui)**: Aulas canceladas - As atividades serão anunciadas em breve.
+ - **31/03 (Ter)**: **Prova 1** (data é prevista, mas provavelmente sofrerá alterações, 
+                    e o mesmo é válido para os demais tópicos da disciplina).
 
 - **02/04 (Qui)**: (4) Variáveis Aleatórias
  - **07/04 (Ter)**: (4) Variáveis Aleatórias
@@ -96,11 +97,12 @@ cat(paste0("- **", datas1, " (Qua)", "**:\n", "- **",
 - **06/03 (Sex)**: (1) Probabilidades
  - **11/03 (Qua)**: (1) Probabilidades
 - **13/03 (Sex)**: (2) Análise Exploratória de Dados
- - **18/03 (Qua)**: (2) Análise Exploratória de Dados
-- **20/03 (Sex)**: (3) Medidas de Resumo
- - **25/03 (Qua)**: (3) Medidas de Resumo
-- **27/03 (Sex)**: Exercícios
- - **01/04 (Qua)**: **Prova 1**
+ - **18/03 (Qua)**: Aulas canceladas - As atividades serão anunciadas em breve.
+- **20/03 (Sex)**: Aulas canceladas - As atividades serão anunciadas em breve.
+ - **25/03 (Qua)**: Aulas canceladas - As atividades serão anunciadas em breve.
+- **27/03 (Sex)**: Aulas canceladas - As atividades serão anunciadas em breve.
+ - **01/04 (Qua)**: **Prova 1** (data é prevista, mas provavelmente sofrerá alterações, 
+                    e o mesmo é válido para os demais tópicos da disciplina).
  
 - **03/04 (Sex)**: (4) Variáveis Aleatórias
  - **08/04 (Qua)**: (4) Variáveis Aleatórias
